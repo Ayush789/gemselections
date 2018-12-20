@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:gemselections/Pages/preciousGemPages/gomed.dart';
 import 'package:gemselections/Pages/preciousGemPages/gulabiPukhraj.dart';
+import 'package:gemselections/Pages/preciousGemPages/haraPukhraj.dart';
 import 'package:gemselections/Pages/preciousGemPages/lehsunia.dart';
 import 'package:gemselections/Pages/preciousGemPages/manik.dart';
+import 'package:gemselections/Pages/preciousGemPages/moonga.dart';
 import 'package:gemselections/Pages/preciousGemPages/moti.dart';
 import 'package:gemselections/Pages/preciousGemPages/neelam.dart';
 import 'package:gemselections/Pages/preciousGemPages/panna.dart';
 import 'package:gemselections/Pages/preciousGemPages/pitambriNeelam.dart';
 import 'package:gemselections/Pages/preciousGemPages/pukhraj.dart';
 import 'package:gemselections/Pages/preciousGemPages/purpleSapphire.dart';
+import 'package:gemselections/Pages/preciousGemPages/safedPukhraj.dart';
 
 class GemstonesPage extends StatefulWidget {
   @override
