@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:gemselections/Pages/Astrology.dart';
+import 'package:gemselections/Pages/abhimantritpage.dart';
 import 'package:gemselections/Pages/accountpage.dart';
+import 'package:gemselections/Pages/cabochonGems.dart';
 import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/gemstones.dart';
 import 'package:gemselections/Pages/jwellry.dart';
+import 'package:gemselections/Pages/triangularGemstones.dart';
 
 class MainScaffold extends StatefulWidget {
   Widget body;
@@ -64,6 +67,10 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Triangular Gemstones"),
               leading: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TriangularGemstonesPage()));
+              },
             ),
             ListTile(
               title: Text("Today's Update"),
@@ -72,6 +79,10 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Abhimantrit"),
               leading: Icon(Icons.info),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => AbhimantritPage()));
+              },
             ),
             ListTile(
               title: Text("Gem Selections\u2122 Astro Dose "),
@@ -84,6 +95,10 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Cabocho Gemstones"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => CabochonGemsPage()));
+              },
             ),
             ListTile(
               title: Text("Birthstones"),
