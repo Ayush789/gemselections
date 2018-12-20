@@ -15,14 +15,15 @@ class _PurpleSapphirePageState extends State<PurpleSapphirePage> {
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FPurple-sapphire-2.jpg?alt=media"),
           Text(
             "Baingani Pukhraj",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a"),
-          Text("Baingani Pukhraj is rare..."),
+          Text(" Baingani Pukhraj is a rare Gemstone widely used in Astrology and healing. Its price ranges from Rs. 2100.00 per ratti to Rs. 31000/- per ratti.
+        \nPurple Sapphire Weight available 2.25 rati to 11.25 rati."),
         ],
       ),
     );
