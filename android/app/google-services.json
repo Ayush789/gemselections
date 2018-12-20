@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "980508632732",
+    "firebase_url": "https://gemselections-add52.firebaseio.com",
+    "project_id": "gemselections-add52",
+    "storage_bucket": "gemselections-add52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980508632732:android:a9f24a6936c735a0",
+        "android_client_info": {
+          "package_name": "tech.iosd.gemselections"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980508632732-7q9e37i90lv6kjmthdutkgo3s7krt5q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.iosd.gemselections",
+            "certificate_hash": "5db1f616151aedcbf675eb308ccae27ac44546fc"
+          }
+        },
+        {
+          "client_id": "980508632732-efd42ipq47r2tso12leouomnos11gv6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.iosd.gemselections",
+            "certificate_hash": "eac6f7d7b69eed5fb97710939810456c3b806193"
+          }
+        },
+        {
+          "client_id": "980508632732-90ls6uvj593qrp3nsgknuk54uoo6kdsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.iosd.gemselections",
+            "certificate_hash": "bb6c578947773e0991fd317e159f3d1cf4a6894a"
+          }
+        },
+        {
+          "client_id": "980508632732-a0639cellesu1v9pomv4sq57ptq4jicn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.iosd.gemselections",
+            "certificate_hash": "f0549e828156dc5402fc9083aface0a519f28249"
+          }
+        },
+        {
+          "client_id": "980508632732-jcrhup9fi0df4099uprodrglv3icova7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmWYEKmjkfRxnSdxVu-Q4UEipSqWuc3Co"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980508632732-jcrhup9fi0df4099uprodrglv3icova7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "980508632732-24tt276kid2qk6ar8qjgiabgg2sc5m81.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.atlas.GemSelection"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
