@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-class PurpleSapphirePage extends StatefulWidget {
+class SafedPukhrajPage extends StatefulWidget {
   @override
-  _PurpleSapphirePageState createState() => _PurpleSapphirePageState();
+  _SafedPukhrajPageState createState() => _SafedPukhrajPageState();
 }
 
-class _PurpleSapphirePageState extends State<PurpleSapphirePage> {
+class _SafedPukhrajPageState extends State<SafedPukhrajPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,14 +16,14 @@ class _PurpleSapphirePageState extends State<PurpleSapphirePage> {
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
           Text(
-            "Baingani Pukhraj",
+            "Baingani SafedPukhraj",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a"),
-          Text("Baingani Pukhraj is rare..."),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+          Text("Select One"),
         ],
       ),
     );

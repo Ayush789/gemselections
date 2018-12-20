@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:gemselections/Pages/preciousGemPages/gomed.dart';
 import 'package:gemselections/Pages/preciousGemPages/gulabiPukhraj.dart';
+import 'package:gemselections/Pages/preciousGemPages/haraPukhraj.dart';
 import 'package:gemselections/Pages/preciousGemPages/lehsunia.dart';
 import 'package:gemselections/Pages/preciousGemPages/manik.dart';
+import 'package:gemselections/Pages/preciousGemPages/moonga.dart';
 import 'package:gemselections/Pages/preciousGemPages/moti.dart';
 import 'package:gemselections/Pages/preciousGemPages/neelam.dart';
 import 'package:gemselections/Pages/preciousGemPages/panna.dart';
 import 'package:gemselections/Pages/preciousGemPages/pitambriNeelam.dart';
 import 'package:gemselections/Pages/preciousGemPages/pukhraj.dart';
 import 'package:gemselections/Pages/preciousGemPages/purpleSapphire.dart';
+import 'package:gemselections/Pages/preciousGemPages/safedPukhraj.dart';
 
 class GemstonesPage extends StatefulWidget {
   @override
@@ -83,33 +87,37 @@ List<GemButton> gemButtons = [
   GemButton(
     Imgurl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a",
-    Title: "Pukhraj",
+    Title: "Moti",
     SubTitle: "Yellow Sapphire",
     Link: MotiPage(),
   ),
   GemButton(
     Imgurl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a",
-    Title: "Pukhraj",
+    Title: "Moonga",
     SubTitle: "Yellow Sapphire",
+    Link: MoongaPage(),
   ),
   GemButton(
     Imgurl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a",
-    Title: "Pukhraj",
+    Title: "Heera",
     SubTitle: "Yellow Sapphire",
+    Link: DiamondPage(),
   ),
   GemButton(
     Imgurl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a",
-    Title: "Pukhraj",
+    Title: "Safed Pukhraj",
     SubTitle: "Yellow Sapphire",
+    Link: SafedPukhrajPage(),
   ),
   GemButton(
     Imgurl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a",
-    Title: "Pukhraj",
+    Title: "Hara Pukhraj",
     SubTitle: "Yellow Sapphire",
+    Link: HaraPukhrajPage(),
   ),
 ];
 
