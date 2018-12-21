@@ -88,19 +88,31 @@ class _GomedPageState extends State<GomedPage> {
       return Column(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgaya-gomed.jpg?alt=media"),
           Text("Text2")
         ],
       );
     }
     if (x == 3) {
       return Column(
-        children: <Widget>[Text("Text3")],
+        children: <Widget>[
+          Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Forrisa-gomed.jpg?alt=media"),
+          Text("Text3")],
       );
     }
     if (x == 4) {
       return Column(
-        children: <Widget>[Text("Text4")],
+        children: <Widget>[Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-gomed.jpg?alt=media"),
+          Text("Text4")],
+      );
+    }
+    if (x == 5) {
+      return Column(
+        children: <Widget>[Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-gomed.jpg?alt=media"),
+          Text("Text5")],
       );
     }
     return Container();
@@ -115,9 +127,9 @@ class _GomedPageState extends State<GomedPage> {
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-gomed.jpg?alt=media"),
           Text(
-            "Baingani Gomed",
+            "GOMED|HESSONITE",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
