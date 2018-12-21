@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/Astrology.dart';
 import 'package:gemselections/Pages/abhimantritpage.dart';
 import 'package:gemselections/Pages/accountpage.dart';
+import 'package:gemselections/Pages/astrologicalremedies.dart';
 import 'package:gemselections/Pages/birthstones.dart';
 import 'package:gemselections/Pages/cabochonGems.dart';
 import 'package:gemselections/Pages/diamonds.dart';
@@ -135,6 +136,12 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Astrological Remedies"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => AstrologicalRemediesPage()));
+              },
             ),
             ListTile(
               title: Text("Gemstones Reccomendations"),
