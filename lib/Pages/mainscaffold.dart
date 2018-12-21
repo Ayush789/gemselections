@@ -5,6 +5,8 @@ import 'package:gemselections/Pages/abhimantritpage.dart';
 import 'package:gemselections/Pages/accountpage.dart';
 import 'package:gemselections/Pages/cabochonGems.dart';
 import 'package:gemselections/Pages/diamonds.dart';
+import 'package:gemselections/Pages/gemStonesAndAstrology.dart';
+import 'package:gemselections/Pages/gemstoneRecommendation.dart';
 import 'package:gemselections/Pages/gemstones.dart';
 import 'package:gemselections/Pages/jwellry.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
@@ -68,8 +70,10 @@ class _MainScaffoldState extends State<MainScaffold> {
               title: Text("Triangular Gemstones"),
               leading: Icon(Icons.arrow_right),
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TriangularGemstonesPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => TriangularGemstonesPage()));
               },
             ),
             ListTile(
@@ -93,11 +97,17 @@ class _MainScaffoldState extends State<MainScaffold> {
               },
             ),
             ListTile(
-              title: Text("Cabocho Gemstones"),
+              title: Container(
+                child: Text(
+                  "Cabocho Gemstones",
+                ),
+              ),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CabochonGemsPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CabochonGemsPage()));
               },
             ),
             ListTile(
@@ -107,6 +117,12 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Gemstones and Astrology"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => GemStonesAndAstrology()));
+              },
             ),
             ListTile(
               title: Text("Astrological Remedies"),
@@ -115,6 +131,12 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Gemstones Reccomendations"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => GemStoneRecommendation()));
+              },
             ),
             ListTile(
               title: Text("Rudrksha"),

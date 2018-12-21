@@ -47,6 +47,8 @@ flutter:
   assets:
     - assets/appbar/bar.jpg
 
+    - assets/gemstones/gemstonesbanner.png
+
     - assets/landing/astrology.jpeg
     - assets/landing/diamonds.jpeg
     - assets/landing/gemstones.jpeg
