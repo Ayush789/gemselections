@@ -96,24 +96,28 @@ List<GemButton> gemButtons = [
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Coral.jpg?alt=media",
     Title: "Moonga",
     SubTitle: "Coral",
+    Link: MoongaPage(),
   ),
   GemButton(
     Imgurl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fdiamond.jpg?alt=media",
+        "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fdiamond.jpg?alt=media",
     Title: "Heera",
     SubTitle: "Diamond",
+    Link: DiamondPage(),
   ),
   GemButton(
     Imgurl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Sapphire.jpg?alt=media",
+        "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Sapphire.jpg?alt=media",
     Title: "Safed Pukhraj",
     SubTitle: "White Sapphire",
+    Link: SafedPukhrajPage(),
   ),
   GemButton(
     Imgurl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgreen-sapphire.jpg?alt=media",
+        "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgreen-sapphire.jpg?alt=media",
     Title: "Hara Pukhraj",
     SubTitle: "Green Sapphire",
+    Link: HaraPukhrajPage(),
   ),
 ];
 
@@ -121,18 +125,15 @@ class _GemstonesPageState extends State<GemstonesPage> {
   @override
   Widget build(BuildContext context) {
     return MainScaffold(
-        body: Column(
+        body: ListView(
       children: <Widget>[
         Container(
-          color: Colors.black,
-          height: 100.0,
-          width: 200.0,
+          padding: EdgeInsets.only(bottom: 10.0),
+          child: Image.asset("assets/gemstones/gemstonesbanner.png"),
         ),
-        Expanded(
-          child: Center(
-            child: ListView(
-              children: GemButtonsToRows(gemButtons, context),
-            ),
+        Center(
+          child: Column(
+            children: GemButtonsToRows(gemButtons, context),
           ),
         )
       ],
@@ -148,29 +149,33 @@ class GemButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200.0,
-      width: 150.0,
-      child: FlatButton(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.network(
-              Imgurl,
-              height: 100.0,
-              width: 150.0,
-            ),
-            Text(Title),
-            Text(SubTitle),
-          ],
+    return Card(
+      elevation: 2.0,
+      //color: Color(0xFFD3D3D3),
+      child: Container(
+        height: 180.0,
+        width: 170.0,
+        child: FlatButton(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.network(
+                Imgurl,
+                //height: 100.0,
+                width: 150.0,
+              ),
+              Text(Title),
+              Text(SubTitle),
+            ],
+          ),
+          onPressed: () {
+            if (Link != null) {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Link));
+            }
+          },
         ),
-        onPressed: () {
-          if (Link != null) {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Link));
-          }
-        },
       ),
     );
   }
