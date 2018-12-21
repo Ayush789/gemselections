@@ -108,35 +108,35 @@ class _MoongaPageState extends State<MoongaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Purple Sapphire"),
+        title: Text("Red Coral"),
       ),
       body: ListView(
         children: <Widget>[
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
           Text(
-            "Baingani Moonga",
+            "MOONGA | CORAL",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-          Text("Select One"),
+        Text("  Moonga : At Gem Selections we have a range of Moonga i.e., Moonga from Rs. 325/ Rt to Rs. 1100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.      \n\Moonga ( Coral ): This is the gem of Hanumanjee ,it bestows upon a person courage and strength. This also improves the muscular system and improve the capability of bone-marrow to produce red blood cells .It improves the process of absorption of oxygen by the lungs and there by gives strength to the entire body and removes many diseases which are not understood by the medical profession . This also removes the effect of tantra and evil spirits. If you have uncomfortable dreams this is a must for you . Quality : Premium      \n\nRED CORAL (MOONGA) IS AVAILABLE WITH US FROM Rs. 425.00 Per Ratti TO Rs. 1800.00 Per Ratti DEPENDING ON QUALITY AND SIZE.\n\n\t<b>  TRIANGULAR RED CORAL\n\tUPTO 6.25 RATTI RS. 650.00 PER RATTI\n\t7.25 RATTI TO 11.25 RATTI RS. 850.00 PER RATTI\n\t11.25 RATTI TO 31 RATTI RS. 1500.00 PER RATTI</b>"),
           FlatButton(
             onPressed: () => showPrice1(context),
             child: Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fjapanese-coral.jpg?alt=media"),
           ),
 
           FlatButton(
             onPressed: () => showPrice2(context),
             child: Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fitalian_Coral.jpg?alt=media"),
           ),
 
           FlatButton(
             onPressed: () => showPrice3(context),
             child: Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fsri-lankan-coral.jpg?alt=media"),
           ),
         ],
       ),
