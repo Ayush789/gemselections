@@ -14,7 +14,7 @@ class _CabochonGemsPageState extends State<CabochonGemsPage> {
     return MainScaffold(
       body: ListView(
         children: <Widget>[
-          Text("All Cabochons"),
+          Text("All Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
           DropdownButton(
             items: [
               DropdownMenuItem<int>(
@@ -50,7 +50,7 @@ Widget bottomData(int x) {
       children: <Widget>[
         Image.network(
             "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-        Text("adfdadfdf"),
+        Text("Ruby Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
         Image.network(
             "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
       ],
@@ -61,7 +61,7 @@ Widget bottomData(int x) {
       children: <Widget>[
         Image.network(
             "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-        Text("adfdadfdf"),
+        Text("Emerald Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
         Image.network(
             "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
       ],
@@ -72,7 +72,7 @@ Widget bottomData(int x) {
       children: <Widget>[
         Image.network(
             "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-        Text("adfdadfdf"),
+        Text("Sapphire Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
         Image.network(
             "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
       ],
