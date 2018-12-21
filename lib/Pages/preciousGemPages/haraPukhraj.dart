@@ -44,19 +44,19 @@ class _HaraPukhrajPageState extends State<HaraPukhrajPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Purple Sapphire"),
+        title: Text("Green Sapphire"),
       ),
       body: ListView(
         children: <Widget>[
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
           Text(
-            "Baingani HaraPukhraj",
+            "HARA PUKHRAJ | GREEN SAPPHIRE",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-          Text("Select One"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fhara-pukhraj.jpg?alt=media"),
+          Text(" Hara Pukhraj : At Gem Selections we have a range of Hara Pukhraj i.e., Hara Pukhraj from <b>Rs. 2100/ Rt to Rs. 31000/ Rt.</b>\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis gem of Venus ,it gives one glamour and radiance which makes one stand apart from the crowd .It improves sex appeal , improves the innovative powers and megha shakti , worn by people who want to stand apart and be remebered like actors, models ,players etc. People in public relations can also benefit a lot from it. Quality : Premium ,\n\n\n"),
           RaisedButton(
             child: Text("Show Prices"),
             onPressed: (){
