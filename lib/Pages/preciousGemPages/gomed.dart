@@ -88,25 +88,32 @@ class _GomedPageState extends State<GomedPage> {
       return Column(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-         Text("  <b>Gaya Gomed:</b> At Gem Selections we have a range of Gaya Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgaya-gomed.jpg?alt=media"),
+          Text("  <b>Gaya Gomed:</b> At Gem Selections we have a range of Gaya Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")
         ],
       );
     }
     if (x == 3) {
       return Column(
-        children: <Widget>[Text("  At Gem Selections we have a range of Orissa Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
+        children: <Widget>[
+          Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Forrisa-gomed.jpg?alt=media"),
+          Text("  At Gem Selections we have a range of Orissa Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
+
       );
     }
     if (x == 4) {
       return Column(
-        children: <Widget>[Text("At Gem Selections we have a range of African Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
+        children: <Widget>[Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-gomed.jpg?alt=media"),
+          Text("At Gem Selections we have a range of African Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
       );
     }
-      if (x == 5) {
+    if (x == 5) {
       return Column(
-        children: <Widget>[Text("At Gem Selections we have a range of Celone Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.
-   ")],
+        children: <Widget>[Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-gomed.jpg?alt=media"),
+          Text("At Gem Selections we have a range of Celone Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
       );
     }
     return Container();
@@ -121,9 +128,9 @@ class _GomedPageState extends State<GomedPage> {
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-gomed.jpg?alt=media"),
           Text(
-            "Baingani Gomed",
+            "GOMED|HESSONITE",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
@@ -146,6 +153,10 @@ class _GomedPageState extends State<GomedPage> {
               DropdownMenuItem<int>(
                 child: Text("Treated Gomed"),
                 value: 4,
+              ),
+              DropdownMenuItem<int>(
+                child: Text("Treated Gomed"),
+                value: 5,
               ),
             ],
             onChanged: (int x) {

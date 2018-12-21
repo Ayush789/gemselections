@@ -55,7 +55,9 @@ class _GemStoneRecommendationState extends State<GemStoneRecommendation> {
                 ),
                 RaisedButton(
                   child: Text("Submit"),
-                  onPressed: () {},
+                  onPressed: () {
+                    print("Sumitted");
+                  },
                 )
               ],
             ),
