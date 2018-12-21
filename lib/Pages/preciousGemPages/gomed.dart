@@ -153,6 +153,10 @@ class _GomedPageState extends State<GomedPage> {
                 child: Text("Treated Gomed"),
                 value: 4,
               ),
+              DropdownMenuItem<int>(
+                child: Text("Treated Gomed"),
+                value: 5,
+              ),
             ],
             onChanged: (int x) {
               setState(() {
