@@ -58,9 +58,9 @@ class _PannaPageState extends State<PannaPage> {
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media&token=2393c15d-8fca-4a9c-be1d-318aa8c5a71a"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-emerald.jpg?alt=media"),
           Text(
-            "Baingani Pukhraj",
+            "EMERALD|PANNA STONE",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(

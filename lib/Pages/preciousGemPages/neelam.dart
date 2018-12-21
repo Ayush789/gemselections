@@ -88,14 +88,17 @@ class _NeelamPageState extends State<NeelamPage> {
       return Column(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fceylon-neelam.jpg?alt=media"),
           Text("Text2")
         ],
       );
     }
     if (x == 3) {
       return Column(
-        children: <Widget>[Text("Text3")],
+        children: <Widget>[
+          Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fbangkok-neelam.jpg?alt=media"),
+          Text("Text3")],
       );
     }
     if (x == 4) {
@@ -115,7 +118,7 @@ class _NeelamPageState extends State<NeelamPage> {
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FNatural-blue-sapphire.jpg?alt=media"),
           Text(
             "Baingani Neelam",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
