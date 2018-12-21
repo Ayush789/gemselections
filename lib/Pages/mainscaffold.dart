@@ -11,6 +11,7 @@ import 'package:gemselections/Pages/gemStonesAndAstrology.dart';
 import 'package:gemselections/Pages/gemstoneRecommendation.dart';
 import 'package:gemselections/Pages/gemstones.dart';
 import 'package:gemselections/Pages/jwellry.dart';
+import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
 
 class MainScaffold extends StatefulWidget {
@@ -156,6 +157,10 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Rudrksha"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+              },
             ),
             Divider(),
             ListTile(
