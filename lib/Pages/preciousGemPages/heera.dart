@@ -10,7 +10,7 @@ class _PurpleSapphirePageState extends State<PurpleSapphirePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Purple Sapphire"),
+        title: Text("Heera"),
       ),
       body: ListView(
         children: <Widget>[
