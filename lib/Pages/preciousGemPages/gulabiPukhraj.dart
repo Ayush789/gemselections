@@ -44,21 +44,21 @@ class _GulabiPukhrajPageState extends State<GulabiPukhrajPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Purple Sapphire"),
+        title: Text("Pink Sapphire"),
       ),
       body: ListView(
         children: <Widget>[
           Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fpink-sapphire.jpg?alt=media"),
           Text(
-            "Baingani GulabiPukhraj",
+            "GULABI PUKHRAJ|PINK SAPPHIRE",
             style: TextStyle(color: Colors.purple, fontSize: 20.0),
           ),
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
           Text("Select One"),
           RaisedButton(
-            child: Text("Show Prices"),
+            child: Text(" Pink Sapphire : At Gem Selections we have a range of Pink Sapphire i.e., Gulabi Pukhraj from Rs. 2100/ Rt to Rs. 31000/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nIt is also known as Pink Sapphire. It is pink in color. It is very cold gem stone and repersent Saturn. It should be worn in gold on the second finger of right hand. Pink Sapphire removes evil effects of Saturn. It has the magical power. Pink Sapphire (Gulabi Pukhraj) if act positively it can take a person to the heights that he or she has never imagined whereas on the other hand if it has its negative impact then it can have the worse effect on the person wearing it,"),
             onPressed: (){
               showPrice1(context);
             },

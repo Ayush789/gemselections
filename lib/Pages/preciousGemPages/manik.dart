@@ -121,7 +121,7 @@ class _ManikPageState extends State<ManikPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Manik"),
+        title: Text("Manik  "),
       ),
       body: ListView(
         children: <Widget>[

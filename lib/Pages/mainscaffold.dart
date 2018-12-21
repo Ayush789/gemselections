@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/Astrology.dart';
 import 'package:gemselections/Pages/abhimantritpage.dart';
 import 'package:gemselections/Pages/accountpage.dart';
+import 'package:gemselections/Pages/astrologicalremedies.dart';
 import 'package:gemselections/Pages/birthstones.dart';
 import 'package:gemselections/Pages/cabochonGems.dart';
 import 'package:gemselections/Pages/diamonds.dart';
@@ -10,6 +11,7 @@ import 'package:gemselections/Pages/gemStonesAndAstrology.dart';
 import 'package:gemselections/Pages/gemstoneRecommendation.dart';
 import 'package:gemselections/Pages/gemstones.dart';
 import 'package:gemselections/Pages/jwellry.dart';
+import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
 
 class MainScaffold extends StatefulWidget {
@@ -135,6 +137,12 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Astrological Remedies"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => AstrologicalRemediesPage()));
+              },
             ),
             ListTile(
               title: Text("Gemstones Reccomendations"),
@@ -149,6 +157,10 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Rudrksha"),
               leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+              },
             ),
             Divider(),
             ListTile(
