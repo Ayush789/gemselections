@@ -81,7 +81,7 @@ class _GomedPageState extends State<GomedPage> {
   Widget bottomData(int x) {
     if (x == 1) {
       return Column(
-        children: <Widget>[Text("Text1")],
+        children: <Widget>[Text("At Gem Selections, we have Gomed Stone ranging from Rs.110 per ratti to Rs.3100 per ratti.\nThese days Garnets and raisin made stone are being sold with the support of self made certificates. If you want a real Gomed, never buy one, unless you have visited <b>Gem Selections, Shop No.8, A-3 DDA Market, Janakpuri, New Delhi - 110058</b>\nYou get Natural Gomed Stone only at Gem Selections, so you must visit us, in your own interest, so that you get a Real Gomed Stone with Govt. Lab Certificate.\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nGomed is a variety of Grossular, a Calcium Aluminium mineral of the Garnet family.\nThe name comes from Greek word which means a Garnet of lower hardness and density than most Garnets of the Garnet family.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.\n\n\t\tGaya Gomed\n\tOrissa Gomed\n\tAfrican Gomed\n\tCeylonese Gomed\n\nGomed if found mainly in India and Sri Lanka. It is also found in Brazil and California and recently mines have been found in Africa.\n\n<b>Benefits of Wearing Gomed Benefits of Wearing Gomed </b>\n\t\t1. It reduces un necessary tensions and gives positive disposition to people where Rahu is favorably placed.\n\t\t2. Gomed can reduce stomach ailments.\n\t\t3. Gomed is said to have powers to weaken the enemies.\n\t\t4. This Gemstone is very potent weapon against enemies of all sorts especially the hidden enemies.\n\t\t5. It Rahu is well placed then a big Gomed of 11 to 21 ratti can be worn. This can give the wearer very fast rise in profession and turn the opponents into pulp.6. Powers of a good quality Gomed can change the game in favour of the wearer if correctly recommended and properly worn.7. In politics and public life this can do wonders.")],
       );
     }
     if (x == 2) {
@@ -89,18 +89,24 @@ class _GomedPageState extends State<GomedPage> {
         children: <Widget>[
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-          Text("Text2")
+         Text("  <b>Gaya Gomed:</b> At Gem Selections we have a range of Gaya Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")
         ],
       );
     }
     if (x == 3) {
       return Column(
-        children: <Widget>[Text("Text3")],
+        children: <Widget>[Text("  At Gem Selections we have a range of Orissa Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
       );
     }
     if (x == 4) {
       return Column(
-        children: <Widget>[Text("Text4")],
+        children: <Widget>[Text("At Gem Selections we have a range of African Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.")],
+      );
+    }
+      if (x == 5) {
+      return Column(
+        children: <Widget>[Text("At Gem Selections we have a range of Celone Gomed i.e., Hessonite from Rs. 50/ Rt to Rs. 3100/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nThis is a Gem of Rahu (Dragon\’s Head ) Rahu gives mental tensions- unnecessary worries and strained relationships .Wearing its gem gives one mental peace and freedom from worries. Rahu is said to give professional excellence and demolishes the enemies power by its strong force.
+   ")],
       );
     }
     return Container();
