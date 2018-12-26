@@ -15,6 +15,7 @@ import 'package:gemselections/Pages/handicraft/goldplatedpots.dart';
 import 'package:gemselections/Pages/japamala.dart';
 import 'package:gemselections/Pages/jwellry.dart';
 import 'package:gemselections/Pages/kavach.dart';
+import 'package:gemselections/Pages/mainpage.dart';
 import 'package:gemselections/Pages/perfumeries.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/saphatic.dart';
@@ -339,3 +340,9 @@ class _MainScaffoldState extends State<MainScaffold> {
     );
   }
 }
+
+PageRouteBuilder homeRoute = new PageRouteBuilder(
+  pageBuilder: (BuildContext context, _, __) {
+    return MainPage();
+  },
+);

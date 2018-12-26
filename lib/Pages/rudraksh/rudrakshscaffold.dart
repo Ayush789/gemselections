@@ -4,6 +4,7 @@ import 'package:gemselections/Pages/rudraksh/bracelet.dart';
 import 'package:gemselections/Pages/rudraksh/faq.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/rudraksh/yugal.dart';
+import 'package:gemselections/Pages/mainscaffold.dart';
 
 class RudrakshScaffold extends StatefulWidget {
   Widget body;
@@ -22,6 +23,15 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Rudraksh"),
+        actions: <Widget>[
+          FlatButton(
+            child: Icon(Icons.home),
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                  context, homeRoute, (Route<dynamic> r) => false);
+            },
+          )
+        ],
       ),
       body: widget.body,
       drawer: Drawer(
@@ -118,10 +128,8 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
               title: Text("FAQ"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => FAQPage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FAQPage()));
               },
             ),
           ],
