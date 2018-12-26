@@ -196,7 +196,7 @@ class Bead extends StatelessWidget {
       elevation: 2.0,
       child: Container(
         width: 170.0,
-        height: 180.0,
+        height: 200.0,
         child: Column(
           children: <Widget>[
             Padding(
@@ -209,7 +209,8 @@ class Bead extends StatelessWidget {
             FlatButton(
               child: Image.network(
                 ImageUrl,
-                width: 150.0,
+                width: 165.0,
+                fit: BoxFit.cover,
               ),
               onPressed: () {
                 showDialog(

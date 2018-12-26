@@ -12,9 +12,11 @@ import 'package:gemselections/Pages/gemstoneRecommendation.dart';
 import 'package:gemselections/Pages/gemstones.dart';
 import 'package:gemselections/Pages/japamala.dart';
 import 'package:gemselections/Pages/jwellry.dart';
+import 'package:gemselections/Pages/kavach.dart';
 import 'package:gemselections/Pages/perfumeries.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/saphatic.dart';
+import 'package:gemselections/Pages/sarvamanokamna.dart';
 import 'package:gemselections/Pages/stoneidols.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
 
@@ -220,7 +222,7 @@ class _MainScaffoldState extends State<MainScaffold> {
               leading: Icon(Icons.account_circle),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+                    MaterialPageRoute(builder: (context) => KavachPage()));
               },
             ),
             ListTile(
@@ -228,7 +230,7 @@ class _MainScaffoldState extends State<MainScaffold> {
               leading: Icon(Icons.account_circle),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+                    MaterialPageRoute(builder: (context) => SarvaManokamnaPage()));
               },
             ),
             ListTile(
