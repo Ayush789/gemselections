@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/mainpage.dart';
 import 'package:gemselections/Pages/rudraksh/beads.dart';
 import 'package:gemselections/Pages/rudraksh/bracelet.dart';
 import 'package:gemselections/Pages/rudraksh/faq.dart';
+import 'package:gemselections/Pages/rudraksh/mala.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/rudraksh/yugal.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
@@ -22,13 +24,17 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Rudraksh"),
+        backgroundColor: Color(0xFF09126F),
+        title: Center(child: Image.asset("assets/appbar/bar.jpg")),
         actions: <Widget>[
           FlatButton(
-            child: Icon(Icons.home),
+            child: Icon(
+              Icons.home,
+              color: Colors.white,
+            ),
             onPressed: () {
-              Navigator.pushAndRemoveUntil(
-                  context, homeRoute, (Route<dynamic> r) => false);
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => MainPage()));
             },
           )
         ],
@@ -59,10 +65,8 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
               title: Text("Rudraksha Mala"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshMala()));
               },
             ),
             ListTile(
