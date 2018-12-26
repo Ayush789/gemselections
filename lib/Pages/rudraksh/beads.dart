@@ -184,7 +184,10 @@ class _BeadPageState extends State<BeadPage> {
     return RudrakshScaffold(
       body: ListView(
         children: <Widget>[
-          Image.network(imgurl),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksh.jpeg?alt=media"),
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
@@ -224,7 +227,8 @@ class Bead extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 Title,
-                style: TextStyle(fontSize: 18.0),
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 17.0,fontWeight: FontWeight.bold),
               ),
             ),
             FlatButton(
