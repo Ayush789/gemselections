@@ -14,28 +14,62 @@ class _CabochonGemsPageState extends State<CabochonGemsPage> {
     return MainScaffold(
       body: ListView(
         children: <Widget>[
-          Text("All Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
-          DropdownButton(
-            items: [
-              DropdownMenuItem<int>(
-                child: Text("Ruby Cabochon"),
-                value: 1,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "All Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones",
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
               ),
-              DropdownMenuItem<int>(
-                child: Text("Emerald Cabochon"),
-                value: 2,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                border: Border.all(width: 2.0),
               ),
-              DropdownMenuItem<int>(
-                child: Text("Blue Sapphire Cabochon"),
-                value: 3,
+              child: Form(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: DropdownButton(
+                    isExpanded: true,
+                    isDense: true,
+                    items: [
+                      DropdownMenuItem<int>(
+                        child: Row(
+                          children: <Widget>[
+                            Text(
+                              "Ruby Cabochon",
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                          mainAxisSize: MainAxisSize.max,
+                        ),
+                        value: 1,
+                      ),
+                      DropdownMenuItem<int>(
+                        child: Text("Emerald Cabochon"),
+                        value: 2,
+                      ),
+                      DropdownMenuItem<int>(
+                        child: Text("Blue Sapphire Cabochon"),
+                        value: 3,
+                      ),
+                    ],
+                    value: v1,
+                    onChanged: (x) {
+                      setState(() {
+                        v1 = x;
+                      });
+                    },
+                  ),
+                ),
               ),
-            ],
-            value: v1,
-            onChanged: (x) {
-              setState(() {
-                v1 = x;
-              });
-            },
+            ),
           ),
           bottomData(v1),
         ],
@@ -46,36 +80,67 @@ class _CabochonGemsPageState extends State<CabochonGemsPage> {
 
 Widget bottomData(int x) {
   if (x == 1) {
-    return Column(
-      children: <Widget>[
-        Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-        Text("Ruby Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
-        Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Card(
+        child: Column(
+          children: <Widget>[
+            Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fruby-cabochon.jpg?alt=media",
+              height: 150.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                  "Ruby Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
+            ),
+            Image.network(
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fredcabo.jpeg?alt=media"),
+          ],
+        ),
+      ),
     );
   }
   if (x == 2) {
-    return Column(
-      children: <Widget>[
-        Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-        Text("Emerald Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
-        Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Card(
+        child: Column(
+          children: <Widget>[
+            Image.network(
+              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Femerald-cabochon.jpg?alt=media",
+              height: 150.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                  "Emerald Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
+            ),
+            Image.network(
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgreencab.jpeg?alt=media"),
+          ],
+        ),
+      ),
     );
   }
   if (x == 3) {
-    return Column(
-      children: <Widget>[
-        Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-        Text("Sapphire Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones"),
-        Image.network(
-            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Card(
+        child: Column(
+          children: <Widget>[
+            Image.network(
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fblue-sapphire-cabochon.jpg?alt=media",height: 150.0,),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0,right: 8.0,top: 6.0,bottom: 12.0),
+              child: Text(
+                  "Sapphire Cabochons are available from 5Rt to 41Rt sizes.Prices vary from 550//Rt to 11000//Rt as per the quality of the Gemstones",textAlign: TextAlign.justify,),
+            ),
+            Image.network(
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fbluecab.jpeg?alt=media"),
+          ],
+        ),
+      ),
     );
   }
   return Container();

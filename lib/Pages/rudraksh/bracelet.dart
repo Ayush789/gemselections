@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
+import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
 
 List<Bracelet> gemstones = [
   Bracelet(
@@ -38,7 +39,7 @@ class _BraceletPageState extends State<BraceletPage>
 {
   @override
   Widget build(BuildContext context) {
-    return MainScaffold(
+    return RudrakshScaffold(
       body: ListView(
         children: <Widget>[
           Padding(

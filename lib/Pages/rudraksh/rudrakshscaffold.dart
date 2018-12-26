@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/rudraksh/beads.dart';
+import 'package:gemselections/Pages/rudraksh/bracelet.dart';
+import 'package:gemselections/Pages/rudraksh/faq.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
+import 'package:gemselections/Pages/rudraksh/yugal.dart';
 
 class RudrakshScaffold extends StatefulWidget {
   Widget body;
@@ -38,10 +41,8 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
               title: Text("Rudraksha Beads"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => BeadPage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BeadPage()));
               },
             ),
             ListTile(
@@ -58,20 +59,16 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
               title: Text("Rudraksha Bracelets"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BraceletPage()));
               },
             ),
             ListTile(
               title: Text("Rudraksha Yugal"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => YugalPage()));
               },
             ),
             Divider(),
@@ -82,30 +79,39 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
               title: Text("Mantras for rudraksha"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        content: Text("Data"),
+                      );
+                    });
               },
             ),
             ListTile(
               title: Text("How to wear"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        content: Text("Data"),
+                      );
+                    });
               },
             ),
             ListTile(
               title: Text("Authenticity"),
               leading: Icon(Icons.account_circle),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        content: Text("Data"),
+                      );
+                    });
               },
             ),
             ListTile(
@@ -115,7 +121,7 @@ class _RudrakshScaffoldState extends State<RudrakshScaffold> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => RudrakshHomePage()));
+                        builder: (context) => FAQPage()));
               },
             ),
           ],

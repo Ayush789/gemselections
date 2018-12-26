@@ -10,8 +10,12 @@ import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/gemStonesAndAstrology.dart';
 import 'package:gemselections/Pages/gemstoneRecommendation.dart';
 import 'package:gemselections/Pages/gemstones.dart';
+import 'package:gemselections/Pages/japamala.dart';
 import 'package:gemselections/Pages/jwellry.dart';
+import 'package:gemselections/Pages/perfumeries.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
+import 'package:gemselections/Pages/saphatic.dart';
+import 'package:gemselections/Pages/stoneidols.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
 
 class MainScaffold extends StatefulWidget {
@@ -156,6 +160,79 @@ class _MainScaffoldState extends State<MainScaffold> {
             ),
             ListTile(
               title: Text("Rudrksha"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+              },
+            ),
+            ListTile(
+              title: Text("Khanna Handicrafts"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => JapaMalaPage()));
+              },
+            ),
+            ListTile(
+              title: Text("Khanna Perfumeries"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PerfumeriesPage()));
+              },
+            ),
+            ListTile(
+              title: Text("Stone Idols"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StoneIdolsPage()));
+              },
+            ),
+            ListTile(
+              title: Text("Yantra"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+              },
+            ),
+            ListTile(
+              title: Text("Saphtic Items"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SaphticItemsPage()));
+              },
+            ),
+            ListTile(
+              title: Text("Japa Mala"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => JapaMalaPage()));
+              },
+            ),
+
+            ListTile(
+              title: Text("Kavach"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+              },
+            ),
+            ListTile(
+              title: Text("Sarva Manokamna Prapti"),
+              leading: Icon(Icons.account_circle),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RudrakshHomePage()));
+              },
+            ),
+            ListTile(
+              title: Text("Frequently Asked Ques."),
               leading: Icon(Icons.account_circle),
               onTap: () {
                 Navigator.push(context,

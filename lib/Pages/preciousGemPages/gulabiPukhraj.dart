@@ -56,9 +56,9 @@ class _GulabiPukhrajPageState extends State<GulabiPukhrajPage> {
           ),
           Image.network(
               "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnatural-pukhraj-stone-certified.jpg?alt=media"),
-          Text("Select One"),
+          Text(" Pink Sapphire : At Gem Selections we have a range of Pink Sapphire i.e., Gulabi Pukhraj from Rs. 2100/ Rt to Rs. 31000/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nIt is also known as Pink Sapphire. It is pink in color. It is very cold gem stone and repersent Saturn. It should be worn in gold on the second finger of right hand. Pink Sapphire removes evil effects of Saturn. It has the magical power. Pink Sapphire (Gulabi Pukhraj) if act positively it can take a person to the heights that he or she has never imagined whereas on the other hand if it has its negative impact then it can have the worse effect on the person wearing it,"),
           RaisedButton(
-            child: Text(" Pink Sapphire : At Gem Selections we have a range of Pink Sapphire i.e., Gulabi Pukhraj from Rs. 2100/ Rt to Rs. 31000/ Rt.\n\nYou can have a look at these collections and decide what you want as per your requirement and budget.\n\nWhat ever you buy comes with a Lab Certificate, bill and Guarantee of purity and originality from our company and its promoter Mr. Pankaj Khanna.\n\nIt is also known as Pink Sapphire. It is pink in color. It is very cold gem stone and repersent Saturn. It should be worn in gold on the second finger of right hand. Pink Sapphire removes evil effects of Saturn. It has the magical power. Pink Sapphire (Gulabi Pukhraj) if act positively it can take a person to the heights that he or she has never imagined whereas on the other hand if it has its negative impact then it can have the worse effect on the person wearing it,"),
+            child: Text("See Prices"),
             onPressed: (){
               showPrice1(context);
             },
