@@ -217,7 +217,13 @@ class Bead extends StatelessWidget {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        content: Text(DialogText),
+                        content: ListView(children: <Widget>[
+                          Text(Title,style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20.0,
+                          ),),
+                          Text(DialogText)
+                        ], ),
                       );
                     });
               },
