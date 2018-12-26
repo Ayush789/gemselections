@@ -5,51 +5,147 @@ import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
 
 List<Bead> gemstones = [
   Bead(
-    Title: "Golden Topaz",
+    Title: "ONE MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-Golden-Topaz.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fone-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "Lemon Topaz",
+    Title: "TWO MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-Lemon-Topaz.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwo-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "Green Amethyst",
+    Title: "THREE MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-Green-Amethyst.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fthree-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "Rose Quartz",
+    Title: "FOUR MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-rose-quartz.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffour-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "Green Fluorite",
+    Title: "FIVE MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-green-fluorite.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffive-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "Smokey Topaz",
+    Title: "SIX MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-Smoky-Topaz.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fsix-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "Green Onyx",
+    Title: "SEVEN MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-Green-Onyx.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fseven-mukhi-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
   Bead(
-    Title: "White Quartz",
+    Title: "EIGHT MUKHI RUDRAKSH",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-White-Quartz.jpg?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Feight-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "NINE MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnine-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "TEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ften-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "ELEVEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Feleven-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "TWELVE MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwelve-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "THIRTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fthirteen-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "FOURTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffourteen-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "FIFTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffifteen-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "SIXTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fsixteen-mukhi-rudraksha.gif?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "SEVENTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fseventeen-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ), 
+  Bead(
+    Title: "EIGHTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Feighteen-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "NINTEEN MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnineteen-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "TWENTY MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwenty-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "TWENTY ONE MUKHI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwentyone-mukhi-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "TRIJUTI RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftrijuti-rudraksha.gif?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "GANESH RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fganesh-rudraksha.jpg?alt=media",
+    DialogText: "Dialog Text 1",
+  ),
+   Bead(
+    Title: "GAURI SHANKAR RUDRAKSH",
+    ImageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgauri-shanker-rudraksha.jpg?alt=media",
     DialogText: "Dialog Text 1",
   ),
 ];
