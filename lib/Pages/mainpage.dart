@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/Astrology.dart';
 import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/gemstones.dart';
+import 'package:gemselections/Pages/gemstonesmainpage.dart';
 import 'package:gemselections/Pages/inthenewspage.dart';
 import 'package:gemselections/Pages/jwellry.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
@@ -43,7 +44,7 @@ class _MainPageState extends State<MainPage> {
           FlatButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => GemstonesPage()));
+                  MaterialPageRoute(builder: (context) => GemStonesMainPage()));
             },
             padding: EdgeInsets.all(2.0),
             child: Image.asset(

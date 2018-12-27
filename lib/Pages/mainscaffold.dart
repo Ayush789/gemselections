@@ -53,6 +53,14 @@ class _MainScaffoldState extends State<MainScaffold> {
               },
             ),
             ListTile(
+              title: Text("Home"),
+              leading: Icon(Icons.home),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MainPage()));
+              },
+            ),
+            ListTile(
               title: Text("Precious Gemstones"),
               leading: Icon(Icons.home),
               onTap: () {

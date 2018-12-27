@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:gemselections/main.dart';
@@ -25,27 +26,11 @@ class _JwelleryPageState extends State<JwelleryPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            CreateYourOwnJewelleryPage()));
+                        builder: (context) => CreateYourOwnJewelleryPage()));
               },
               child: Column(
                 children: <Widget>[
                   Image.asset("assets/category_create_your_own_cewellery.png"),
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
-                        Colors.teal,
-                        Colors.lightGreen,
-                      ]),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Create Your Own Jewellery",
-                        style: TextStyle(fontSize: 15.0, color: Colors.white),
-                      ),
-                    ),
-                    padding: EdgeInsets.all(5.0),
-                  )
                 ],
               ),
             ),
@@ -54,31 +39,12 @@ class _JwelleryPageState extends State<JwelleryPage> {
             padding: EdgeInsets.all(8.0),
             child: FlatButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => JewelleryViewPage(
-                              type: "Diamond",
-                            )));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DiamondPage()));
               },
               child: Column(
                 children: <Widget>[
                   Image.asset("assets/category_diamond_jewellery.png"),
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
-                        Colors.teal,
-                        Colors.lightGreen,
-                      ]),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Diamond Jewellery",
-                        style: TextStyle(fontSize: 15.0, color: Colors.white),
-                      ),
-                    ),
-                    padding: EdgeInsets.all(5.0),
-                  )
                 ],
               ),
             ),
@@ -90,27 +56,11 @@ class _JwelleryPageState extends State<JwelleryPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            JewelleryViewPage(type: "GemStudded")));
+                        builder: (context) => GemStuddedJewelleryPage()));
               },
               child: Column(
                 children: <Widget>[
                   Image.asset("assets/category_gem_studded_jewellery.png"),
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
-                        Colors.teal,
-                        Colors.lightGreen,
-                      ]),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Gem Studded Jewellery",
-                        style: TextStyle(fontSize: 15.0, color: Colors.white),
-                      ),
-                    ),
-                    padding: EdgeInsets.all(5.0),
-                  )
                 ],
               ),
             ),
@@ -129,21 +79,6 @@ class _JwelleryPageState extends State<JwelleryPage> {
               child: Column(
                 children: <Widget>[
                   Image.asset("assets/category_victorian_jewellery_.png"),
-                  Container(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
-                        Colors.teal,
-                        Colors.lightGreen,
-                      ]),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Victorian Jewellery",
-                        style: TextStyle(fontSize: 15.0, color: Colors.white),
-                      ),
-                    ),
-                    padding: EdgeInsets.all(5.0),
-                  )
                 ],
               ),
             ),
@@ -190,7 +125,6 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
                           snap.data.data[widget.type][index],
                           height: w / 2,
                         ),
-
                       );
                     }),
                   );
@@ -208,9 +142,6 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
 }
 
 class CreateYourOwnJewelleryPage extends StatefulWidget {
-
-
-
   @override
   _CreateYourOwnJewelleryPageState createState() =>
       _CreateYourOwnJewelleryPageState();
@@ -239,7 +170,6 @@ class _CreateYourOwnJewelleryPageState
     });
   }
 
-
   Future uploadImage(String name, String email, String phone) async {
     print("Uploading");
     StorageReference storageReference = FirebaseStorage.instance.ref().child(
@@ -265,7 +195,8 @@ class _CreateYourOwnJewelleryPageState
           print("Running Transaction");
           ref.add(data).then((ref) {
             print("Got ref ${ref}");
-            _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text("Your Order has been recorded.")));
+            _scaffoldKey.currentState.showSnackBar(
+                SnackBar(content: Text("Your Order has been recorded.")));
           }).catchError((e) {
             print(e);
           });
@@ -379,6 +310,115 @@ class _CreateYourOwnJewelleryPageState
               ],
             ),
           )
+        ],
+      ),
+    );
+  }
+}
+
+class GemStuddedJewelleryPage extends StatefulWidget {
+  @override
+  _GemStuddedJewelleryPageState createState() =>
+      _GemStuddedJewelleryPageState();
+}
+
+class _GemStuddedJewelleryPageState extends State<GemStuddedJewelleryPage> {
+  @override
+  Widget build(BuildContext context) {
+    return MainScaffold(
+      body: ListView(
+        children: <Widget>[
+          Image.asset("assets/category_gem_studded_jewellery.png"),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => JewelleryViewPage(
+                              type: "GemStuddedSets",
+                            )));
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/category_victorian_jewellery_.png"),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => JewelleryViewPage(
+                              type: "GemStuddedPendants",
+                            )));
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/category_victorian_jewellery_.png"),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => JewelleryViewPage(
+                              type: "GemStuddedTops",
+                            )));
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/category_victorian_jewellery_.png"),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => JewelleryViewPage(
+                              type: "GemStuddedRings",
+                            )));
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/category_victorian_jewellery_.png"),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => JewelleryViewPage(
+                              type: "GemStuddedBracelets",
+                            )));
+              },
+              child: Column(
+                children: <Widget>[
+                  Image.asset("assets/category_victorian_jewellery_.png"),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
