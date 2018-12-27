@@ -20,46 +20,46 @@ class _FAQPageState extends State<FAQPage> {
                 "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "Testing of Gemstones",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections clarifies all the misconceptions in the minds of the people as how are gemstones tested.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "Specific Gravity of Gemstones",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses about the Specific Gravity  of Gemstones.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "How Gemstones work",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses about how Gemstones actually work for Astrological purposes.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "Which Gemstones to wear",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses which Gemstone a person should wear.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "Return policy of Gem Selections",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections clarifies the Returns Policy of Gem Selections.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "Rough Gemstones",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses about Rough Gemstones.",
           ),
           FAQTile(
-            Question: "Pricing of Gemstones",
+            Question: "Refractive index of Gemstones",
             Imgurl: imgurl,
             Answer:
-                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses how Gemstones and Diamonds are priced.",
+                "In this video Mr. Pankaj Khanna, founder of Gem Selections discusses about Refractive Index of Gemstones.",
           ),
         ],
       ),

@@ -61,7 +61,7 @@ class _MainScaffoldState extends State<MainScaffold> {
               },
             ),
             ListTile(
-              title: Text("Diamon"),
+              title: Text("Diamond"),
               leading: Icon(Icons.attach_money),
               onTap: () {
                 Navigator.push(context,
