@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gemselections/Pages/imageurl.dart';
 import 'package:gemselections/Pages/readmore.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
 
@@ -65,8 +64,10 @@ class _RudrakshHomePageState extends State<RudrakshHomePage> {
               ),
             ),
             ReadMoreInkwell(
-                txt:
-                    " The scared Rudhraksha that you have got is abhimantrit and empowered by Pankaj Khanna, so that it gives maximum results. This is ready to wear or can be kept in your place of worship and should be worn on a Monday morning before 7.30 a.m.\n\nTo recharge it, you should take it off one week before Mahashivratri. Take a clean bowl and put the Rudraksha in it. Add Pure Desi Ghee in that bowl so that the Rudhraksha is properly immersed in it. Add some sandal wood powder, a bit of turmeric powder (Haldi) in that bowl. Leave it for a week\'s time or more.\n\nThen on Mahashivratri day before 7.30 a.m. wash it with Ganga Jal mixed with saffron (kesar) and wear it after chanting the required mantra 108 times. Fasting on Mondays and Mahashivratri day will also be great help and improves the results from a Rudraksha.",len: 230,),
+              txt:
+                  " The scared Rudhraksha that you have got is abhimantrit and empowered by Pankaj Khanna, so that it gives maximum results. This is ready to wear or can be kept in your place of worship and should be worn on a Monday morning before 7.30 a.m.\n\nTo recharge it, you should take it off one week before Mahashivratri. Take a clean bowl and put the Rudraksha in it. Add Pure Desi Ghee in that bowl so that the Rudhraksha is properly immersed in it. Add some sandal wood powder, a bit of turmeric powder (Haldi) in that bowl. Leave it for a week\'s time or more.\n\nThen on Mahashivratri day before 7.30 a.m. wash it with Ganga Jal mixed with saffron (kesar) and wear it after chanting the required mantra 108 times. Fasting on Mondays and Mahashivratri day will also be great help and improves the results from a Rudraksha.",
+              len: 230,
+            ),
           ],
         ),
       ),

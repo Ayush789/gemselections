@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:gemselections/Pages/Astrology.dart';
+import 'package:gemselections/Pages/astrology/Astrology.dart';
 import 'package:gemselections/Pages/abhimantritpage.dart';
 import 'package:gemselections/Pages/accountpage.dart';
 import 'package:gemselections/Pages/astrologicalremedies.dart';
