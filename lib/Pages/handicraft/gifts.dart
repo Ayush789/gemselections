@@ -2,126 +2,80 @@ import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/handicraft/handicraftScaffold.dart';
 import 'package:gemselections/Pages/imageurl.dart';
 
-class GoldPlatedMarbleClockPage extends StatefulWidget {
+class HandicraftGiftsPage extends StatefulWidget {
   @override
-  _GoldPlatedMarbleClockPageState createState() =>
-      _GoldPlatedMarbleClockPageState();
+  _HandicraftGiftsPageState createState() => _HandicraftGiftsPageState();
 }
 
-class _GoldPlatedMarbleClockPageState extends State<GoldPlatedMarbleClockPage> {
+class _HandicraftGiftsPageState extends State<HandicraftGiftsPage> {
   @override
   Widget build(BuildContext context) {
     return HandicraftScaffold(
       body: ListView(
         children: <Widget>[
           Text("Gold Plated Marble Clocks"),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
-          GoldPlatedClocksTile(
+          HandicraftGiftsTile(
             Title:
                 "Marbel mobile holder with beautiful watch in it (Code MMW01)",
             Imgurl: imgurl,
             text: "txt",
             Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
-          ),
-          GoldPlatedClocksTile(
-            Title:
-                "Marbel mobile holder with beautiful watch in it (Code MMW01)",
-            Imgurl: imgurl,
-            text: "txt",
-            Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
-          ),
-          GoldPlatedClocksTile(
-            Title:
-                "Marbel mobile holder with beautiful watch in it (Code MMW01)",
-            Imgurl: imgurl,
-            text: "txt",
-            Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
-          ),
-          GoldPlatedClocksTile(
-            Title:
-                "Marbel mobile holder with beautiful watch in it (Code MMW01)",
-            Imgurl: imgurl,
-            text: "txt",
-            Price: "1250",
-            Weight: "600",
-            Size: "4.5\" x 4\"",
           ),
         ],
       ),
@@ -129,12 +83,10 @@ class _GoldPlatedMarbleClockPageState extends State<GoldPlatedMarbleClockPage> {
   }
 }
 
-class GoldPlatedClocksTile extends StatelessWidget {
-  String Title, text, Imgurl, Price, Weight, Size;
+class HandicraftGiftsTile extends StatelessWidget {
+  String Title, text, Imgurl, Price;
 
-  GoldPlatedClocksTile({
-    this.Size,
-    this.Weight,
+  HandicraftGiftsTile({
     this.Price,
     this.Title,
     this.Imgurl,
@@ -151,8 +103,6 @@ class GoldPlatedClocksTile extends StatelessWidget {
             Text(Title),
             Text(text),
             Text("Rs $Price/-"),
-            Text("Weight $Weight grams"),
-            Text("Size $Size"),
           ],
         ),
       ),

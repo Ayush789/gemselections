@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/handicraft/blackstone.dart';
+import 'package:gemselections/Pages/handicraft/gifts.dart';
+import 'package:gemselections/Pages/handicraft/goldplatedmarbleclock.dart';
 import 'package:gemselections/Pages/handicraft/goldplatedpots.dart';
+import 'package:gemselections/Pages/handicraft/goldplatedtiles.dart';
+import 'package:gemselections/Pages/handicraft/soapstone.dart';
+import 'package:gemselections/Pages/handicraft/spiritualgifts.dart';
+import 'package:gemselections/Pages/handicraft/spiritualitms.dart';
+import 'package:gemselections/Pages/handicraft/spiritualtabletop.dart';
 
 class HandicraftScaffold extends StatefulWidget {
   Widget body;
@@ -40,7 +48,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => GoldPlatedMarbleClockPage(),
                   ),
                 );
               },
@@ -51,7 +59,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => GoldPlatedTiles(),
                   ),
                 );
               },
@@ -62,7 +70,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => HandicraftGiftsPage(),
                   ),
                 );
               },
@@ -73,7 +81,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => SpiritualItemsPage(),
                   ),
                 );
               },
@@ -84,7 +92,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => SpiritualGiftsPage(),
                   ),
                 );
               },
@@ -95,7 +103,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => BlackStonePage(),
                   ),
                 );
               },
@@ -106,7 +114,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => SoapStonePage(),
                   ),
                 );
               },
@@ -117,7 +125,7 @@ class _HandicraftScaffoldState extends State<HandicraftScaffold> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GoldPlatedPotsPage(),
+                    builder: (context) => SpiritualTableTopItemPage(),
                   ),
                 );
               },

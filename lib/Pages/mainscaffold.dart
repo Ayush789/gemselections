@@ -20,6 +20,7 @@ import 'package:gemselections/Pages/perfumeries.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
 import 'package:gemselections/Pages/saphatic.dart';
 import 'package:gemselections/Pages/sarvamanokamna.dart';
+import 'package:gemselections/Pages/semipreciouspage.dart';
 import 'package:gemselections/Pages/stoneidols.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
 import 'package:gemselections/Pages/yantra.dart';
@@ -78,6 +79,12 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Semi Precious Stones"),
               leading: Icon(Icons.adb),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SemiPreciousGemstonesPage()));
+              },
             ),
             ListTile(
               title: Text("Triangular Gemstones"),
@@ -98,7 +105,7 @@ class _MainScaffoldState extends State<MainScaffold> {
               leading: Icon(Icons.info),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => AbhimantritPage()));
+                    MaterialPageRoute(builder: (context) => AbhimantranMainPage()));
               },
             ),
             ListTile(

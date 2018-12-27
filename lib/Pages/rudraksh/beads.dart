@@ -186,15 +186,7 @@ class _BeadPageState extends State<BeadPage> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksh.jpeg?alt=media"),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              "We deal in following triangular gems:",
-              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
+            child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F0.jpg?alt=media"),
           ),
           Column(
             children: BeadToRows(gemstones, context),

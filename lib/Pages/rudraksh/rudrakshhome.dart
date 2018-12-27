@@ -23,7 +23,7 @@ class _RudrakshHomePageState extends State<RudrakshHomePage> {
               child: Text("\"The Message\"Rudraksh-From Lord Shiva with Love"),
             ),
             Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksh.jpeg?alt=media"),
+                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F0.jpg?alt=media"),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(

@@ -1,7 +1,92 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/imageurl.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 
+class AbhimantranMainPage extends StatefulWidget {
+  @override
+  _AbhimantranMainPageState createState() => _AbhimantranMainPageState();
+}
+
+class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return MainScaffold(
+      body: ListView(
+        children: <Widget>[
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AbhimantritPage(
+                        Imgurl:
+                            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media",
+                      ),
+                ),
+              );
+            },
+            child: Card(
+              child: Column(
+                children: <Widget>[
+                  Text("PANNA STONE ABHIMANTRAN"),
+                  Image.network(imgurl),
+                ],
+              ),
+            ),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AbhimantritPage(
+                        Imgurl:
+                            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media",
+                      ),
+                ),
+              );
+            },
+            child: Card(
+              child: Column(
+                children: <Widget>[
+                  Text("PANNA STONE ABHIMANTRAN"),
+                  Image.network(imgurl),
+                ],
+              ),
+            ),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AbhimantritPage(
+                        Imgurl:
+                            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media",
+                      ),
+                ),
+              );
+            },
+            child: Card(
+              child: Column(
+                children: <Widget>[
+                  Text("PANNA STONE ABHIMANTRAN"),
+                  Image.network(imgurl),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class AbhimantritPage extends StatefulWidget {
+  String Imgurl;
+
+  AbhimantritPage({this.Imgurl});
+
   @override
   _AbhimantritPageState createState() => _AbhimantritPageState();
 }
@@ -9,13 +94,12 @@ class AbhimantritPage extends StatefulWidget {
 class _AbhimantritPageState extends State<AbhimantritPage> {
   @override
   Widget build(BuildContext context) {
-    return MainScaffold(
+    return Scaffold(
       body: ListView(
         children: <Widget>[
-          Image.network(
-              "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media"),
+          Image.network(widget.Imgurl),
           Padding(
-            padding: const EdgeInsets.only(left: 10.0,right: 10.0,top: 20.0),
+            padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 20.0),
             child: Card(
               elevation: 2.0,
               child: Padding(
