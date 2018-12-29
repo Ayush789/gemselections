@@ -247,8 +247,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 1:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Amythsy (Kerela)"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FAmethist.jpg?alt=media"),
+            Text("Amythsy (Katela)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -257,7 +257,7 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 2:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FAquamarine.jpg?alt=media"),
             Text("Aquamarine (Beruj)"),
             Image.network(imgurl),
             Text("Body"),
@@ -267,8 +267,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 3:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlack-Onyx-Cabochun.jpg?alt=media"),
+            Text("Black Onyx (Cabochon)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -277,8 +277,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 4:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlack-Onyx-cut.jpg?alt=media"),
+            Text("Black Onyx (Cut)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -287,8 +287,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 5:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlack-Rainbow.jpg?alt=media"),
+            Text("Black Rainbow"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -297,8 +297,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 6:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlack-Star.jpg?alt=media"),
+            Text("Black Star"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -307,8 +307,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 7:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlue-Topaz.jpg?alt=media"),
+            Text("Blue Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -317,8 +317,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 8:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FAquamarine.jpg?alt=media"),
+            Text("Beruj"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -327,8 +327,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 9:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FGolden-Topaz.jpg?alt=media"),
+            Text("Citrine | Sunhela | Golden Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -337,8 +337,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 10:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FMoon-Stone.jpg?alt=media"),
+            Text("Chandramani | Moonstone"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -347,8 +347,7 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 11:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Text("Dhunela | Smoky Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -357,8 +356,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 12:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTurquoise.jpg?alt=media"),
+            Text("Feroja | Turquoise"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -367,8 +366,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 13:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FGarnet.jpg?alt=media"),
+            Text("Garnet | Tamara"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -377,8 +376,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 14:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FGolden-Topaz.jpg?alt=media"),
+            Text("Golden Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -387,8 +386,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 15:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FGreen-Amethys.jpg?alt=media"),
+            Text("Green Amethyst"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -397,8 +396,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 16:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FGreen-Flourite.jpg?alt=media"),
+            Text("Green Fluorite"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -406,8 +405,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 17:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FGreen-Garnet.jpg?alt=media"),
+            Text("Green Garnet | Vasonite"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -416,8 +415,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 18:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FOnyx.jpg?alt=media"),
+            Text("Green Onyx"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -426,8 +425,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 19:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTurmuline.jpg?alt=media"),
+            Text("Green Tourmaline"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -436,8 +435,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 20:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FI-Olite.jpg?alt=media"),
+            Text("Iolite (Kakaneeli)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -446,8 +445,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 21:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FJade.jpg?alt=media"),
+            Text("Jade"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -456,8 +455,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 22:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FAmethist.jpg?alt=media"),
+            Text("Amethyst (Katela): Jamunia"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -466,8 +465,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 23:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FI-Olite.jpg?alt=media"),
+            Text("Iolite (Kakaneeli)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -476,9 +475,7 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 24:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
-            Image.network(imgurl),
+            Text("Kyanite"),
             Text("Body"),
           ],
         );
@@ -486,8 +483,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 25:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlack-Rainbow.jpg?alt=media"),
+            Text("Labradorite"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -496,8 +493,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 26:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLepis-Lazuli.jpg?alt=media"),
+            Text("Lajwrat | Lapiz Lazuli | Lapiz Lazuli"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -506,8 +503,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 27:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLepis-Lazuli.jpg?alt=media"),
+            Text("Lajwrat | Lapiz Lazuli | Lapiz Lazuli"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -516,8 +513,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 28:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLemon-Topaz.jpg?alt=media"),
+            Text("Lemon Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -526,8 +523,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 29:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FMalachite.jpg?alt=media"),
+            Text("Malachite"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -536,8 +533,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 30:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FMoon-Stone.jpg?alt=media"),
+            Text("Chandramani | Moonstone"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -546,8 +543,15 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 31:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Row(
+              children:[
+              Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fwhiteopal.img.jpg?alt=media"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FOpal.jpg?alt=media"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FBlackfireopal.img.jpg?alt=media"),
+              
+              ],
+            ),
+            Text("Opal"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -556,8 +560,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 32:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FOnyx.jpg?alt=media"),
+            Text("Onyx"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -566,8 +570,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 33:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FPeriodot.jpg?alt=media"),
+            Text("Peridot"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -576,8 +580,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 34:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FPink-Tourmaline.jpg?alt=media"),
+            Text("Pink Tourmaline"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -586,8 +590,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 35:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Onyx-Cabochun.jpg?alt=media"),
+            Text("Red Onyx (Cabochon)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -596,8 +600,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 36:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Onyx-cut.jpg?alt=media"),
+            Text("Red Onyx(Cut)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -606,8 +610,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 37:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frhodolite-garnet.jpg?alt=media"),
+            Text("Rhodolite Garnet(Cut)"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -616,8 +620,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 38:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRose-Quartz.jpg?alt=media"),
+            Text("Rose Quartz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -626,8 +630,7 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 39:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Text("Dhunela | Smoky Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -636,28 +639,20 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 40:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FStar-Ruby.jpg?alt=media"),
+            Text("Star Ruby"),
             Image.network(imgurl),
             Text("Body"),
           ],
         );
 
-      case 41:
-        return Column(
-          children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
-            Image.network(imgurl),
-            Text("Body"),
-          ],
-        );
+      
 
       case 42:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FMarium-gemstone.jpg?alt=media"),
+            Text("Sang-e-Maryam"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -686,8 +681,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 45:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTiger's-Eye-Stone.jpg?alt=media"),
+            Text("Tiger's Eye"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -716,8 +711,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 48:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Coral.jpg?alt=media"),
+            Text("White Coral"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -726,8 +721,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 49:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Quartz-gemstone.jpg?alt=media"),
+            Text("White Quartz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -736,8 +731,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 50:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Rainbow.jpg?alt=media"),
+            Text("White Rainbow"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -746,8 +741,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 51:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-topaz.jpg?alt=media"),
+            Text("White Topaz"),
             Image.network(imgurl),
             Text("Body"),
           ],
@@ -756,22 +751,13 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
       case 52:
         return Column(
           children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
+            Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FZircon.jpg?alt=media"),
+            Text("Zircon"),
             Image.network(imgurl),
             Text("Body"),
           ],
         );
 
-      case 53:
-        return Column(
-          children: <Widget>[
-            Image.network(imgurl),
-            Text("Name"),
-            Image.network(imgurl),
-            Text("Body"),
-          ],
-        );
 
       default:
         return Container();
