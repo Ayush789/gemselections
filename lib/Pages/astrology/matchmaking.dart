@@ -197,181 +197,220 @@ class _MatchInputPageState extends State<MatchInputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          Text("Male Details"),
-          Form(
-            child: Column(
-              children: <Widget>[
-                DateTimePickerFormField(
-                  format: dateFormat,
-                  decoration: InputDecoration(
-                    labelText: "Date and Time of Birth",
-                    border: OutlineInputBorder(),
+      appBar: AppBar(
+        title: Text("Enter Details"),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: <Widget>[
+            Text("Male Details"),
+            Form(
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: DateTimePickerFormField(
+                      format: dateFormat,
+                      decoration: InputDecoration(
+                        labelText: "Date and Time of Birth",
+                        border: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue)),
+                      ),
+                      onChanged: (dt) => setState(() => male_date = dt),
+                      onFieldSubmitted: (v) {
+                        FocusScope.of(context).requestFocus(focus1);
+                      },
+                    ),
                   ),
-                  onChanged: (dt) => setState(() => male_date = dt),
-                  onFieldSubmitted: (v) {
-                    FocusScope.of(context).requestFocus(focus1);
-                  },
-                ),
-                TextFormField(
-                  focusNode: focus1,
-                  textInputAction: TextInputAction.next,
-                  controller: male_lat_controller,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "Birth Latitude"),
-                  onFieldSubmitted: (v) {
-                    FocusScope.of(context).requestFocus(focus2);
-                  },
-                ),
-                TextFormField(
-                  focusNode: focus2,
-                  textInputAction: TextInputAction.next,
-                  controller: male_lon_controller,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "Birth Longitude"),
-                  onFieldSubmitted: (v) {
-                    FocusScope.of(context).requestFocus(focus3);
-                  },
-                ),
-                TextFormField(
-                  focusNode: focus3,
-                  controller: male_tzone,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "Birth Time Zone"),
-                ),
-              ],
-            ),
-          ),
-          Text("Female Details"),
-          Form(
-            child: Column(
-              children: <Widget>[
-                DateTimePickerFormField(
-                  format: dateFormat,
-                  decoration: InputDecoration(
-                    labelText: "Date and Time of Birth",
-                    border: OutlineInputBorder(),
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: TextFormField(
+                      focusNode: focus1,
+                      textInputAction: TextInputAction.next,
+                      controller: male_lat_controller,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: "Birth Latitude"),
+                      onFieldSubmitted: (v) {
+                        FocusScope.of(context).requestFocus(focus2);
+                      },
+                    ),
                   ),
-                  onChanged: (dt) => setState(() => female_date = dt),
-                  onFieldSubmitted: (v) {
-                    FocusScope.of(context).requestFocus(focus5);
-                  },
-                ),
-                TextFormField(
-                  focusNode: focus5,
-                  textInputAction: TextInputAction.next,
-                  onFieldSubmitted: (v) {
-                    FocusScope.of(context).requestFocus(focus6);
-                  },
-                  controller: female_lat_controller,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "Birth Latitude"),
-                ),
-                TextFormField(
-                  focusNode: focus6,
-                  textInputAction: TextInputAction.next,
-                  onFieldSubmitted: (v) {
-                    FocusScope.of(context).requestFocus(focus7);
-                  },
-                  controller: female_lon_controller,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "Birth Longitude"),
-                ),
-                TextFormField(
-                  focusNode: focus7,
-                  controller: female_tzone,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "Birth Time Zone"),
-                ),
-              ],
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: TextFormField(
+                      focusNode: focus2,
+                      textInputAction: TextInputAction.next,
+                      controller: male_lon_controller,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: "Birth Longitude"),
+                      onFieldSubmitted: (v) {
+                        FocusScope.of(context).requestFocus(focus3);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: TextFormField(
+                      focusNode: focus3,
+                      controller: male_tzone,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: "Birth Time Zone"),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-          RaisedButton(
-            onPressed: () {
-              Map<String, dynamic> data = {
-                "m_day": male_date.day,
-                "m_month": male_date.month,
-                "m_year": male_date.year,
-                "m_hour": male_date.hour,
-                "m_min": male_date.minute,
-                "m_lat": male_lat_controller.text,
-                "m_lon": male_lon_controller.text,
-                "m_tzone": male_tzone.text,
-                "f_day": female_date.day,
-                "f_month": female_date.month,
-                "f_year": female_date.year,
-                "f_hour": female_date.hour,
-                "f_min": female_date.minute,
-                "f_lat": female_lat_controller.text,
-                "f_lon": female_lon_controller.text,
-                "f_tzone": female_tzone.text
-              };
-              Map<String, dynamic> results = {};
-              submitForm(data).then((val) {
-                results = val;
-                if (results != null) {
-                  print("Results Type: ${results.runtimeType}");
-                  //var male = results['male_astro_details'];
-                  //print(male['ascendant']);
-                  //print(male.runtimeType);
-                  print(widget.predicate);
-                  Widget nextWidget;
-                  switch (widget.predicate) {
-                    case "birth_details":
-                      nextWidget = MatchBirthResultsPage(
-                        data: results,
-                      );
-                      break;
+            Text("Female Details"),
+            Form(
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: DateTimePickerFormField(
+                      format: dateFormat,
+                      decoration: InputDecoration(
+                        labelText: "Date and Time of Birth",
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (dt) => setState(() => female_date = dt),
+                      onFieldSubmitted: (v) {
+                        FocusScope.of(context).requestFocus(focus5);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: TextFormField(
+                      focusNode: focus5,
+                      textInputAction: TextInputAction.next,
+                      onFieldSubmitted: (v) {
+                        FocusScope.of(context).requestFocus(focus6);
+                      },
+                      controller: female_lat_controller,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: "Birth Latitude"),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: TextFormField(
+                      focusNode: focus6,
+                      textInputAction: TextInputAction.next,
+                      onFieldSubmitted: (v) {
+                        FocusScope.of(context).requestFocus(focus7);
+                      },
+                      controller: female_lon_controller,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: "Birth Longitude"),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: TextFormField(
+                      focusNode: focus7,
+                      controller: female_tzone,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: "Birth Time Zone"),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                Map<String, dynamic> data = {
+                  "m_day": male_date.day,
+                  "m_month": male_date.month,
+                  "m_year": male_date.year,
+                  "m_hour": male_date.hour,
+                  "m_min": male_date.minute,
+                  "m_lat": male_lat_controller.text,
+                  "m_lon": male_lon_controller.text,
+                  "m_tzone": male_tzone.text,
+                  "f_day": female_date.day,
+                  "f_month": female_date.month,
+                  "f_year": female_date.year,
+                  "f_hour": female_date.hour,
+                  "f_min": female_date.minute,
+                  "f_lat": female_lat_controller.text,
+                  "f_lon": female_lon_controller.text,
+                  "f_tzone": female_tzone.text
+                };
+                Map<String, dynamic> results = {};
+                submitForm(data).then((val) {
+                  results = val;
+                  if (results != null) {
+                    print("Results Type: ${results.runtimeType}");
+                    //var male = results['male_astro_details'];
+                    //print(male['ascendant']);
+                    //print(male.runtimeType);
+                    print(widget.predicate);
+                    Widget nextWidget;
+                    switch (widget.predicate) {
+                      case "birth_details":
+                        nextWidget = MatchBirthResultsPage(
+                          data: results,
+                        );
+                        break;
 
-                    case "astro_details":
-                      nextWidget = MatchAstroResultsPage(
-                        data: results,
-                      );
-                      break;
-                    case "ashtakoot_points":
-                      nextWidget = MatchAshtakootPointsPage(
-                        data: results,
-                      );
-                      break;
-                    case "obstructions":
-                      nextWidget = MatchObstructionPage(
-                        data: results,
-                      );
-                      break;
-                    case "planet_details":
-                      nextWidget = MatchPlanetPage(
-                        data: results,
-                      );
-                      break;
+                      case "astro_details":
+                        nextWidget = MatchAstroResultsPage(
+                          data: results,
+                        );
+                        break;
+                      case "ashtakoot_points":
+                        nextWidget = MatchAshtakootPointsPage(
+                          data: results,
+                        );
+                        break;
+                      case "obstructions":
+                        nextWidget = MatchObstructionPage(
+                          data: results,
+                        );
+                        break;
+                      case "planet_details":
+                        nextWidget = MatchPlanetPage(
+                          data: results,
+                        );
+                        break;
 
-                    default:
-                      break;
+                      default:
+                        break;
+                    }
+                    print(nextWidget);
+                    if (nextWidget != null)
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => nextWidget));
+                  } else {
+                    print("No Results");
                   }
-                  print(nextWidget);
-                  if (nextWidget != null)
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => nextWidget));
-                } else {
-                  print("No Results");
-                }
-              });
-            },
-            child: Text("Sumbit"),
-          )
-        ],
+                });
+              },
+              child: Text(
+                "Sumbit",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
