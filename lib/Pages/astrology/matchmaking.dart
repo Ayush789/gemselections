@@ -20,8 +20,12 @@ class _MatchMakingPageState extends State<MatchMakingPage> {
         children: <Widget>[
           FlatButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => MatchInputPage()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "_astro_details",
+                          )));
             },
             child: Text("Match Birth Details"),
           ),
@@ -80,6 +84,10 @@ class _MatchMakingPageState extends State<MatchMakingPage> {
 }
 
 class MatchInputPage extends StatefulWidget {
+  String predicate;
+
+  MatchInputPage({this.predicate});
+
   @override
   _MatchInputPageState createState() => _MatchInputPageState();
 }
@@ -96,8 +104,9 @@ class _MatchInputPageState extends State<MatchInputPage> {
       female_tzone = TextEditingController();
 
   Future<Map<String, dynamic>> submitForm(Map<String, dynamic> data) async {
-    String url = "https://json.astrologyapi.com/v1/match_birth_details";
+    String url = "https://json.astrologyapi.com/v1/match" + widget.predicate;
     print(data);
+    print(url);
 
     String userid = "601696", APIKey = "8510e537bcc424e154a3860e70e92209";
     String basicauth = "Basic " + base64Encode(utf8.encode("$userid:$APIKey"));
@@ -218,11 +227,14 @@ class _MatchInputPageState extends State<MatchInputPage> {
                 results = val;
                 if (results != null) {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => MatchMakingResults(
-                                results: results,
-                              )));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MatchMakingResults(
+                            results: results,
+                            predicate: widget.predicate,
+                          ),
+                    ),
+                  );
                 } else {
                   print("No Results");
                 }
@@ -238,8 +250,12 @@ class _MatchInputPageState extends State<MatchInputPage> {
 
 class MatchMakingResults extends StatefulWidget {
   Map<String, dynamic> results;
+  String predicate;
 
-  MatchMakingResults({this.results});
+  MatchMakingResults({
+    this.results,
+    this.predicate,
+  });
 
   @override
   _MatchMakingResultsState createState() => _MatchMakingResultsState();
@@ -264,8 +280,6 @@ class _MatchMakingResultsState extends State<MatchMakingResults> {
   }
 
   Widget build(BuildContext context) {
-    print(
-        "Widget Results ${widget.results["male_astro_details"].keys.toList()[1]}");
     return Scaffold(
       appBar: AppBar(
         title: Text("Results"),
@@ -282,8 +296,8 @@ class _MatchMakingResultsState extends State<MatchMakingResults> {
             ),
             child: Table(
                 children: getmaleRows(
-                    widget.results["male_astro_details"].keys.toList(),
-                    "male_astro_details",
+                    widget.results["male" + widget.predicate].keys.toList(),
+                    "male" + widget.predicate,
                     widget.results)),
           ),
         ),
