@@ -432,11 +432,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FI-Olite.jpg?alt=media"),
             Text("Iolite (Kakaneeli)"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("IOLITE is mined in India, Brazil, Sri Lanka, Mozambique and Brazil. It is often used as a substitute for Blue Sapphire. In Hindi, it is called KAKA NEELI - KAKA NELI because of its Blue Colour, it is related to crown chakra. People with a weak crown chakra or bad memory are advised to wear IOLITE. It is known as the GEMSTONE of self- vision, creativity and constructive ideas. IOLITE is said to have qualities of nurturing relationships. The STONE helps in healing ailments related to the digestive system, throat, nervous system and skin. It is also said to assist a person in his spiritual quest. Some scholars believe that IOLITE helps in getting knowledge about previous births.\n\nThe low qualities of this Gem are very cheap but the good quality is rare and very difficult to procure. IOLITE GEMS above the size of 5.25 ratti is very costly.\n\nThis is a semi-precious gem which resembles a blue sapphire. Extensively used as a substitute of Blue Sapphire. It empowers Saturn of the native said to give power on the masses and enhances the status of the person. This gem gives one an unfair advantage while dealing with the opposite sex. The superiors of the person are also positively influenced by wearing this gem.\n\n"),
+            Text("Iolite Rs. 1100.00 Per Ratti.\n\n\t"),//bold
+            Text("Category : Silicate mineral\n\tCrystal system : Orthorhombic - Dipyramidal \n\tSpace Group: C ccm\n\tCrystal habit : Pseudo-hexagonal prismatic twins, as imbedded grains, and massive\n\tColor : \n\t\tColorless, Blue, smoky blue, bluish violet; greenish, yellowish brown, gray; colorless to very pale blue in thin section\n\tChemical formula : (Mg,Fe)2Al4Si5O18\n\tTwinning : Common on {110}, {130}, simple, lamellar, cyclical\n\tMohs scale hardness : 7 - 7.5\n\tLuster : Greasy or vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tOptical properties : Usually optically (-), sometimes (+); 2V = 0-90°\n\tRefractive index : 1.527 - 1.560 , 1.532 - 1.574, 1.538 - 1.578\n\tFracture : Conchoidal\n\tCleavage : None"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"),//blue,center-align
           ],
         );
 
@@ -446,11 +446,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FJade.jpg?alt=media"),
             Text("Jade"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Jade, It is a semi-opaque to highly translucent aggregate of juxtaposed, very firmly inter connected, granular crystals. Jade is extremely tenacious and tough. Jade is available in an enormous range of Colours, white, pink, lilac, brown, red, orange, blue, black and many shades of greet. It is used as a gem, cut into cabochons or engraved stones for settings, beads on other ornaments. It is also made into different types of decorative ware or small sculptures. Benefits: Very popular with Chinese of ancient as well as present times it is supposed to bestow long life and peaceful and protects the wearer from accidents, snake bites etc. said to be useful for those who want to have more close relationships with opposite sex. Who should wear it? Lucky gem for those born in the month of May. It is widely recommended to people suffering from allergies and skin problems.\n\n"),
+            Text("Jade Rs. 150.00 Per Ratti"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -462,11 +461,9 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
         return Column(
           children: <Widget>[
             Text("Kyanite"),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Kayanite Rs. 1100 Per Ratti"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"),//blue,center-align
           ],
         );
 
@@ -478,11 +475,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLepis-Lazuli.jpg?alt=media"),
             Text("Lajwrat | Lapiz Lazuli | Lapiz Lazuli"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Lapis Lazuli, An opaque stone of blue colour with white web like structures on it, Lepiz Lazuli usually contains some traces of gold, which lends it a beautiful look. It is widely used in jewellery. Benefits: While it curtails the malefic effects of Saturn, Lepis lazuli is used to fight depression and feeling of dullness. It is effective against skin diseases and ulcers (both internal and external) and many people have faith that it has the capacity to give unqualified success to one who wears it. Who should wear it? This is especially good for ladies engaged in music, art, dance, drama etc. It gives one power to win over others by the power of love. The people who use it are never found to be wanting in money or love. Quality : Premium\n\n"),
+            Text("Lapis Lazuli Rs. 150.00 Per Ratti.\n\n\t"),//bold
+            Text("Category : Rock\n\tCrystal system : \n\t\tas lapis is a rock. Lazurite, the main constituent, frequently occurs as dodecahedra\n\tChemical formula : mixture of minerals\n\tStrunz classification : 9.AF.35\n\tColor : \n\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\tCleavage : none\n\tCrystal habit : Compact, massive\n\tMohs scale hardness : 5–5.5\n\tLuster : dull\n\tStreak : light blue\n\tSpecific gravity : 2.7–2.9\n\tRefractive index : 1.5"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -493,11 +490,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLemon-Topaz.jpg?alt=media"),
             Text("Lemon Topaz"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Lemon Topaz Rs. 200.00 Per Ratti.\n\n\t"),//bold
+            Text("Category : Silicate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : \n\t\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\n\tCrystal system : Orthorhombic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 650.00 INR\n\t4.25 Ratti Rs. 850.00 INR\n\t5.25 Ratti Rs. 1050.00 INR\n\t6.25 Ratti Rs. 1250.00 INR\n\t7.25 Ratti Rs. 1450.00 INR\n\t8.25 Ratti Rs. 1650.00 INR\n\t9.25 Ratti Rs. 1850.00 INR\n\t10.25 Ratti Rs. 2050.00 INR\n\t11.25 Ratti Rs. 2250.00 INR\n\t12.25 Ratti Rs. 4900.00 INR\n\t13.25 Ratti Rs. 5300.00 INR\n\t14.25 Ratti Rs. 5700.00 INR\n\t15.25 Ratti Rs. 6100.00 INR\n\t16.25 Ratti Rs. 6500.00 INR\n\t17.25 Ratti Rs. 6900.00 INR\n\t18.25 Ratti Rs. 7300.00 INR\n\t19.25 Ratti Rs. 7700.00 INR\n\t20.25 Ratti Rs. 8100.00 INR\n\t21.25 Ratti Rs. 8500.00 INR"),//blue,center-align
           ],
         );
 
@@ -507,11 +503,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FMalachite.jpg?alt=media"),
             Text("Malachite"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Malachite, Malachite is green in colour, but varies from mild green to almost blackish green. The tones appear in alternate stripes. Low on hardness, it may acquire exceptional polish but the polish is not very durable. Widely used for mosaics, boxes, figurines, cabochons and beads, it is also used in Jewellery. It is not very costly. Benefits: It is used to fight Kidney ailments. Malachite, if regularly worn, improves mental alertness, quickness and makes one systematic. Malachite bestows youthfulness and desire for outdoor life and aids in getting a happy life Quality : Premium"),
+            Text("Malachite Rs. 150.00 Per Ratti.\n\n\t"),//bold
+            Text("Category : Carbonate mineral\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 05.BA.10\n\tColor : \n\t\tBright green, dark green, blackish green, commonly banded in masses; green to yellowish green in transmittedlight\n\n\tCrystal system : prismatic H-M\n\tCrystal habit : \n\t\tMassive, botryoidal, stalactitic, crystals are acicular to tabular prismatic\n\n\tMohs scale hardness : 3.5–4.0\n\tLuster : \n\t\tAdamantine to vitreous; silky if fibrous; dull to earthy if massive\n\tStreak : light green\n\tSpecific gravity : 3.6–4Diaphaneity : Transparent\n\tOptical properties : Biaxial (–)\n\tRefractive index : 1.655, 1.655, 1.909"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -530,11 +526,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             Text("Opal"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
-            Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("Opal is an opaque stone, with a see through surface and some minute tinges of Colours in it that give it its famous firing. Benefits: This gem is said to bestow beauty, power and financial prosperity. This improves intuition and helps magnetize others. It also helps in winning court cases and gives stability in life. Who Should Wear It: E especially good for those engaged in business connected with travel, tourism and import/export. It is an excellent gem for those born in the month of October as it turns them more loving and affectionate in personal and family life.\n\n\nOpal Gemstone\n\nOpal or Opal Gemstone is a popular Gem of Venus i.e., Shura. This Gemstone is mainly found in Australia. It is found in various varieties like White Opal, Fire Opal and Black Opal.\n\nOpal Gemstone if worn in silver and in accordance with the laid down procedures increases the strength of Venus and there by gives worldly pleasures. The wearer is able to get wealth, family happiness, children, fame and respect. The noted Indian film star Ashwaria Rai Bachan is always seen with this ring in her right hand index finger. It gave her stability and completeness in personal life. This gemstone has saved many marriages breaking. There are many cases in which a person has the required money or resources still he is not able to have material comforts of life, love and personal touch is simply missing. In such cases wearing an Abhimantrit Opal can bring about great change in life. I have come across many cases where this Gemstone has revived the personal lives of women and brought love and romance back.\n\nArtists working in TV, films, theater and the like should always wear this Gemstone for fame and recognition.\n\nPeople in whose horoscopes – Venus is Yogkarka, Ascendant Lord, Rashi Lord, or Bhagyakarka should wear an Opal Gemstone. This Gemstone does not have any side effects.\n\nOpal Gemstone is also widely used in Jewellery. It makes an excellent ring stone and pendant stone as its various colours allow it to be worn with any kind of cloths. Europe is the main market for Opals – the fascination of white women for opals is simply insatiable. So these Opals are found in Australia, cut and polished in India and exported in finished form to Europe.\n\n\t"),
+            Text("White Opal      Rs. 550.00 Per Ratti\n\n\tFire Opal      Rs. 1100.00 Per Ratti\n\n\tBlack Opal      Rs. 4000.00 Per Ratti"),//bold
+            Text("\n\n visit www.astropankaj.com to know :\n\n\tWho should wear an Opal?\n\tBenefits of Wearing an Opal?\n\tMantra for Opal.\n\tHow to wear an Opal?\n\tFinger for Opal.\n\tWhen to wear an Opal?\n\n\n"),
+            Text("Opal Stone\n\nColor : \n\t\tYellow, White, Red, Black, Green, Brown, Blue and Coloreless.\n\n\tFracture : Conchoidal\n\tCrystal system : Amorphous\n\tMohs scale hardness : 5.5–6\n\tLuster : waxy\n\tStreak : White\n\tSpecific gravity : 2.15 Refractive index : 1.42–1.43 "),//bold
           ],
         );
 
@@ -546,11 +541,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FPeriodot.jpg?alt=media"),
             Text("Peridot"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Peridot is a beautiful transparent green stone that used to be worshipped by the people of Brazil. Benefits: It enhances the power of Mercury, and thus Peridot is used to curb the problems caused by a weak mercury. The ancient Egyptian kings had immense faith in its powers and even believed that Peridot could break the evil spell and dig into the mysteries of the darkness."),
+            Text("\n\nPeridot Rs. 1100.00 Per Ratti, 2100.00 Per Ratti.\n\n\tCategory : Carbonate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : \n\t\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\n\tCrystal system : Orthorhombic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 13475.00 INR\n\t13.25 Ratti Rs. 14575.00 INR\n\t14.25 Ratti Rs. 15675.00 INR\n\t15.25 Ratti Rs. 16775.00 INR\n\t16.25 Ratti Rs. 17875.00 INR\n\t17.25 Ratti Rs. 18975.00 INR\n\t18.25 Ratti Rs. 20075.00 INR\n\t19.25 Ratti Rs. 21175.00 INR\n\t20.25 Ratti Rs. 21262.00 INR\n\t21.25 Ratti Rs. 22312.00 INR"),//blue,center-align
           ],
         );
 
@@ -560,11 +554,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FPink-Tourmaline.jpg?alt=media"),
             Text("Pink Tourmaline"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Love Gem is the common name for this Gemstone. It is said to bring genuine love in life.Couples that have problems in relationships can get immense benefit if both of them wear it. Pink Turmuline looks beautiful is said to bring beauty to life.\n\n"),
+            Text("Pink Tourmaline Rs. 1100.00 Per Ratti.\n\n\t"),//bold
+            Text("Category : Cyclosilicate\n\tCrystal system : Trigonal\n\tCrystal habit : \n\t\tParallel and elongated. Acicular prisms, sometimes radiating. Massive. Scattered grains.\n\n\tColor : \n\t\tMost commonly black, but can range from brown, violet, green, pink, or in a dual-colored pink and green.\n\n\tMohs scale hardness : 7–7.5\n\tLuster : Vitreous, sometimes resinous\n\tStreak : White\n\tSpecific gravity : 3.06 (+.20 -.06)\n\tRefractive index : 1.635–1.675,, 1.610–1.650\n\tSolubility : insoluble in common solvents\n\tPleochroism :\n\tRed Tourmaline: \n\t\tDefinite; dark red,light red \n\n\tGreen Tourmaline: \n\t\tStrong; dark green, yellow-green \n\n\tBrown Tourmaline: \n\t\tDefinite; dark brown, light brown \n\n\tBlue Tourmaline: \n\t\tStrong; dark blue, light blue"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"),//blue,center-align
           ],
         );
 
@@ -574,11 +568,9 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Onyx-Cabochun.jpg?alt=media"),
             Text("Red Onyx (Cabochon)"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Red Onyx Rs. 150.00 Per Ratti."),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -588,11 +580,9 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Onyx-cut.jpg?alt=media"),
             Text("Red Onyx(Cut)"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Red Onyx Rs. 150.00 Per Ratti."),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -602,11 +592,9 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frhodolite-garnet.jpg?alt=media"),
             Text("Rhodolite Garnet(Cut)"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
-            Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("\n\nRhodolite Garnet is a species of garnet family. It is found in Macon which is located in North Carolina in Cowee Valley.\n\n\t"),
+            Text("Rhodolite Garnet Rs.2100.00 Per Ratti.</b>\n\n"),//bold
+            Text("Category : Pyrope variety\n\tChemical formula : (Mg,Fe)3Al2(SiO4)3\n\tCleavage : none, may show indistinct parting\n\tColor : light to dark purplish red through reddish purple\n\tCrystal system : cubic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 7 - 7.5\n\tLuster : greasy to vitreous\n\tSpecific gravity : 3.84 (+/- .10)\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.760 (+.010, -.020)"),//bold
           ],
         );
 
@@ -616,11 +604,9 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRose-Quartz.jpg?alt=media"),
             Text("Rose Quartz"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Rose Quartz Rs. 150.00 Per Ratti.\n\n\tCategory : Silicate mineral\n\tCrystal symmetry : Trigonal H–M Symbol 32\n\tChemical formula : Silica (silicon dioxide, SiO2)\n\tStrunz classification : 04.DA.05\n\tColor : \n\t\tColorless, From colorless to black, through various colors\n\n\tCrystal system : trapezohedral class 3 2\n\tCrystal habit : \n\t\t6-sided prism ending in 6-sided pyramid (typical), drusy, fine-grained to microcrystalline, massive\n\n\tMohs scale hardness : 7 – lower in impure\n\tLuster : Vitreous – waxy to dull when massive\n\tStreak : White\n\tSpecific gravity : 2.65; variable 2.59–2.63 in impure varieties\n\n\tDiaphaneity : Transparent to nearly opaque\n\tOptical properties : Uniaxial (+)\n\tRefractive index : 1.543–1.545, 1.552–1.554"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
