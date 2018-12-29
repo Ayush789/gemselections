@@ -30,8 +30,6 @@ class _TodaysUpdateState extends State<TodaysUpdate> {
                   ],
                 ),
                 TodaysUpdateTile(
-                  Title: snap.data.data['todaysUpdate']
-                      [snap.data.data['todaysUpdate'].length - 1]['Title'],
                   text: snap.data.data['todaysUpdate']
                       [snap.data.data['todaysUpdate'].length - 1]['Text'],
                   Imgurl: snap.data.data['todaysUpdate']
@@ -54,7 +52,6 @@ List<TodaysUpdateTile> tilesfromdata(List<dynamic> map) {
   for (int i = map.length - 1; i >= 0 && i > map.length - 2; i--) {
     print(map[i]);
     ans.add(TodaysUpdateTile(
-      Title: map[i]['Title'],
       text: map[i]['Text'],
       Imgurl: map[i]['Imgurl'],
     ));
@@ -63,10 +60,10 @@ List<TodaysUpdateTile> tilesfromdata(List<dynamic> map) {
 }
 
 class TodaysUpdateTile extends StatelessWidget {
-  String Title, text, Imgurl;
+  String  text, Imgurl;
 
   TodaysUpdateTile({
-    this.Title,
+
     this.text,
     this.Imgurl = "",
   });
@@ -78,13 +75,28 @@ class TodaysUpdateTile extends StatelessWidget {
       child: Container(
         child: Column(
           children: <Widget>[
-            Text(
-              Title,
-              textAlign: TextAlign.start,
-              style: TextStyle(fontSize: 20.0),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.all(8.0),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.blue, width: 3.0),
+                borderRadius: BorderRadius.circular(10.0),
+                //color: Colors.lightBlueAccent,
+              ),
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(bottom:15.0),
+                    child: Text(
+                      text,
+                      textAlign: TextAlign.justify,
+                      style: TextStyle(fontSize: 17.0),
+                    ),
+                  ),
+                  (Imgurl != "") ? Image.network(Imgurl) : Container(),
+                ],
+              ),
             ),
-            (Imgurl != "") ? Image.network(Imgurl) : Container(),
-            Text(text),
           ],
         ),
       ),

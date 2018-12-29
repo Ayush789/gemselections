@@ -10,6 +10,7 @@ import 'package:gemselections/Pages/jwellry.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshhome.dart';
+import 'package:gemselections/Pages/testimonials.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -125,7 +126,7 @@ class _MainPageState extends State<MainPage> {
           FlatButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => InTheNewsPage()));
+                  MaterialPageRoute(builder: (context) => TestimonialsPage()));
             },
             padding: EdgeInsets.all(2.0),
             child: Image.asset(
