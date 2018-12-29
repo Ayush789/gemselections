@@ -15,20 +15,20 @@ class _BlackStonePageState extends State<BlackStonePage> {
         children: <Widget>[
           BlackStoneTile(
             Code: "GPP01",
-            text: "Data",
+            text: "White marble tile with a beautiful hand painting of musical instrument.  The Colours used are permanent and include 24 k gold.  It can be hanged from a wall or else can be placed on a table using a stand.",
             Imgurl: imgurl,
             Weight: "250",
             Size: "9 inch",
           ),
           BlackStoneTile(
-            Code: "GPP01",
-            text: "Data",
+            Code: "GPP02",
+            text: "White marble tile with a beautiful hand painting of musical instrument.  The Colours used are permanent and include 24 k gold.  It can be hanged from a wall or else can be placed on a table using a stand.",
             Weight: "250",
             Size: "9 inch",
           ),
           BlackStoneTile(
-            Code: "GPP01",
-            text: "Data",
+            Code: "GPP03",
+            text: "White marble tile with a beautiful hand painting of musical instrument.  The Colours used are permanent and include 24 k gold.  It can be hanged from a wall or else can be placed on a table using a stand.",
             Weight: "250",
             Size: "9 inch",
           ),
