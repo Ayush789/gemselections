@@ -22,6 +22,7 @@ import 'package:gemselections/Pages/saphatic.dart';
 import 'package:gemselections/Pages/sarvamanokamna.dart';
 import 'package:gemselections/Pages/semipreciouspage.dart';
 import 'package:gemselections/Pages/stoneidols.dart';
+import 'package:gemselections/Pages/todaysupdate.dart';
 import 'package:gemselections/Pages/triangularGemstones.dart';
 import 'package:gemselections/Pages/yantra.dart';
 
@@ -107,13 +108,19 @@ class _MainScaffoldState extends State<MainScaffold> {
             ListTile(
               title: Text("Today's Update"),
               leading: Icon(Icons.new_releases),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TodaysUpdate()));
+              },
             ),
             ListTile(
               title: Text("Abhimantrit"),
               leading: Icon(Icons.info),
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => AbhimantranMainPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => AbhimantranMainPage()));
               },
             ),
             ListTile(

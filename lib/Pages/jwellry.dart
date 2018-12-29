@@ -50,7 +50,7 @@ class _JwelleryPageState extends State<JwelleryPage> {
             ),
           ),
           Container(
-            padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
             child: FlatButton(
               onPressed: () {
                 Navigator.push(
