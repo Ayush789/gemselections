@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
-import 'package:datetime_picker_formfield/time_picker_formfield.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:intl/intl.dart';
 import 'package:http/http.dart';
@@ -24,58 +23,120 @@ class _MatchMakingPageState extends State<MatchMakingPage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => MatchInputPage(
-                            predicate: "_astro_details",
+                            predicate: "birth_details",
                           )));
             },
             child: Text("Match Birth Details"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "ashtakoot_points",
+                          )));
+            },
+            child: Text("Match Ashtakoot Details"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "obstructions",
+                          )));
+            },
+            child: Text("Match Vedha(Obstructions)"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "astro_details",
+                          )));
+            },
+            child: Text("Match Astro Details"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "planet_details",
+                          )));
+            },
+            child: Text("Match Planet Details"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "manglik_report",
+                          )));
+            },
+            child: Text("Match Manglik Report"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "making_report",
+                          )));
+            },
+            child: Text("Match Making Report"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "simple_report",
+                          )));
+            },
+            child: Text("Match Simple Report"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "making_detailed_report",
+                          )));
+            },
+            child: Text("Match Making Simple Report"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "dashakoot_points",
+                          )));
+            },
+            child: Text("Match Daskakoot Points"),
           ),
           FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
-          ),
-          FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
-          ),
-          FlatButton(
-            onPressed: () {},
-            child: Text("Match Birth Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MatchInputPage(
+                            predicate: "match_percentage",
+                          )));
+            },
+            child: Text("Match Percentage"),
           ),
         ],
       ),
@@ -104,7 +165,7 @@ class _MatchInputPageState extends State<MatchInputPage> {
       female_tzone = TextEditingController();
 
   Future<Map<String, dynamic>> submitForm(Map<String, dynamic> data) async {
-    String url = "https://json.astrologyapi.com/v1/match" + widget.predicate;
+    String url = "https://json.astrologyapi.com/v1/match_" + widget.predicate;
     print(data);
     print(url);
 
@@ -125,6 +186,14 @@ class _MatchInputPageState extends State<MatchInputPage> {
       return null;
   }
 
+  final focus1 = FocusNode(),
+      focus2 = FocusNode(),
+      focus3 = FocusNode(),
+      focus4 = FocusNode(),
+      focus5 = FocusNode(),
+      focus6 = FocusNode(),
+      focus7 = FocusNode();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,22 +210,36 @@ class _MatchInputPageState extends State<MatchInputPage> {
                     border: OutlineInputBorder(),
                   ),
                   onChanged: (dt) => setState(() => male_date = dt),
+                  onFieldSubmitted: (v) {
+                    FocusScope.of(context).requestFocus(focus1);
+                  },
                 ),
                 TextFormField(
+                  focusNode: focus1,
+                  textInputAction: TextInputAction.next,
                   controller: male_lat_controller,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: "Birth Latitude"),
+                  onFieldSubmitted: (v) {
+                    FocusScope.of(context).requestFocus(focus2);
+                  },
                 ),
                 TextFormField(
+                  focusNode: focus2,
+                  textInputAction: TextInputAction.next,
                   controller: male_lon_controller,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: "Birth Longitude"),
+                  onFieldSubmitted: (v) {
+                    FocusScope.of(context).requestFocus(focus3);
+                  },
                 ),
                 TextFormField(
+                  focusNode: focus3,
                   controller: male_tzone,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -177,8 +260,16 @@ class _MatchInputPageState extends State<MatchInputPage> {
                     border: OutlineInputBorder(),
                   ),
                   onChanged: (dt) => setState(() => female_date = dt),
+                  onFieldSubmitted: (v) {
+                    FocusScope.of(context).requestFocus(focus5);
+                  },
                 ),
                 TextFormField(
+                  focusNode: focus5,
+                  textInputAction: TextInputAction.next,
+                  onFieldSubmitted: (v) {
+                    FocusScope.of(context).requestFocus(focus6);
+                  },
                   controller: female_lat_controller,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -186,6 +277,11 @@ class _MatchInputPageState extends State<MatchInputPage> {
                       labelText: "Birth Latitude"),
                 ),
                 TextFormField(
+                  focusNode: focus6,
+                  textInputAction: TextInputAction.next,
+                  onFieldSubmitted: (v) {
+                    FocusScope.of(context).requestFocus(focus7);
+                  },
                   controller: female_lon_controller,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -193,6 +289,7 @@ class _MatchInputPageState extends State<MatchInputPage> {
                       labelText: "Birth Longitude"),
                 ),
                 TextFormField(
+                  focusNode: focus7,
                   controller: female_tzone,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
@@ -226,15 +323,47 @@ class _MatchInputPageState extends State<MatchInputPage> {
               submitForm(data).then((val) {
                 results = val;
                 if (results != null) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MatchMakingResults(
-                            results: results,
-                            predicate: widget.predicate,
-                          ),
-                    ),
-                  );
+                  print("Results Type: ${results.runtimeType}");
+                  //var male = results['male_astro_details'];
+                  //print(male['ascendant']);
+                  //print(male.runtimeType);
+                  print(widget.predicate);
+                  Widget nextWidget;
+                  switch (widget.predicate) {
+                    case "birth_details":
+                      nextWidget = MatchBirthResultsPage(
+                        data: results,
+                      );
+                      break;
+
+                    case "astro_details":
+                      nextWidget = MatchAstroResultsPage(
+                        data: results,
+                      );
+                      break;
+                    case "ashtakoot_points":
+                      nextWidget = MatchAshtakootPointsPage(
+                        data: results,
+                      );
+                      break;
+                    case "obstructions":
+                      nextWidget = MatchObstructionPage(
+                        data: results,
+                      );
+                      break;
+                    case "planet_details":
+                      nextWidget = MatchPlanetPage(
+                        data: results,
+                      );
+                      break;
+
+                    default:
+                      break;
+                  }
+                  print(nextWidget);
+                  if (nextWidget != null)
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => nextWidget));
                 } else {
                   print("No Results");
                 }
@@ -248,75 +377,439 @@ class _MatchInputPageState extends State<MatchInputPage> {
   }
 }
 
-class MatchMakingResults extends StatefulWidget {
-  Map<String, dynamic> results;
-  String predicate;
+class ResultTableBox extends StatelessWidget {
+  Color boxcolor;
+  dynamic data;
+  String Title;
 
-  MatchMakingResults({
-    this.results,
-    this.predicate,
-  });
+  ResultTableBox({this.data, this.Title, this.boxcolor});
 
   @override
-  _MatchMakingResultsState createState() => _MatchMakingResultsState();
-}
-
-class _MatchMakingResultsState extends State<MatchMakingResults> {
-  @override
-  List<TableRow> getmaleRows(List male, String name, Map<String, dynamic> res) {
-    List<TableRow> ans = [];
-
-    for (int i = 0; i < male.length; i++) {
-      ans.add(TableRow(children: [
-        Text(
-          "${male[i][0].toUpperCase()}${male[i].substring(1)}",
-          //"${male[i].substring(1)}",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
+  Widget build(BuildContext context) {
+    //print("data: $data");
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        padding: EdgeInsets.all(8.0),
+        decoration: BoxDecoration(
+          color: boxcolor,
+          borderRadius: BorderRadius.circular(10.0),
         ),
-        Text(res[name][male[i]].toString()),
-      ]));
-    }
-    return ans;
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              Title,
+              style: TextStyle(
+                fontSize: 17.0,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.start,
+            ),
+            Table(
+              children: rowsFromData(data),
+            )
+          ],
+        ),
+      ),
+    );
   }
 
+  List<TableRow> rowsFromData(dynamic data) {
+    List<TableRow> ans = [];
+    for (int i = 0; i < data.keys.toList().length; i++) {
+      ans.add(TableRow(
+        children: [
+          Text(
+            "${data.keys.toList()[i].toString()[0].toUpperCase()}${data.keys.toList()[i].toString().substring(1)}",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          Text(data[data.keys.toList()[i]].toString()),
+        ],
+      ));
+    }
+
+    return ans;
+  }
+}
+
+class MatchBirthResultsPage extends StatelessWidget {
+  dynamic data;
+
+  MatchBirthResultsPage({this.data});
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Results"),
       ),
-      body: ListView(children: <Widget>[
-        Container(),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            padding: EdgeInsets.all(10.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
-              color: Colors.lightBlueAccent,
+      body: ListView(
+        children: [
+          ResultTableBox(
+            Title: "Male Details",
+            data: data["male_astro_details"],
+            boxcolor: Colors.lightBlueAccent,
+          ),
+          ResultTableBox(
+            Title: "Female Details",
+            data: data["female_astro_details"],
+            boxcolor: Colors.pinkAccent,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MatchAstroResultsPage extends StatelessWidget {
+  dynamic data;
+
+  MatchAstroResultsPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ResultTableBox(
+            data: data["male_astro_details"],
+            Title: "Male Details",
+            boxcolor: Colors.lightBlueAccent,
+          ),
+          ResultTableBox(
+            data: data["female_astro_details"],
+            Title: "Female Details",
+            boxcolor: Colors.pinkAccent,
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class MatchAshtakootPointsPage extends StatelessWidget {
+  dynamic data;
+
+  MatchAshtakootPointsPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            child: Column(
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Varna",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["varna"]["description"]),
+                      Text("Male   : ${data["varna"]["male_koot_attribute"]}"),
+                      Text(
+                          "Female : ${data["varna"]["female_koot_attribute"]}"),
+                      Text(
+                          "Points : ${data["varna"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Vashya",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["vashya"]["description"]),
+                      Text("Male   : ${data["vashya"]["male_koot_attribute"]}"),
+                      Text(
+                          "Female : ${data["vashya"]["female_koot_attribute"]}"),
+                      Text(
+                          "Points : ${data["vashya"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Tara",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["tara"]["description"]),
+                      Text(
+                          "Points : ${data["tara"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Yoni",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["yoni"]["description"]),
+                      Text(
+                          "Points : ${data["yoni"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Maitri",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["maitri"]["description"]),
+                      Text("Male   : ${data["maitri"]["male_koot_attribute"]}"),
+                      Text(
+                          "Female : ${data["maitri"]["female_koot_attribute"]}"),
+                      Text(
+                          "Points : ${data["maitri"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Gan",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["gan"]["description"]),
+                      Text("Male   : ${data["gan"]["male_koot_attribute"]}"),
+                      Text("Female : ${data["gan"]["female_koot_attribute"]}"),
+                      Text(
+                          "Points : ${data["gan"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Bhakut",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["bhakut"]["description"]),
+                      Text("Male   : ${data["bhakut"]["male_koot_attribute"]}"),
+                      Text(
+                          "Female : ${data["bhakut"]["female_koot_attribute"]}"),
+                      Text(
+                          "Points : ${data["bhakut"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Nadi",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text(data["nadi"]["description"]),
+                      Text("Male   : ${data["nadi"]["male_koot_attribute"]}"),
+                      Text("Female : ${data["nadi"]["female_koot_attribute"]}"),
+                      Text(
+                          "Points : ${data["nadi"]["received_points"].toString()}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Total",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text("Total Points : ${data["total"]["total_points"]}"),
+                      Text(
+                          "Received Points : ${data["total"]["received_points"]}"),
+                      Text(
+                          "Minimum Points : ${data["total"]["minimum_required"]}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        "Conclusion",
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
+                      ),
+                      Text("${data["conclusion"]["report"]}"),
+                      Divider(),
+                    ],
+                  ),
+                ),
+              ],
             ),
-            child: Table(
-                children: getmaleRows(
-                    widget.results["male" + widget.predicate].keys.toList(),
-                    "male" + widget.predicate,
-                    widget.results)),
+            color: Colors.lightBlueAccent,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MatchObstructionPage extends StatelessWidget {
+  dynamic data;
+
+  MatchObstructionPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Vedha Report",
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                ),
+                Text(data["vedha_report"]),
+                (data["is_present"])
+                    ? Text("Vedha Name: ${data["vedha_name"]}")
+                    : Container(),
+              ],
+            ),
+            color: Colors.lightBlueAccent,
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class MatchPlanetPage extends StatelessWidget {
+  dynamic data;
+
+  MatchPlanetPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    print(data["male_planet_details"].length);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: getWidgets(data["male_planet_details"]),
+            ),
+          ),
+          ComfyBox(
+            color: Colors.pinkAccent,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: getWidgets(data["female_planet_details"]),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getWidgets(dynamic data1) {
+    List<Widget> ans = [];
+    for (int i = 0; i < 10; i++) {
+      ans.add(
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                data1[i]["name"].toString(),
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              ),
+              Text("Full Degrees: ${data1[i]["fullDegree"].toString()}"),
+              Text("Normal Dregees: ${data1[i]["normDegree"].toString()}"),
+              Text("Speed: ${data1[i]["speed"].toString()}"),
+              Text("Retro: ${data1[i]["isRetro"].toString()}"),
+              Text("Sign: ${data1[i]["sign"].toString()}"),
+              Text("Sign Lord: ${data1[i]["signLord"].toString()}"),
+              Text("Nakshatra: ${data1[i]["nakshatra"].toString()}"),
+              Text("Nakshatra Lord: ${data1[i]["nakshatraLord"].toString()}"),
+              Text("House: ${data1[i]["house"].toString()}"),
+              Divider(),
+            ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            padding: EdgeInsets.all(10.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
-              color: Colors.pinkAccent,
-            ),
-            child: Table(
-                children: getmaleRows(
-                    widget.results["female_astro_details"].keys.toList(),
-                    "female_astro_details",
-                    widget.results)),
-          ),
+      );
+    }
+    return ans;
+  }
+}
+
+class ComfyBox extends StatelessWidget {
+  Widget child;
+  Color color;
+
+  ComfyBox({this.child, this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        padding: EdgeInsets.all(8.0),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(10.0),
         ),
-      ]),
+        child: child,
+      ),
     );
   }
 }
