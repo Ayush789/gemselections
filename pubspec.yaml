@@ -26,6 +26,8 @@ dependencies:
   url_launcher: ^4.0.2
   firebase_storage: ^1.0.4
   carousel_slider: ^1.0.1
+  datetime_picker_formfield: ^0.1.7
+  http:
 
 
 dev_dependencies:
