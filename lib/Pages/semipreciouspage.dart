@@ -615,11 +615,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
           children: <Widget>[
             Text("Dhunela | Smoky Topaz"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Dhunela, Code: ASP 21(Smoky Topaz)\n\nA brilliant Gem of smoky colour used extensively to ward off evil spirits, Smoky Topaz is especially useful for people facing unfulfilled love. Besides giving one success in love, it is said to protect the wearer from depressions and sleeplessness. Benefits: It has great spiritual, medicinal and super natural power that holds the faith of many and is of immense use to people interested in occult. Also useful in healing eye infections, eye sores, stomach ailments, stomach ulcers, throat infections, giddiness and blood poisoning. Who should wearit? This is a highly recommended colour for research scholars and those who want to acquire a flair for creativity. Quality : Premiu\n\n"),
+            Text("Dhunela Rs. 150.00 Per Ratti."),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
