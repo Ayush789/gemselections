@@ -209,6 +209,7 @@ class _CreateYourOwnJewelleryPageState
     }).catchError((e) {
       print(e);
     });
+    Navigator.pop(context);
   }
 
   @override

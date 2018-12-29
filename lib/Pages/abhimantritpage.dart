@@ -49,7 +49,7 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
             child: Card(
               child: Column(
                 children: <Widget>[
-                  Text("PANNA STONE ABHIMANTRAN"),
+                  Text("NEELAM STONE ABHIMANTRAN"),
                   Image.network(imgurl),
                 ],
               ),
@@ -70,7 +70,7 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
             child: Card(
               child: Column(
                 children: <Widget>[
-                  Text("PANNA STONE ABHIMANTRAN"),
+                  Text("PUKHRAJ STONE ABHIMANTRAN"),
                   Image.network(imgurl),
                 ],
               ),

@@ -18,219 +18,215 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
         children: <Widget>[
           Text("We have"),
           Text("Selet a Gemstone"),
-          DropdownButton(
+          DropdownButtonFormField(
             items: [
               DropdownMenuItem<int>(
-                child: Text("Name1"),
+                child: Text("Amethyst(Katela)"),
                 value: 1,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name2"),
+                child: Text("Aquamarine(Beruj)"),
                 value: 2,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name3"),
+                child: Text("Black Onyx(Cabocho)"),
                 value: 3,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name4"),
+                child: Text("Black Onyx(Cut)"),
                 value: 4,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name5"),
+                child: Text("Black Rainbow"),
                 value: 5,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name6"),
+                child: Text("Black Star"),
                 value: 6,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name7"),
+                child: Text("Black Topaz"),
                 value: 7,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name8"),
+                child: Text("Beruj"),
                 value: 8,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name9"),
+                child: Text("Citrine"),
                 value: 9,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name10"),
+                child: Text("Chandramani"),
                 value: 10,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name11"),
+                child: Text("Dhunela"),
                 value: 11,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name12"),
+                child: Text("Feroja"),
                 value: 12,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name13"),
+                child: Text("Garnet(Tamara)"),
                 value: 13,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name14"),
+                child: Text("Golden Topaz"),
                 value: 14,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name15"),
+                child: Text("Green Amethyst"),
                 value: 15,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name16"),
+                child: Text("Green Fluorite"),
                 value: 16,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name17"),
+                child: Text("Green Garnet(Vasonite)"),
                 value: 17,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name18"),
+                child: Text("Green Onyx"),
                 value: 18,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name19"),
+                child: Text("Green Tourmaline"),
                 value: 19,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name20"),
+                child: Text("Iolite(Kaka Neeli)"),
                 value: 20,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name21"),
+                child: Text("Jade"),
                 value: 21,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name22"),
+                child: Text("Kateala"),
                 value: 22,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name23"),
+                child: Text("Kakaneeli"),
                 value: 23,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name24"),
+                child: Text("Kyanite"),
                 value: 24,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name25"),
+                child: Text("Labrolite"),
                 value: 25,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name26"),
+                child: Text("Lajwrat"),
                 value: 26,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name27"),
+                child: Text("Lapis Lazuli"),
                 value: 27,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name28"),
+                child: Text("Lemon Topaz"),
                 value: 28,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name29"),
+                child: Text("Malachite"),
                 value: 29,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name30"),
+                child: Text("MoonStone(Chandramani)"),
                 value: 30,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name31"),
+                child: Text("Opal"),
                 value: 31,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name32"),
+                child: Text("Onyx"),
                 value: 32,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name33"),
+                child: Text("Peridot"),
                 value: 33,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name34"),
+                child: Text("Pink Tourmaline"),
                 value: 34,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name35"),
+                child: Text("Red Onyx(Cabochon)"),
                 value: 35,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name36"),
+                child: Text("Red Onyx(Cut)"),
                 value: 36,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name37"),
+                child: Text("Rhodolite Garnet(Cut)"),
                 value: 37,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name38"),
+                child: Text("Rose Quartz"),
                 value: 38,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name39"),
+                child: Text("Smoky Topaz(Dhunela)"),
                 value: 39,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name40"),
+                child: Text("Star Ruby"),
                 value: 40,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name41"),
+                child: Text("Sunehala"),
                 value: 41,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name42"),
+                child: Text("Sang-e-Maryam"),
                 value: 42,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name43"),
+                child: Text("Surya Kant Mani"),
                 value: 43,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name44"),
+                child: Text("Tamara"),
                 value: 44,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name45"),
+                child: Text("Tiger's Eye"),
                 value: 45,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name46"),
+                child: Text("Turquoise(Feroza)"),
                 value: 46,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name47"),
+                child: Text("Vasonite"),
                 value: 47,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name48"),
+                child: Text("White Coral"),
                 value: 48,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name49"),
+                child: Text("White Quartz"),
                 value: 49,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name50"),
+                child: Text("White Rainbow"),
                 value: 50,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name51"),
+                child: Text("White Topaz"),
                 value: 51,
               ),
               DropdownMenuItem<int>(
-                child: Text("Name52"),
+                child: Text("Zircon"),
                 value: 52,
-              ),
-              DropdownMenuItem<int>(
-                child: Text("Name53"),
-                value: 53,
               ),
             ],
             onChanged: (x) {
@@ -240,6 +236,7 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             },
             value: v1,
           ),
+          showbottom(v1),
         ],
       ),
     );
