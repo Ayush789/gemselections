@@ -626,13 +626,12 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
         return Column(
           children: <Widget>[
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FStar-Ruby.jpg?alt=media"),
-            Text("Star Ruby"),
+            Text("Star Ruby | Surya Kant Mani"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Star Ruby is never completely transparent, because the star can only be produced by the presence of needle like inclusions that cause some degree of turbidity. Star rubies are very valuable. The finest star ruby known weighs 138 carats; this is the famous Rosier Reeves star ruby, on display at the Smithsonian Institution in Washington, D.C. The most striking phenomenon of rubies is the development of the six ray star, arranged in perfect symmetry, which shifts its centre, as the stone is moved. It is clearly visible under a single light source such as the sun or a lamp; much less so in diffuse light. If two or more powerful light sources are set close together, as many stars can be seen in the stone. Each light produces its own star, which is basically a reflection. The effect is usually less pronounced in more transparent stones. When the ground colour is ruby red it is known as Star Ruby. Benefits: Used to pep up the internal strength and to ward off tensions, Star Ruby drives away stress related problems like Migraine, Insomnia, and Hysteria etc. Traditionally worn by knights in the battlefields to protect themselves from the enemy. Local tales in Karnataka say that if this is worn as a visible pendant or as a head gear then anyone who faces you, as an enemy looses half his valour to your. It is said that Karna, the son of Sun wore it in his head gear and only after Krishna directed Arjuna to remove the Headgear with his arrow was be able to fight an equal battle with him.\n\n"),
+            Text("Star Ruby Rs. 525.00 Per Ratti"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 1706.00 INR\n\t4.25 Ratti Rs. 2231.00 INR\n\t5.25 Ratti Rs. 2756.00 INR\n\t6.25 Ratti Rs. 3281.00 INR\n\t7.25 Ratti Rs. 3806.00 INR\n\t8.25 Ratti Rs. 4331.00 INR\n\t9.25 Ratti Rs. 4856.00 INR\n\t10.25 Ratti Rs. 5381.00 INR\n\t11.25 Ratti Rs. 5906.00 INR\n\t12.25 Ratti Rs. 12862.00 INR\n\t13.25 Ratti Rs. 13912.00 INR\n\t14.25 Ratti Rs. 14962.00 INR\n\t15.25 Ratti Rs. 16012.00 INR\n\t16.25 Ratti Rs. 17062.00 INR\n\t17.25 Ratti Rs. 18112.00 INR\n\t18.25 Ratti Rs. 19162.00 INR\n\t19.25 Ratti Rs. 20212.00 INR\n\t20.25 Ratti Rs. 21262.00 INR\n\t21.25 Ratti Rs. 22312.00 INR"),//blue,center-align
           ],
         );
 
@@ -644,11 +643,9 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FMarium-gemstone.jpg?alt=media"),
             Text("Sang-e-Maryam"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Sang E  Maryam Rs. 150.00 Per Ratti"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -660,11 +657,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTiger's-Eye-Stone.jpg?alt=media"),
             Text("Tiger's Eye"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Tiger\'s Eye consists of compact fibers of quartz that has replaced asbestos fibers. The light reflected from the fibers produces a strong sheen or silky appearance, like that of the original asbestos known as \'Chiromancy\'. The result is a series of minor gemstones differing only in their ground Colour and that of mobile reflection. A golden yellow reflection on a brown ground is called a Tiger\'s Eye. It may very from brown and brownish yellow to blue and blue grey. The Colours and clearly fibrous appearance once are normally distinctive. Despite its attractiveness, this material is not very valuable. Benefits: It is normally cut on cabochon, to bring out the chiromancy, but it can be cut into more or less round, polished pieces, for necklaces and pendants. Tiger\'s Eye is also used for carvings, boxes, ashtrays, and other ornamental items, although in these, the fibers are seen as strips of colour. Said to be a Gem that gives courage and self confidence. Widely used in Africa toward off evil eye and to give the wearer victory over his enemies. Who should wear it? The evil spirits stay away for the wearer of this gem. It improves energy and stamina and gives inner initiative and drive. Recommended for those with birth No. 2 or 7.\n\n"),
+            Text("Tiger's Eye Rs. 150.00 Per Ratti"),//bold
+            Text("\n\n\tCategory : Mineral\n\tChemical formula : Silica (silicon dioxide, SiO2)\n\tColor : golden to red-brown\n\tMohs scale hardness : 7.0\n\tLuster : Silky\n\tSpecific gravity : 2.64 – 2.71"),
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text(" 3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -691,11 +688,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Quartz-gemstone.jpg?alt=media"),
             Text("White Quartz"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("This is used with considerable success in problems which are difficult to understand by the doctors. This gives a person capacity to speak with authority and its regular facial expression. This also helps in the strength to bear unpleasant happenings and understand the working of other people\'s minds.\n\n"),
+            Text("White Coral Rs. 150.00 Per Ratti."),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text(" 3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -704,12 +700,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
           children: <Widget>[
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Rainbow.jpg?alt=media"),
             Text("White Rainbow"),
-            Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Image.network(imgurl),          
+            Text("White Rainbow Rs. 150.00 Per Ratti."),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"),//blue,center-align
           ],
         );
 
@@ -718,12 +712,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
           children: <Widget>[
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-topaz.jpg?alt=media"),
             Text("White Topaz"),
-            Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Image.network(imgurl),            
+            Text("White Topaz Rs. 350.00 Per Ratti.\n\n\t"),//bold
+            Text("Category : Silicate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tStrunz classification : 9.AF.35\n\tColor : \n\t\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\n\tCrystal system : Orthorhombic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638"),//bold
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("3.25 Ratti Rs. 1137.00 INR\n\t4.25 Ratti Rs. 1487.00 INR\n\t5.25 Ratti Rs. 1837.00 INR\n\t6.25 Ratti Rs. 2187.00 INR\n\t7.25 Ratti Rs. 2537.00 INR\n\t8.25 Ratti Rs. 2887.00 INR\n\t9.25 Ratti Rs. 3237.00 INR\n\t10.25 Ratti Rs. 3587.00 INR\n\t11.25 Ratti Rs. 3937.00 INR\n\t12.25 Ratti Rs. 8575.00 INR\n\t13.25 Ratti Rs. 9275.00 INR\n\t14.25 Ratti Rs. 9975.00 INR\n\t15.25 Ratti Rs. 10675.00 INR\n\t16.25 Ratti Rs. 11375.00 INR\n\t17.25 Ratti Rs. 12075.00 INR\n\t18.25 Ratti Rs. 12775.00 INR\n\t19.25 Ratti Rs. 13475.00 INR\n\t20.25 Ratti Rs. 14175.00 INR\n\t21.25 Ratti Rs. 14875.00 INR"),//blue,center-align
           ],
         );
 
@@ -733,11 +726,12 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FZircon.jpg?alt=media"),
             Text("Zircon"),
             Image.network(imgurl),
-            Text("Body"),
-            Text("Body"),//bold
-            Text("Body"),//bold
+            Text("Zircon (AD):\n Looks like diamond and shines more than it. But unlike diamond, it shines only for a flash of a second, after which it looks dull and pale. Widely used in astrology as a substitute of diamond, Zircon is said to enhance beauty and attractiveness of a person. It makes an excellent ring stone and is thus widely used in jewellery also. Benefits: It gives added popularity in social circles and appreciation by members of the opposite sex. It improves prestige and protects him from jealousies and rivalries and plots hatched by one\'s enemies Quality : Premium\n\nZircon is found many coloures like red, pink, yellow, or black. Zircon may also be coloreless.\n\n"),
+            Text("Zircon(AD) Rs. 110.00 Per Ratti"),//bold
+            Text("\n\nNatural Zircon\n\nName:\nFrom the Arabic "zar", gold, plus "gun", coloured, referring to one of the many colors that the mineral may display.\n\nDimorph of: Reidite\n\tFormula: ZrSiO4\n\tSystem: Tetragonal\n\tMember of: Zircon Group\n\tLustre: Adamantine, Vitreous, Greasy\n\tColour: \n\t\tColourless, yellow, grey, reddish-brown, green, brown, black,\n\n\tHardness: 7.5\n\t\n\n"),
+            Text("Zircon is found in the most metamorphic rocks as small crystals mostly widely distributed and rarely more than 1% of the total mass of the rock.\n\n"),
             Text("Weight : INR"),//bold,blue,center-align
-            Text(""),//blue,center-align
+            Text("Natural Zircon Rs. 2100.00 Per Ratti."),//bold
           ],
         );
 
