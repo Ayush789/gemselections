@@ -223,7 +223,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             //Blue,Center align
             Text(
-                "\t3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "\t3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+                    style:TextStyle(fontWeight:FontWeight.bold,color: Colors.blue),
+                        textAlign: TextAlign.center,),
+                 //blue,center-align
+
           ],
         );
 
@@ -251,10 +255,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             //Blue,Center-align
             Text(
               " \t3.25 Ratti Rs. 6825.00 INR\n\t4.25 Ratti Rs. 8925.00 INR\n\t5.25 Ratti Rs. 11025.00 INR\n\t6.25 Ratti Rs. 13125.00 INR\n\t7.25 Ratti Rs. 15225.00 INR\n\t8.25 Ratti Rs. 17325.00 INR\n\t9.25 Ratti Rs. 19425.00 INR\n\t10.25 Ratti Rs. 21525 INR\n\t11.25 Ratti Rs. 23625.00 INR\n\t12.25 Ratti Rs. 25725.00 INR\n\t13.25 Ratti Rs. 27825.00 INR\n\t14.25 Ratti Rs. 29925.00 INR\n\t15.25 Ratti Rs. 32025.00 INR\n\t16.25 Ratti Rs. 34125.00 INR\n\t17.25 Ratti Rs. 36225.00 INR\n\t18.25 Ratti Rs. 38325.00 INR\n\t19.25 Ratti Rs. 40425.00 INR\n\t20.25 Ratti Rs. 42525.00 INR\n\t21.25 Ratti Rs. 44625.00 INR",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            ), //blue,center-align
+                style:TextStyle(fontWeight:FontWeight.bold,color: Colors.blue),
+                       textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -284,11 +286,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             //blue,center-align
             Text(
               "\t3.25 Ratti Rs. 357.50.00 INR\n\t4.25 Ratti Rs. 467.50 INR\n\t5.25 Ratti Rs. 577.50 INR\n\t6.25 Ratti Rs. 687.50 INR\n\t7.25 Ratti Rs. 797.50 INR\n\t8.25 Ratti Rs. 907.50 INR\n\t9.25 Ratti Rs. 1017.50 INR\n\t10.25 Ratti Rs. 1127.50 INR\n\t11.25 Ratti Rs. 1237.50 INR\n\t12.25 Ratti Rs. 1347.50 INR\n\t13.25 Ratti Rs. 1457.50 INR\n\t14.25 Ratti Rs. 1567.50 INR\n\t15.25 Ratti Rs. 1677.50 INR\n\t16.25 Ratti Rs. 1787.50 INR\n\t17.25 Ratti Rs. 1897.50 INR\n\t18.25 Ratti Rs. 2007.50 INR\n\t19.25 Ratti Rs. 2117.50 INR\n\t20.25 Ratti Rs. 2227.50 INR\n\t21.25 Ratti Rs. 2337.50 INR",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
+              style:TextStyle(fontWeight:FontWeight.bold,color: Colors.blue),
+                  textAlign: TextAlign.center,
               ),
-            ), //blue
-          ],
+            ], //blue
         );
 
       case 4:
@@ -317,9 +318,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             //blue,center-align
             Text(
               "\t3.25 Ratti Rs. 357.50.00 INR\n\t4.25 Ratti Rs. 467.50 INR\n\t5.25 Ratti Rs. 577.50 INR\n\t6.25 Ratti Rs. 687.50 INR\n\t7.25 Ratti Rs. 797.50 INR\n\t8.25 Ratti Rs. 907.50 INR\n\t9.25 Ratti Rs. 1017.50 INR\n\t10.25 Ratti Rs. 1127.50 INR\n\t11.25 Ratti Rs. 1237.50 INR\n\t12.25 Ratti Rs. 1347.50 INR\n\t13.25 Ratti Rs. 1457.50 INR\n\t14.25 Ratti Rs. 1567.50 INR\n\t15.25 Ratti Rs. 1677.50 INR\n\t16.25 Ratti Rs. 1787.50 INR\n\t17.25 Ratti Rs. 1897.50 INR\n\t18.25 Ratti Rs. 2007.50 INR\n\t19.25 Ratti Rs. 2117.50 INR\n\t20.25 Ratti Rs. 2227.50 INR\n\t21.25 Ratti Rs. 2337.50 INR",
-              style: TextStyle(
+              style: TextStyle(color: Colors.blue,
                 fontWeight: FontWeight.bold,
               ),
+              textAlign: TextAlign.center,
             ), //blue
           ],
         );
@@ -356,7 +358,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             //blue,center-align
             Text(
-                "\t3.25 Ratti Rs. 357.50.00 INR\n\t4.25 Ratti Rs. 467.50 INR\n\t5.25 Ratti Rs. 577.50 INR\n\t6.25 Ratti Rs. 687.50 INR\n\t7.25 Ratti Rs. 797.50 INR\n\t8.25 Ratti Rs. 907.50 INR\n\t9.25 Ratti Rs. 1017.50 INR\n\t10.25 Ratti Rs. 1127.50 INR\n\t11.25 Ratti Rs. 1237.50 INR\n\t12.25 Ratti Rs. 1347.50 INR\n\t13.25 Ratti Rs. 1457.50 INR\n\t14.25 Ratti Rs. 1567.50 INR\n\t15.25 Ratti Rs. 1677.50 INR\n\t16.25 Ratti Rs. 1787.50 INR\n\t17.25 Ratti Rs. 1897.50 INR\n\t18.25 Ratti Rs. 2007.50 INR\n\t19.25 Ratti Rs. 2117.50 INR\n\t20.25 Ratti Rs. 2227.50 INR\n\t21.25 Ratti Rs. 2337.50 INR"), //blue,center-align
+                "\t3.25 Ratti Rs. 357.50.00 INR\n\t4.25 Ratti Rs. 467.50 INR\n\t5.25 Ratti Rs. 577.50 INR\n\t6.25 Ratti Rs. 687.50 INR\n\t7.25 Ratti Rs. 797.50 INR\n\t8.25 Ratti Rs. 907.50 INR\n\t9.25 Ratti Rs. 1017.50 INR\n\t10.25 Ratti Rs. 1127.50 INR\n\t11.25 Ratti Rs. 1237.50 INR\n\t12.25 Ratti Rs. 1347.50 INR\n\t13.25 Ratti Rs. 1457.50 INR\n\t14.25 Ratti Rs. 1567.50 INR\n\t15.25 Ratti Rs. 1677.50 INR\n\t16.25 Ratti Rs. 1787.50 INR\n\t17.25 Ratti Rs. 1897.50 INR\n\t18.25 Ratti Rs. 2007.50 INR\n\t19.25 Ratti Rs. 2117.50 INR\n\t20.25 Ratti Rs. 2227.50 INR\n\t21.25 Ratti Rs. 2337.50 INR",
+              style:TextStyle(color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -391,7 +396,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             //blue,center-align
             Text(
-                "\t3.25 Ratti Rs. 1787.50 INR\n\t4.25 Ratti Rs. 2337.50 INR\n\t5.25 Ratti Rs. 2887.50 INR\n\t6.25 Ratti Rs. 3437.50 INR\n\t7.25 Ratti Rs. 3987.50 INR\n\t8.25 Ratti Rs. 4537.50 INR\n\t9.25 Ratti Rs. 5087.50 INR\n\t10.25 Ratti Rs. 5637.50 INR\n\t11.25 Ratti Rs. 6137.50 INR\n\t12.25 Ratti Rs. 6737.50 INR\n\t13.25 Ratti Rs. 7287.50 INR\n\t14.25 Ratti Rs. 7837.00 INR\n\t15.25 Ratti Rs. 8387.50 INR\n\t16.25 Ratti Rs. 8937.50 INR\n\t17.25 Ratti Rs. 9437.50 INR\n\t18.25 Ratti Rs. 10037.50 INR\n\t19.25 Ratti Rs. 10587.50 INR\n\t20.25 Ratti Rs. 11137.50 INR\n\t21.25 Ratti Rs. 11687.50 INR"), //blue,center-align
+                "\t3.25 Ratti Rs. 1787.50 INR\n\t4.25 Ratti Rs. 2337.50 INR\n\t5.25 Ratti Rs. 2887.50 INR\n\t6.25 Ratti Rs. 3437.50 INR\n\t7.25 Ratti Rs. 3987.50 INR\n\t8.25 Ratti Rs. 4537.50 INR\n\t9.25 Ratti Rs. 5087.50 INR\n\t10.25 Ratti Rs. 5637.50 INR\n\t11.25 Ratti Rs. 6137.50 INR\n\t12.25 Ratti Rs. 6737.50 INR\n\t13.25 Ratti Rs. 7287.50 INR\n\t14.25 Ratti Rs. 7837.00 INR\n\t15.25 Ratti Rs. 8387.50 INR\n\t16.25 Ratti Rs. 8937.50 INR\n\t17.25 Ratti Rs. 9437.50 INR\n\t18.25 Ratti Rs. 10037.50 INR\n\t19.25 Ratti Rs. 10587.50 INR\n\t20.25 Ratti Rs. 11137.50 INR\n\t21.25 Ratti Rs. 11687.50 INR",
+              style:TextStyle(color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -426,7 +434,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             //blue,center-align
             Text(
-                "\t3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "\t3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight:FontWeight.bold,color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
+
           ],
         );
 
@@ -451,7 +463,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             //blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -486,7 +501,10 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             ),
             //blue,center-align
             Text(
-                " 3.25 Ratti Rs. 1137.00 INR\n\t4.25 Ratti Rs. 1487.00 INR\n\t5.25 Ratti Rs. 1837.00 INR\n\t6.25 Ratti Rs. 2187.00 INR\n\t7.25 Ratti Rs. 2537.00 INR\n\t8.25 Ratti Rs. 2887.00 INR\n\t9.25 Ratti Rs. 3237.00 INR\n\t10.25 Ratti Rs. 3587.00 INR\n\t11.25 Ratti Rs. 3937.00 INR\n\t12.25 Ratti Rs. 4287.00 INR\n\t13.25 Ratti Rs. 4637.00 INR\n\t14.25 Ratti Rs. 4987.00 INR\n\t15.25 Ratti Rs. 5337.00 INR\n\t16.25 Ratti Rs. 5687.00 INR\n\t17.25 Ratti Rs. 6037.00 INR\n\t18.25 Ratti Rs. 6387.00 INR\n\t19.25 Ratti Rs. 6737.00 INR\n\t20.25 Ratti Rs. 7087.00 INR\n\t21.25 Ratti Rs. 7437.00 INR"), //blue,center-align
+                " 3.25 Ratti Rs. 1137.00 INR\n\t4.25 Ratti Rs. 1487.00 INR\n\t5.25 Ratti Rs. 1837.00 INR\n\t6.25 Ratti Rs. 2187.00 INR\n\t7.25 Ratti Rs. 2537.00 INR\n\t8.25 Ratti Rs. 2887.00 INR\n\t9.25 Ratti Rs. 3237.00 INR\n\t10.25 Ratti Rs. 3587.00 INR\n\t11.25 Ratti Rs. 3937.00 INR\n\t12.25 Ratti Rs. 4287.00 INR\n\t13.25 Ratti Rs. 4637.00 INR\n\t14.25 Ratti Rs. 4987.00 INR\n\t15.25 Ratti Rs. 5337.00 INR\n\t16.25 Ratti Rs. 5687.00 INR\n\t17.25 Ratti Rs. 6037.00 INR\n\t18.25 Ratti Rs. 6387.00 INR\n\t19.25 Ratti Rs. 6737.00 INR\n\t20.25 Ratti Rs. 7087.00 INR\n\t21.25 Ratti Rs. 7437.00 INR",
+              style:TextStyle(color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -502,12 +520,17 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Garnet Rs. 150.00 Per Ratti"),
             //bold
             Text(
-                "Category : Nesosilicate\n\tChemical formula : The general formula X3Y2(SiO4)3\n\tCrystal habit : Rhombic dodecahedra or cubic\n\tFracture : conchoidal to uneven\n\tCrystal system : \n\t\tCubic rhombic dodecahedron,\n\t\ticositetrahedron\n\tCleavage : Indistinct\n\tMohs scale hardness : 6.5 - 7.5\n\tLuster : vitreous to resinous\n\tStreak : White\n\tSpecific gravity : 3.1 - 4.3\n\tBirefringence : None\n\tPleochroism : None\n\tRefractive index : 1.72 - 1.94"),
+                "Category : Nesosilicate\n\tChemical formula : The general formula X3Y2(SiO4)3\n\tCrystal habit : Rhombic dodecahedra or cubic\n\tFracture : conchoidal to uneven\n\tCrystal system : \n\t\tCubic rhombic dodecahedron,\n\t\ticositetrahedron\n\tCleavage : Indistinct\n\tMohs scale hardness : 6.5 - 7.5\n\tLuster : vitreous to resinous\n\tStreak : White\n\tSpecific gravity : 3.1 - 4.3\n\tBirefringence : None\n\tPleochroism : None\n\tRefractive index : 1.72 - 1.94",
+                 style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -523,12 +546,19 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text(" Citrine Rs. 150.00 Per Ratti. \n\n\t"),
             //bold
             Text(
-                "Category : Silicate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : Colorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\tCrystal system : Orthorhombic\n\tCrystal habit : Prismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638"),
+                "Category : Silicate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : Colorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\tCrystal system : Orthorhombic\n\tCrystal habit : Prismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold ),
+            ),
             //bold,blue,center-align
             Text(
-                "\t3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "\t3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+                  style: TextStyle(fontWeight:FontWeight.bold,color: Colors.blue ),
+                  textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -544,12 +574,19 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Green Amethyst Rs. 250.00 per Ratti."),
             //bold
             Text(
-                "Category : Mineral variety\n\tCrystal system : rhombohedral class 32\n\tCrystal habit : 6-sided prism ending in 6-sided pyramid (typical)\n\tColor : Colorless, Purple, violet\n\tChemical formula : Silica (silicon dioxide, SiO2)\n\tTwinning : Dauphine law, Brazil law, and Japan law\n\tMohs scale hardness : 7–lower in impure varieties\n\tLuster : Vitreous/glossy\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent to translucent\n\tOptical properties : Uniaxial (+)\n\tRefractive index : 1.543–1.553, 1.552–1.554\n\tSolubility : insoluble in common solvents\n\tMelting point : 1650±75 °C\n\tFracture : Conchoidal\n\tCleavage : None"),
+                "Category : Mineral variety\n\tCrystal system : rhombohedral class 32\n\tCrystal habit : 6-sided prism ending in 6-sided pyramid (typical)\n\tColor : Colorless, Purple, violet\n\tChemical formula : Silica (silicon dioxide, SiO2)\n\tTwinning : Dauphine law, Brazil law, and Japan law\n\tMohs scale hardness : 7–lower in impure varieties\n\tLuster : Vitreous/glossy\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent to translucent\n\tOptical properties : Uniaxial (+)\n\tRefractive index : 1.543–1.553, 1.552–1.554\n\tSolubility : insoluble in common solvents\n\tMelting point : 1650±75 °C\n\tFracture : Conchoidal\n\tCleavage : None",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 812.00 INR\n\t4.25 Ratti Rs. 1062.00 INR\n\t5.25 Ratti Rs. 1312.00 INR\n\t6.25 Ratti Rs. 1562.00 INR\n\t7.25 Ratti Rs. 1812.00 INR\n\t8.25 Ratti Rs. 2062.00 INR\n\t9.25 Ratti Rs. 2312.00 INR\n\t10.25 Ratti Rs. 2562.00 INR\n\t11.25 Ratti Rs. 2812.00 INR\n\t12.25 Ratti Rs. 3062.00 INR\n\t13.25 Ratti Rs. 3312.00 INR\n\t14.25 Ratti Rs. 352.00 INR\n\t15.25 Ratti Rs. 3812.00 INR\n\t16.25 Ratti Rs. 4062.00 INR\n\t17.25 Ratti Rs. 4312.00 INR\n\t18.25 Ratti Rs. 4562.00 INR\n\t19.25 Ratti Rs. 4812.00 INR\n\t20.25 Ratti Rs. 10125.00 INR\n\t21.25 Ratti Rs. 10625.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 812.00 INR\n\t4.25 Ratti Rs. 1062.00 INR\n\t5.25 Ratti Rs. 1312.00 INR\n\t6.25 Ratti Rs. 1562.00 INR\n\t7.25 Ratti Rs. 1812.00 INR\n\t8.25 Ratti Rs. 2062.00 INR\n\t9.25 Ratti Rs. 2312.00 INR\n\t10.25 Ratti Rs. 2562.00 INR\n\t11.25 Ratti Rs. 2812.00 INR\n\t12.25 Ratti Rs. 3062.00 INR\n\t13.25 Ratti Rs. 3312.00 INR\n\t14.25 Ratti Rs. 352.00 INR\n\t15.25 Ratti Rs. 3812.00 INR\n\t16.25 Ratti Rs. 4062.00 INR\n\t17.25 Ratti Rs. 4312.00 INR\n\t18.25 Ratti Rs. 4562.00 INR\n\t19.25 Ratti Rs. 4812.00 INR\n\t20.25 Ratti Rs. 10125.00 INR\n\t21.25 Ratti Rs. 10625.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue ),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -565,12 +602,19 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Green Florite Rs. 150.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Halide mineral\n\tCrystal system : Isometric, cF12, SpaceGroup Fm3m, No. 225\n\tCrystal habit : Occurs as well-formed coarse sized crystals also nodular, botryoidal, rarely columnar or fibrous; granular, massive\n\n\tColor : Colorless, white, purple, blue, green, yellow, orange, red, pink, brown, bluish black; commonly zoned\n\n\tChemical formula : CaF2\n\tTwinning : Common on {111}, interpenetrant, flattened\n\tMohs scale hardness : 4 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.175–3.184; to 3.56 if high in rare-earth elements\n\n\tStrunz classification : 03.AB.25\n\tDiaphaneity : Transparent to translucent\n\tOptical properties : Isotropic; weak anomalous anisotropism\n\tRefractive index : 1.433–1.448"),
+                "Category : Halide mineral\n\tCrystal system : Isometric, cF12, SpaceGroup Fm3m, No. 225\n\tCrystal habit : Occurs as well-formed coarse sized crystals also nodular, botryoidal, rarely columnar or fibrous; granular, massive\n\n\tColor : Colorless, white, purple, blue, green, yellow, orange, red, pink, brown, bluish black; commonly zoned\n\n\tChemical formula : CaF2\n\tTwinning : Common on {111}, interpenetrant, flattened\n\tMohs scale hardness : 4 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.175–3.184; to 3.56 if high in rare-earth elements\n\n\tStrunz classification : 03.AB.25\n\tDiaphaneity : Transparent to translucent\n\tOptical properties : Isotropic; weak anomalous anisotropism\n\tRefractive index : 1.433–1.448",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue ),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
       case 17:
@@ -585,12 +629,19 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Green Garnet | Vasonite Rs. 550.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Nesosilicate\n\tCrystal System : Cubic rhombic dodecahedron,icositetrahedron\n\tChemical formula : The general formula X3Y2(SiO4)3\n\tCrystal habit : Rhombic dodecahedra or cubic\n\tFracture : conchoidal to uneven\n\tCrystal system : Cubic rhombic dodecahedron,icositetrahedron\n\tCleavage : Indistinct\n\tMohs scale hardness : 6.5 - 7.5\n\tLuster : vitreous to resinous\n\tStreak : White\n\tSpecific gravity : 3.1 - 4.3\n\tBirefringence : None\n\tPleochroism : None\n\tRefractive index : 1.72 - 1.94Body"),
+                "Category : Nesosilicate\n\tCrystal System : Cubic rhombic dodecahedron,icositetrahedron\n\tChemical formula : The general formula X3Y2(SiO4)3\n\tCrystal habit : Rhombic dodecahedra or cubic\n\tFracture : conchoidal to uneven\n\tCrystal system : Cubic rhombic dodecahedron,icositetrahedron\n\tCleavage : Indistinct\n\tMohs scale hardness : 6.5 - 7.5\n\tLuster : vitreous to resinous\n\tStreak : White\n\tSpecific gravity : 3.1 - 4.3\n\tBirefringence : None\n\tPleochroism : None\n\tRefractive index : 1.72 - 1.94Body",
+              style:TextStyle(fontWeight: FontWeight.bold,),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold,blue,center-align
             Text(
-                "Category : Nesosilicate\n\tCrystal System : Cubic rhombic dodecahedron,icositetrahedron\n\tChemical formula : The general formula X3Y2(SiO4)3\n\tCrystal habit : Rhombic dodecahedra or cubic\n\tFracture : conchoidal to uneven\n\tCrystal system : Cubic rhombic dodecahedron,icositetrahedron\n\tCleavage : Indistinct\n\tMohs scale hardness : 6.5 - 7.5\n\tLuster : vitreous to resinous\n\tStreak : White\n\tSpecific gravity : 3.1 - 4.3\n\tBirefringence : None\n\tPleochroism : None\n\tRefractive index : 1.72 - 1.94"), //blue,center-align
+                "Category : Nesosilicate\n\tCrystal System : Cubic rhombic dodecahedron,icositetrahedron\n\tChemical formula : The general formula X3Y2(SiO4)3\n\tCrystal habit : Rhombic dodecahedra or cubic\n\tFracture : conchoidal to uneven\n\tCrystal system : Cubic rhombic dodecahedron,icositetrahedron\n\tCleavage : Indistinct\n\tMohs scale hardness : 6.5 - 7.5\n\tLuster : vitreous to resinous\n\tStreak : White\n\tSpecific gravity : 3.1 - 4.3\n\tBirefringence : None\n\tPleochroism : None\n\tRefractive index : 1.72 - 1.94",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue ),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -603,10 +654,18 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 " Green Onyx Hard, tough and durable, Green is ideal for carving and engraving or fashioning into beads, spheres and bowls, making paper weights, pen holders, book ends and boxes. Used in inexpensive jewellery Onyx is also used for stone inlay work. With its consecutive layers of different colours, it makes excellent material for cameos and some variegated pieces are used for the carving of multi-coloured figurines. Benefits: Used instead of Emerald, Green Onyx gives good comprehension power and the power to deeply analyse a situation before reacting to it. Mostly used by astrologers to give better business acumen and management skills. Who should wear it? People interested in politics should use it. It restores confidence in life and love. And though it comes in different shades like red, blue, green, yellow, black and white, but astrologically the best suited for wearing, as a ring stone is green onyx.\n\n"),
-            Text("Green Onyx Rs. 150.00 Per Ratti."), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Green Onyx Rs. 150.00 Per Ratti.",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue),
+              textAlign: TextAlign.center,
+            ), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue ),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -619,15 +678,23 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "Green Tourmaline, A beautiful gem available in nearly all the colours and multi-coloured gems are also available. Its deep colours and enchanting lustre makes it one of the most widely used gemstones. Though good quality Green Tourmaline are expensive but still not as expensive as Emeralds and Rubies. Hence, Astrologers often use these as sub-stones. Benefits: Mostly green coloured Tourmaline are used in Astrology. It has a positive effect on the body and mind and does away with all the malefic influences of Rahu, Ketu, Mars and Saturn. Who should wear it? It improves memory and is very useful for children who are weak in studies also recommended for accountant, software professional etc. who are supposed to strain their mind to a very great extent. Greatly beneficial for business people, politicians and administrators."),
-            Text("Green Tourmaline Rs. 1100.00 Per Ratti.\n\n\t"),
+            Text("Green Tourmaline Rs. 1100.00 Per Ratti.\n\n\t",
+            ),
             //bold
             Text(
-                "Category : Cyclosilicate\n\tCrystal system : Trigonal\n\tCrystal habit : \n\t\tParallel and elongated. \n\t\tAcicular prisms, \n\t\tsometimes radiating. \n\t\tMassive. Scattered grains.\n\tColor : \n\t\tMost commonly black, but can range from brown, violet, green, pink, or in a dual-colored pink and green.\n\tMohs scale hardness : 7–7.5\n\tLuster : Vitreous, sometimes resinous\n\tStreak : White\n\tSpecific gravity : 3.06 (+.20 -.06)\n\tRefractive index : 1.635–1.675,, 1.610–1.650\n\tSolubility : insoluble in common solvents\n\tPleochroism : \n\t\tRed Tourmaline: Definite; dark red,light red Green Tourmaline: Strong; dark green, yellow-green Brown Tourmaline: Definite; dark brown, light brown Blue Tourmaline: Strong; dark blue, light blue"),
+                "Category : Cyclosilicate\n\tCrystal system : Trigonal\n\tCrystal habit : \n\t\tParallel and elongated. \n\t\tAcicular prisms, \n\t\tsometimes radiating. \n\t\tMassive. Scattered grains.\n\tColor : \n\t\tMost commonly black, but can range from brown, violet, green, pink, or in a dual-colored pink and green.\n\tMohs scale hardness : 7–7.5\n\tLuster : Vitreous, sometimes resinous\n\tStreak : White\n\tSpecific gravity : 3.06 (+.20 -.06)\n\tRefractive index : 1.635–1.675,, 1.610–1.650\n\tSolubility : insoluble in common solvents\n\tPleochroism : \n\t\tRed Tourmaline: Definite; dark red,light red Green Tourmaline: Strong; dark green, yellow-green Brown Tourmaline: Definite; dark brown, light brown Blue Tourmaline: Strong; dark blue, light blue",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color:Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -643,12 +710,19 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Iolite Rs. 1100.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Silicate mineral\n\tCrystal system : Orthorhombic - Dipyramidal \n\tSpace Group: C ccm\n\tCrystal habit : Pseudo-hexagonal prismatic twins, as imbedded grains, and massive\n\tColor : \n\t\tColorless, Blue, smoky blue, bluish violet; greenish, yellowish brown, gray; colorless to very pale blue in thin section\n\tChemical formula : (Mg,Fe)2Al4Si5O18\n\tTwinning : Common on {110}, {130}, simple, lamellar, cyclical\n\tMohs scale hardness : 7 - 7.5\n\tLuster : Greasy or vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tOptical properties : Usually optically (-), sometimes (+); 2V = 0-90°\n\tRefractive index : 1.527 - 1.560 , 1.532 - 1.574, 1.538 - 1.578\n\tFracture : Conchoidal\n\tCleavage : None"),
+                "Category : Silicate mineral\n\tCrystal system : Orthorhombic - Dipyramidal \n\tSpace Group: C ccm\n\tCrystal habit : Pseudo-hexagonal prismatic twins, as imbedded grains, and massive\n\tColor : \n\t\tColorless, Blue, smoky blue, bluish violet; greenish, yellowish brown, gray; colorless to very pale blue in thin section\n\tChemical formula : (Mg,Fe)2Al4Si5O18\n\tTwinning : Common on {110}, {130}, simple, lamellar, cyclical\n\tMohs scale hardness : 7 - 7.5\n\tLuster : Greasy or vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tOptical properties : Usually optically (-), sometimes (+); 2V = 0-90°\n\tRefractive index : 1.527 - 1.560 , 1.532 - 1.574, 1.538 - 1.578\n\tFracture : Conchoidal\n\tCleavage : None",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -661,10 +735,15 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "Jade, It is a semi-opaque to highly translucent aggregate of juxtaposed, very firmly inter connected, granular crystals. Jade is extremely tenacious and tough. Jade is available in an enormous range of Colours, white, pink, lilac, brown, red, orange, blue, black and many shades of greet. It is used as a gem, cut into cabochons or engraved stones for settings, beads on other ornaments. It is also made into different types of decorative ware or small sculptures. Benefits: Very popular with Chinese of ancient as well as present times it is supposed to bestow long life and peaceful and protects the wearer from accidents, snake bites etc. said to be useful for those who want to have more close relationships with opposite sex. Who should wear it? Lucky gem for those born in the month of May. It is widely recommended to people suffering from allergies and skin problems.\n\n"),
-            Text("Jade Rs. 150.00 Per Ratti"), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Jade Rs. 150.00 Per Ratti",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -672,10 +751,13 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
         return Column(
           children: <Widget>[
             Text("Kyanite"),
-            Text("Kayanite Rs. 1100 Per Ratti"), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Kayanite Rs. 1100 Per Ratti",
+              style:TextStyle(fontWeight: FontWeight.bold),), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -691,12 +773,16 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Lapis Lazuli Rs. 150.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Rock\n\tCrystal system : \n\t\tas lapis is a rock. Lazurite, the main constituent, frequently occurs as dodecahedra\n\tChemical formula : mixture of minerals\n\tStrunz classification : 9.AF.35\n\tColor : \n\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\tCleavage : none\n\tCrystal habit : Compact, massive\n\tMohs scale hardness : 5–5.5\n\tLuster : dull\n\tStreak : light blue\n\tSpecific gravity : 2.7–2.9\n\tRefractive index : 1.5"),
+                "Category : Rock\n\tCrystal system : \n\t\tas lapis is a rock. Lazurite, the main constituent, frequently occurs as dodecahedra\n\tChemical formula : mixture of minerals\n\tStrunz classification : 9.AF.35\n\tColor : \n\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\tCleavage : none\n\tCrystal habit : Compact, massive\n\tMohs scale hardness : 5–5.5\n\tLuster : dull\n\tStreak : light blue\n\tSpecific gravity : 2.7–2.9\n\tRefractive index : 1.5",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -710,12 +796,15 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Lemon Topaz Rs. 200.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Silicate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : \n\t\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\n\tCrystal system : Orthorhombic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638"),
+                "Category : Silicate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : \n\t\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\n\tCrystal system : Orthorhombic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 650.00 INR\n\t4.25 Ratti Rs. 850.00 INR\n\t5.25 Ratti Rs. 1050.00 INR\n\t6.25 Ratti Rs. 1250.00 INR\n\t7.25 Ratti Rs. 1450.00 INR\n\t8.25 Ratti Rs. 1650.00 INR\n\t9.25 Ratti Rs. 1850.00 INR\n\t10.25 Ratti Rs. 2050.00 INR\n\t11.25 Ratti Rs. 2250.00 INR\n\t12.25 Ratti Rs. 4900.00 INR\n\t13.25 Ratti Rs. 5300.00 INR\n\t14.25 Ratti Rs. 5700.00 INR\n\t15.25 Ratti Rs. 6100.00 INR\n\t16.25 Ratti Rs. 6500.00 INR\n\t17.25 Ratti Rs. 6900.00 INR\n\t18.25 Ratti Rs. 7300.00 INR\n\t19.25 Ratti Rs. 7700.00 INR\n\t20.25 Ratti Rs. 8100.00 INR\n\t21.25 Ratti Rs. 8500.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 650.00 INR\n\t4.25 Ratti Rs. 850.00 INR\n\t5.25 Ratti Rs. 1050.00 INR\n\t6.25 Ratti Rs. 1250.00 INR\n\t7.25 Ratti Rs. 1450.00 INR\n\t8.25 Ratti Rs. 1650.00 INR\n\t9.25 Ratti Rs. 1850.00 INR\n\t10.25 Ratti Rs. 2050.00 INR\n\t11.25 Ratti Rs. 2250.00 INR\n\t12.25 Ratti Rs. 4900.00 INR\n\t13.25 Ratti Rs. 5300.00 INR\n\t14.25 Ratti Rs. 5700.00 INR\n\t15.25 Ratti Rs. 6100.00 INR\n\t16.25 Ratti Rs. 6500.00 INR\n\t17.25 Ratti Rs. 6900.00 INR\n\t18.25 Ratti Rs. 7300.00 INR\n\t19.25 Ratti Rs. 7700.00 INR\n\t20.25 Ratti Rs. 8100.00 INR\n\t21.25 Ratti Rs. 8500.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -731,12 +820,16 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Malachite Rs. 150.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Carbonate mineral\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 05.BA.10\n\tColor : \n\t\tBright green, dark green, blackish green, commonly banded in masses; green to yellowish green in transmittedlight\n\n\tCrystal system : prismatic H-M\n\tCrystal habit : \n\t\tMassive, botryoidal, stalactitic, crystals are acicular to tabular prismatic\n\n\tMohs scale hardness : 3.5–4.0\n\tLuster : \n\t\tAdamantine to vitreous; silky if fibrous; dull to earthy if massive\n\tStreak : light green\n\tSpecific gravity : 3.6–4Diaphaneity : Transparent\n\tOptical properties : Biaxial (–)\n\tRefractive index : 1.655, 1.655, 1.909"),
+                "Category : Carbonate mineral\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 05.BA.10\n\tColor : \n\t\tBright green, dark green, blackish green, commonly banded in masses; green to yellowish green in transmittedlight\n\n\tCrystal system : prismatic H-M\n\tCrystal habit : \n\t\tMassive, botryoidal, stalactitic, crystals are acicular to tabular prismatic\n\n\tMohs scale hardness : 3.5–4.0\n\tLuster : \n\t\tAdamantine to vitreous; silky if fibrous; dull to earthy if massive\n\tStreak : light green\n\tSpecific gravity : 3.6–4Diaphaneity : Transparent\n\tOptical properties : Biaxial (–)\n\tRefractive index : 1.655, 1.655, 1.909",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold),
+            ), //blue,center-align
           ],
         );
 
@@ -761,7 +854,8 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
                 "White Opal      Rs. 550.00 Per Ratti\n\n\tFire Opal      Rs. 1100.00 Per Ratti\n\n\tBlack Opal      Rs. 4000.00 Per Ratti"),
             //bold
             Text(
-                "\n\n visit www.astropankaj.com to know :\n\n\tWho should wear an Opal?\n\tBenefits of Wearing an Opal?\n\tMantra for Opal.\n\tHow to wear an Opal?\n\tFinger for Opal.\n\tWhen to wear an Opal?\n\n\n"),
+                "\n\n visit www.astropankaj.com to know :\n\n\tWho should wear an Opal?\n\tBenefits of Wearing an Opal?\n\tMantra for Opal.\n\tHow to wear an Opal?\n\tFinger for Opal.\n\tWhen to wear an Opal?\n\n\n",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             Text(
                 "Opal Stone\n\nColor : \n\t\tYellow, White, Red, Black, Green, Brown, Blue and Coloreless.\n\n\tFracture : Conchoidal\n\tCrystal system : Amorphous\n\tMohs scale hardness : 5.5–6\n\tLuster : waxy\n\tStreak : White\n\tSpecific gravity : 2.15 Refractive index : 1.42–1.43 "), //bold
           ],
@@ -779,10 +873,12 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text(
                 "\n\nPeridot Rs. 1100.00 Per Ratti, 2100.00 Per Ratti.\n\n\tCategory : Carbonate mineral\n\tCrystal symmetry : Orthorhombic dipyramidal\n\tChemical formula : Al2SiO4(F,OH)2\n\tStrunz classification : 9.AF.35\n\tColor : \n\t\tColorless, blue, brown, orange, gray, yellow, green, pink and reddish pink\n\n\tCrystal system : Orthorhombic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 8 (defining mineral)\n\tLuster : Vitreous\n\tStreak : White\n\tSpecific gravity : 3.49–3.57\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.606–1.629, 1.609–1.631, 1.616–1.638"),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 13475.00 INR\n\t13.25 Ratti Rs. 14575.00 INR\n\t14.25 Ratti Rs. 15675.00 INR\n\t15.25 Ratti Rs. 16775.00 INR\n\t16.25 Ratti Rs. 17875.00 INR\n\t17.25 Ratti Rs. 18975.00 INR\n\t18.25 Ratti Rs. 20075.00 INR\n\t19.25 Ratti Rs. 21175.00 INR\n\t20.25 Ratti Rs. 21262.00 INR\n\t21.25 Ratti Rs. 22312.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 13475.00 INR\n\t13.25 Ratti Rs. 14575.00 INR\n\t14.25 Ratti Rs. 15675.00 INR\n\t15.25 Ratti Rs. 16775.00 INR\n\t16.25 Ratti Rs. 17875.00 INR\n\t17.25 Ratti Rs. 18975.00 INR\n\t18.25 Ratti Rs. 20075.00 INR\n\t19.25 Ratti Rs. 21175.00 INR\n\t20.25 Ratti Rs. 21262.00 INR\n\t21.25 Ratti Rs. 22312.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -798,12 +894,15 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("Pink Tourmaline Rs. 1100.00 Per Ratti.\n\n\t"),
             //bold
             Text(
-                "Category : Cyclosilicate\n\tCrystal system : Trigonal\n\tCrystal habit : \n\t\tParallel and elongated. Acicular prisms, sometimes radiating. Massive. Scattered grains.\n\n\tColor : \n\t\tMost commonly black, but can range from brown, violet, green, pink, or in a dual-colored pink and green.\n\n\tMohs scale hardness : 7–7.5\n\tLuster : Vitreous, sometimes resinous\n\tStreak : White\n\tSpecific gravity : 3.06 (+.20 -.06)\n\tRefractive index : 1.635–1.675,, 1.610–1.650\n\tSolubility : insoluble in common solvents\n\tPleochroism :\n\tRed Tourmaline: \n\t\tDefinite; dark red,light red \n\n\tGreen Tourmaline: \n\t\tStrong; dark green, yellow-green \n\n\tBrown Tourmaline: \n\t\tDefinite; dark brown, light brown \n\n\tBlue Tourmaline: \n\t\tStrong; dark blue, light blue"),
+                "Category : Cyclosilicate\n\tCrystal system : Trigonal\n\tCrystal habit : \n\t\tParallel and elongated. Acicular prisms, sometimes radiating. Massive. Scattered grains.\n\n\tColor : \n\t\tMost commonly black, but can range from brown, violet, green, pink, or in a dual-colored pink and green.\n\n\tMohs scale hardness : 7–7.5\n\tLuster : Vitreous, sometimes resinous\n\tStreak : White\n\tSpecific gravity : 3.06 (+.20 -.06)\n\tRefractive index : 1.635–1.675,, 1.610–1.650\n\tSolubility : insoluble in common solvents\n\tPleochroism :\n\tRed Tourmaline: \n\t\tDefinite; dark red,light red \n\n\tGreen Tourmaline: \n\t\tStrong; dark green, yellow-green \n\n\tBrown Tourmaline: \n\t\tDefinite; dark brown, light brown \n\n\tBlue Tourmaline: \n\t\tStrong; dark blue, light blue",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 3575.00 INR\n\t4.25 Ratti Rs. 4675.00 INR\n\t5.25 Ratti Rs. 5775.00 INR\n\t6.25 Ratti Rs. 6875.00 INR\n\t7.25 Ratti Rs. 7975.00 INR\n\t8.25 Ratti Rs. 9075.00 INR\n\t9.25 Ratti Rs. 10175.00 INR\n\t10.25 Ratti Rs. 11275.00 INR\n\t11.25 Ratti Rs. 12375.00 INR\n\t12.25 Ratti Rs. 26950.00 INR\n\t13.25 Ratti Rs. 29150.00 INR\n\t14.25 Ratti Rs. 31350.00 INR\n\t15.25 Ratti Rs. 33550.00 INR\n\t16.25 Ratti Rs. 35750.00 INR\n\t17.25 Ratti Rs. 37950.00 INR\n\t18.25 Ratti Rs. 40150.00 INR\n\t19.25 Ratti Rs. 42350.00 INR\n\t20.25 Ratti Rs. 44550.00 INR\n\t21.25 Ratti Rs. 46750.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -814,10 +913,12 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
                 "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Onyx-Cabochun.jpg?alt=media"),
             Text("Red Onyx (Cabochon)"),
             Image.network(imgurl),
-            Text("Red Onyx Rs. 150.00 Per Ratti."), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Red Onyx Rs. 150.00 Per Ratti.",style:TextStyle(fontWeight: FontWeight.bold),), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -828,10 +929,13 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
                 "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FRed-Onyx-cut.jpg?alt=media"),
             Text("Red Onyx(Cut)"),
             Image.network(imgurl),
-            Text("Red Onyx Rs. 150.00 Per Ratti."), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Red Onyx Rs. 150.00 Per Ratti.",style:TextStyle(fontWeight: FontWeight.bold),), //bold
+            Text("Weight : INR",style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),
+              textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -844,9 +948,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "\n\nRhodolite Garnet is a species of garnet family. It is found in Macon which is located in North Carolina in Cowee Valley.\n\n\t"),
-            Text("Rhodolite Garnet Rs.2100.00 Per Ratti.</b>\n\n"), //bold
+            Text("Rhodolite Garnet Rs.2100.00 Per Ratti.</b>\n\n",
+              style:TextStyle(fontWeight: FontWeight.bold),), //bold
             Text(
-                "Category : Pyrope variety\n\tChemical formula : (Mg,Fe)3Al2(SiO4)3\n\tCleavage : none, may show indistinct parting\n\tColor : light to dark purplish red through reddish purple\n\tCrystal system : cubic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 7 - 7.5\n\tLuster : greasy to vitreous\n\tSpecific gravity : 3.84 (+/- .10)\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.760 (+.010, -.020)"), //bold
+                "Category : Pyrope variety\n\tChemical formula : (Mg,Fe)3Al2(SiO4)3\n\tCleavage : none, may show indistinct parting\n\tColor : light to dark purplish red through reddish purple\n\tCrystal system : cubic\n\tCrystal habit : \n\t\tPrismatic crystals with faces striated parallel to long dimension; also columnar, compact, massive\n\n\tMohs scale hardness : 7 - 7.5\n\tLuster : greasy to vitreous\n\tSpecific gravity : 3.84 (+/- .10)\n\tDiaphaneity : Transparent\n\tOptical properties : Biaxial (+)\n\tRefractive index : 1.760 (+.010, -.020)",
+              style:TextStyle(fontWeight: FontWeight.bold),), //bold
           ],
         );
 
@@ -860,10 +966,12 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text(
                 "Rose Quartz Rs. 150.00 Per Ratti.\n\n\tCategory : Silicate mineral\n\tCrystal symmetry : Trigonal H–M Symbol 32\n\tChemical formula : Silica (silicon dioxide, SiO2)\n\tStrunz classification : 04.DA.05\n\tColor : \n\t\tColorless, From colorless to black, through various colors\n\n\tCrystal system : trapezohedral class 3 2\n\tCrystal habit : \n\t\t6-sided prism ending in 6-sided pyramid (typical), drusy, fine-grained to microcrystalline, massive\n\n\tMohs scale hardness : 7 – lower in impure\n\tLuster : Vitreous – waxy to dull when massive\n\tStreak : White\n\tSpecific gravity : 2.65; variable 2.59–2.63 in impure varieties\n\n\tDiaphaneity : Transparent to nearly opaque\n\tOptical properties : Uniaxial (+)\n\tRefractive index : 1.543–1.545, 1.552–1.554"),
             //bold
-            Text("Weight : INR"),
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold),),
             //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -874,10 +982,13 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "Dhunela, Code: ASP 21(Smoky Topaz)\n\nA brilliant Gem of smoky colour used extensively to ward off evil spirits, Smoky Topaz is especially useful for people facing unfulfilled love. Besides giving one success in love, it is said to protect the wearer from depressions and sleeplessness. Benefits: It has great spiritual, medicinal and super natural power that holds the faith of many and is of immense use to people interested in occult. Also useful in healing eye infections, eye sores, stomach ailments, stomach ulcers, throat infections, giddiness and blood poisoning. Who should wearit? This is a highly recommended colour for research scholars and those who want to acquire a flair for creativity. Quality : Premiu\n\n"),
-            Text("Dhunela Rs. 150.00 Per Ratti."), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Dhunela Rs. 150.00 Per Ratti.",
+              style:TextStyle(fontWeight: FontWeight.bold),), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -890,10 +1001,13 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "Star Ruby is never completely transparent, because the star can only be produced by the presence of needle like inclusions that cause some degree of turbidity. Star rubies are very valuable. The finest star ruby known weighs 138 carats; this is the famous Rosier Reeves star ruby, on display at the Smithsonian Institution in Washington, D.C. The most striking phenomenon of rubies is the development of the six ray star, arranged in perfect symmetry, which shifts its centre, as the stone is moved. It is clearly visible under a single light source such as the sun or a lamp; much less so in diffuse light. If two or more powerful light sources are set close together, as many stars can be seen in the stone. Each light produces its own star, which is basically a reflection. The effect is usually less pronounced in more transparent stones. When the ground colour is ruby red it is known as Star Ruby. Benefits: Used to pep up the internal strength and to ward off tensions, Star Ruby drives away stress related problems like Migraine, Insomnia, and Hysteria etc. Traditionally worn by knights in the battlefields to protect themselves from the enemy. Local tales in Karnataka say that if this is worn as a visible pendant or as a head gear then anyone who faces you, as an enemy looses half his valour to your. It is said that Karna, the son of Sun wore it in his head gear and only after Krishna directed Arjuna to remove the Headgear with his arrow was be able to fight an equal battle with him.\n\n"),
-            Text("Star Ruby Rs. 525.00 Per Ratti"), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Star Ruby Rs. 525.00 Per Ratti",style:TextStyle(fontWeight: FontWeight.bold),), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 1706.00 INR\n\t4.25 Ratti Rs. 2231.00 INR\n\t5.25 Ratti Rs. 2756.00 INR\n\t6.25 Ratti Rs. 3281.00 INR\n\t7.25 Ratti Rs. 3806.00 INR\n\t8.25 Ratti Rs. 4331.00 INR\n\t9.25 Ratti Rs. 4856.00 INR\n\t10.25 Ratti Rs. 5381.00 INR\n\t11.25 Ratti Rs. 5906.00 INR\n\t12.25 Ratti Rs. 12862.00 INR\n\t13.25 Ratti Rs. 13912.00 INR\n\t14.25 Ratti Rs. 14962.00 INR\n\t15.25 Ratti Rs. 16012.00 INR\n\t16.25 Ratti Rs. 17062.00 INR\n\t17.25 Ratti Rs. 18112.00 INR\n\t18.25 Ratti Rs. 19162.00 INR\n\t19.25 Ratti Rs. 20212.00 INR\n\t20.25 Ratti Rs. 21262.00 INR\n\t21.25 Ratti Rs. 22312.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 1706.00 INR\n\t4.25 Ratti Rs. 2231.00 INR\n\t5.25 Ratti Rs. 2756.00 INR\n\t6.25 Ratti Rs. 3281.00 INR\n\t7.25 Ratti Rs. 3806.00 INR\n\t8.25 Ratti Rs. 4331.00 INR\n\t9.25 Ratti Rs. 4856.00 INR\n\t10.25 Ratti Rs. 5381.00 INR\n\t11.25 Ratti Rs. 5906.00 INR\n\t12.25 Ratti Rs. 12862.00 INR\n\t13.25 Ratti Rs. 13912.00 INR\n\t14.25 Ratti Rs. 14962.00 INR\n\t15.25 Ratti Rs. 16012.00 INR\n\t16.25 Ratti Rs. 17062.00 INR\n\t17.25 Ratti Rs. 18112.00 INR\n\t18.25 Ratti Rs. 19162.00 INR\n\t19.25 Ratti Rs. 20212.00 INR\n\t20.25 Ratti Rs. 21262.00 INR\n\t21.25 Ratti Rs. 22312.00 INR",
+              style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -920,12 +1034,17 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "Tiger\'s Eye consists of compact fibers of quartz that has replaced asbestos fibers. The light reflected from the fibers produces a strong sheen or silky appearance, like that of the original asbestos known as \'Chiromancy\'. The result is a series of minor gemstones differing only in their ground Colour and that of mobile reflection. A golden yellow reflection on a brown ground is called a Tiger\'s Eye. It may very from brown and brownish yellow to blue and blue grey. The Colours and clearly fibrous appearance once are normally distinctive. Despite its attractiveness, this material is not very valuable. Benefits: It is normally cut on cabochon, to bring out the chiromancy, but it can be cut into more or less round, polished pieces, for necklaces and pendants. Tiger\'s Eye is also used for carvings, boxes, ashtrays, and other ornamental items, although in these, the fibers are seen as strips of colour. Said to be a Gem that gives courage and self confidence. Widely used in Africa toward off evil eye and to give the wearer victory over his enemies. Who should wear it? The evil spirits stay away for the wearer of this gem. It improves energy and stamina and gives inner initiative and drive. Recommended for those with birth No. 2 or 7.\n\n"),
-            Text("Tiger's Eye Rs. 150.00 Per Ratti"), //bold
+            Text("Tiger's Eye Rs. 150.00 Per Ratti",
+              style:TextStyle(fontWeight: FontWeight.bold),), //bold
             Text(
                 "\n\n\tCategory : Mineral\n\tChemical formula : Silica (silicon dioxide, SiO2)\n\tColor : golden to red-brown\n\tMohs scale hardness : 7.0\n\tLuster : Silky\n\tSpecific gravity : 2.64 – 2.71"),
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,
+            ), //bold,blue,center-align
             Text(
-                " 3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                " 3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -937,10 +1056,11 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Text("White Coral"),
             Image.network(imgurl),
             Text("Body"),
-            Text("Body"), //bold
-            Text("Body"), //bold
-            Text("Weight : INR"), //bold,blue,center-align
-            Text(""), //blue,center-align
+            Text("Body",style:TextStyle(fontWeight: FontWeight.bold)), //bold
+            Text("Body",style:TextStyle(fontWeight: FontWeight.bold)), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //bold,blue,center-align
+            Text("",style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
@@ -953,10 +1073,14 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
             Image.network(imgurl),
             Text(
                 "This is used with considerable success in problems which are difficult to understand by the doctors. This gives a person capacity to speak with authority and its regular facial expression. This also helps in the strength to bear unpleasant happenings and understand the working of other people\'s minds.\n\n"),
-            Text("White Coral Rs. 150.00 Per Ratti."), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("White Coral Rs. 150.00 Per Ratti.",
+              style:TextStyle(color: Colors.blue)), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),textAlign: TextAlign.center,), //bold,blue,center-align
             Text(
-                " 3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                " 3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,
+            ), //blue,center-align
           ],
         );
 
@@ -967,10 +1091,15 @@ class _SemiPreciousGemstonesPageState extends State<SemiPreciousGemstonesPage> {
                 "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FWhite-Rainbow.jpg?alt=media"),
             Text("White Rainbow"),
             Image.network(imgurl),
-            Text("White Rainbow Rs. 150.00 Per Ratti."), //bold
-            Text("Weight : INR"), //bold,blue,center-align
+            Text("White Rainbow Rs. 150.00 Per Ratti.",
+              style:TextStyle(fontWeight: FontWeight.bold)), //bold
+            Text("Weight : INR",
+              style:TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),
+              textAlign: TextAlign.center,), //bold,blue,center-align
             Text(
-                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR"), //blue,center-align
+                "3.25 Ratti Rs. 487.00 INR\n\t4.25 Ratti Rs. 637.00 INR\n\t5.25 Ratti Rs. 787.00 INR\n\t6.25 Ratti Rs. 937.00 INR\n\t7.25 Ratti Rs. 1087.00 INR\n\t8.25 Ratti Rs. 1237.00 INR\n\t9.25 Ratti Rs. 1387.00 INR\n\t10.25 Ratti Rs. 1537.00 INR\n\t11.25 Ratti Rs. 1687.00 INR\n\t12.25 Ratti Rs. 3675.00 INR\n\t13.25 Ratti Rs. 3975.00 INR\n\t14.25 Ratti Rs. 4275.00 INR\n\t15.25 Ratti Rs. 4575.00 INR\n\t16.25 Ratti Rs. 4875.00 INR\n\t17.25 Ratti Rs. 5175.00 INR\n\t18.25 Ratti Rs. 5475.00 INR\n\t19.25 Ratti Rs. 5775.00 INR\n\t20.25 Ratti Rs. 6075.00 INR\n\t21.25 Ratti Rs. 6375.00 INR",
+              style:TextStyle(color: Colors.blue),
+              textAlign: TextAlign.center,), //blue,center-align
           ],
         );
 
