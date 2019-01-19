@@ -139,6 +139,75 @@ class _WesternAstrologyPageState extends State<WesternAstrologyPage> {
             },
             child: Text("Personality Report"),
           ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WesternSinglePage(
+                            predicate: "romantic_personality_report/tropical",
+                          )));
+            },
+            child: Text("Romantic Personality Report"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WesternSinglePage(
+                            predicate:
+                                "personalized_planet_prediction/daily/moon",
+                          )));
+            },
+            child: Text("Personalised Planet Report"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WesternDoublePage(
+                            predicate: "friendship_report/tropical",
+                          )));
+            },
+            child: Text("Friendship Report Horoscope"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WesternDoublePage(
+                            predicate: "karma_destiny_report/tropical",
+                          )));
+            },
+            child: Text("Karma Destiny Report"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WesternDoublePage(
+                            predicate: "love_compatibility_report/tropical",
+                          )));
+            },
+            child: Text("Love Compatibility Report"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WesternSinglePage(
+                        predicate:
+                        "romantic_forecast_report/tropical",
+                      )));
+            },
+            child: Text("Romantic Forecast Report"),
+          ),
+
         ],
       ),
     );
@@ -177,7 +246,7 @@ class _WesternSinglePageState extends State<WesternSinglePage> {
       body: utf8.encode(json.encode(data)),
     );
 
-    //print(resp.body);
+    print(resp.body);
     if (resp.statusCode == 200)
       return json.decode(resp.body);
     else
@@ -298,10 +367,26 @@ class _WesternSinglePageState extends State<WesternSinglePage> {
                         data: results,
                       );
                       break;
+                    case "romantic_personality_report/tropical":
+                      nextWidget = RomanticPersonalityReportPage(
+                        data: results,
+                      );
+                      break;
+                    case "personalized_planet_prediction/daily/sun":
+                      nextWidget = PersonalisedPlanetReportPage(
+                        data: results,
+                      );
+                      break;
+                    case "romantic_forecast_report/tropical":
+                      nextWidget = RomanticForecastPage(
+                        data: results,
+                      );
+                      break;
+
                     default:
                       break;
                   }
-                  //print(nextWidget);
+                  print(nextWidget);
                   if (nextWidget != null)
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => nextWidget));
@@ -363,7 +448,7 @@ class _WesternDoublePageState extends State<WesternDoublePage> {
       body: utf8.encode(json.encode(data)),
     );
 
-    //print(resp.body);
+    print(resp.body);
     if (resp.statusCode == 200)
       return json.decode(resp.body);
     else
@@ -489,6 +574,21 @@ class _WesternDoublePageState extends State<WesternDoublePage> {
                   switch (widget.predicate) {
                     case "synastry_horoscope":
                       nextWidget = SynastryHoroscopePage(
+                        data: results,
+                      );
+                      break;
+                    case "friendship_report/tropical":
+                      nextWidget = FriendshipReportPage(
+                        data: results,
+                      );
+                      break;
+                    case "karma_destiny_report/tropical":
+                      nextWidget = KarmaDestinyReportPage(
+                        data: results,
+                      );
+                      break;
+                    case "love_compatibility_report/tropical":
+                      nextWidget = LoveCompatibilityReportPage(
                         data: results,
                       );
                       break;
@@ -900,10 +1000,10 @@ class TropicalTransitsDailyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -935,10 +1035,10 @@ class TropicalTransitsDailyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -970,10 +1070,10 @@ class TropicalTransitsDailyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1076,10 +1176,10 @@ class TropicalTransitsWeeklyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1111,10 +1211,10 @@ class TropicalTransitsWeeklyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1217,10 +1317,10 @@ class TropicalTransitsMonthlyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1252,10 +1352,10 @@ class TropicalTransitsMonthlyPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1351,10 +1451,10 @@ class SolarPlnetDetailsPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1460,7 +1560,7 @@ class SolarPlanetHousesPage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
         print(data1[j].toString());
@@ -1625,10 +1725,10 @@ class SynastryHoroscopePage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1667,10 +1767,10 @@ class SynastryHoroscopePage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1703,10 +1803,10 @@ class SynastryHoroscopePage extends StatelessWidget {
     List<Widget> ans = [];
     int j = 0;
     //print(j);
-    //print(data1[j]);
+    //data1[j]=="1";
     while (true) {
       try {
-        print(data1[j]);
+        data1[j] == "1";
         j++;
         if (j > 10000) break;
       } catch (e) {
@@ -1790,14 +1890,427 @@ class PersonalityReportPage extends StatelessWidget {
   }
 }
 
+class RomanticPersonalityReportPage extends StatelessWidget {
+  dynamic data;
+
+  RomanticPersonalityReportPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Report",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  children: getReport(data["report"]),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getReport(dynamic data1) {
+    List<Widget> ans = [];
+    int j = 0;
+    //print(j);
+    //data1[j]=="1";
+    while (true) {
+      try {
+        //data1[j]=="1";
+        data1[j] == "1";
+        j++;
+        if (j > 10000) break;
+      } catch (e) {
+        break;
+      }
+    }
+
+    //print(j);
+    for (int i = 0; i < j; i++) {
+      ans.add(
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("${data1[i].toString()}"),
+              Divider(),
+            ],
+          ),
+        ),
+      );
+    }
+    return ans;
+  }
+}
+
+class PersonalisedPlanetReportPage extends StatelessWidget {
+  dynamic data;
+
+  PersonalisedPlanetReportPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Report Date",
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                ),
+                Text(data["report_date"].toString()),
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Report",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  children: getReport(data["personalised_report"]),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getReport(dynamic data1) {
+    List<Widget> ans = [];
+    int j = 0;
+    //print(j);
+    //data1[j]=="1";
+    while (true) {
+      try {
+        //data1[j]=="1";
+        data1[j] == "1";
+        j++;
+        if (j > 10000) break;
+      } catch (e) {
+        break;
+      }
+    }
+
+    //print(j);
+    for (int i = 0; i < j; i++) {
+      ans.add(
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("${data1[i].toString()}"),
+              Divider(),
+            ],
+          ),
+        ),
+      );
+    }
+    return ans;
+  }
+}
+
+class FriendshipReportPage extends StatelessWidget {
+  dynamic data;
+
+  FriendshipReportPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Report",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  children: getReport(data["friendship_report"]),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getReport(dynamic data1) {
+    List<Widget> ans = [];
+    int j = 0;
+    //print(j);
+    //data1[j]=="1";
+    while (true) {
+      try {
+        //data1[j]=="1";
+        data1[j] == "1";
+        j++;
+        if (j > 10000) break;
+      } catch (e) {
+        break;
+      }
+    }
+
+    //print(j);
+    for (int i = 0; i < j; i++) {
+      ans.add(
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("${data1[i].toString()}"),
+              Divider(),
+            ],
+          ),
+        ),
+      );
+    }
+    return ans;
+  }
+}
+
+class KarmaDestinyReportPage extends StatelessWidget {
+  dynamic data;
+
+  KarmaDestinyReportPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Report",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  children: getReport(data["karma_destiny_report"]),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getReport(dynamic data1) {
+    List<Widget> ans = [];
+    int j = 0;
+    //print(j);
+    //data1[j]=="1";
+    while (true) {
+      try {
+        //data1[j]=="1";
+        data1[j] == "1";
+        j++;
+        if (j > 10000) break;
+      } catch (e) {
+        break;
+      }
+    }
+
+    //print(j);
+    for (int i = 0; i < j; i++) {
+      ans.add(
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("${data1[i].toString()}"),
+              Divider(),
+            ],
+          ),
+        ),
+      );
+    }
+    return ans;
+  }
+}
+
+class LoveCompatibilityReportPage extends StatelessWidget {
+  dynamic data;
+
+  LoveCompatibilityReportPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Report",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  children: getReport(data["love_report"]),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getReport(dynamic data1) {
+    List<Widget> ans = [];
+    int j = 0;
+    //print(j);
+    //data1[j]=="1";
+    while (true) {
+      try {
+        //data1[j]=="1";
+        data1[j] == "1";
+        j++;
+        if (j > 10000) break;
+      } catch (e) {
+        break;
+      }
+    }
+
+    //print(j);
+    for (int i = 0; i < j; i++) {
+      ans.add(
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("${data1[i].toString()}"),
+              Divider(),
+            ],
+          ),
+        ),
+      );
+    }
+    return ans;
+  }
+}
+
+class RomanticForecastPage extends StatelessWidget {
+  dynamic data;
+
+  RomanticForecastPage({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Romantic Forecast",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+          Column(
+            children: getReport(data["romantic_forecast"]),
+          )
+        ],
+      ),
+    );
+  }
+
+  List<Widget> getReport(dynamic data1) {
+    List<Widget> ans = [];
+    int j = 0;
+    //print(j);
+    //data1[j]=="1";
+    while (true) {
+      try {
+        //data1[j]=="1";
+        data1[j] == "1";
+        j++;
+        if (j > 10000) break;
+      } catch (e) {
+        break;
+      }
+    }
+
+    //print(j);
+    for (int i = 0; i < j; i++) {
+      ans.add(
+        ComfyBox(
+          color: Colors.lightBlueAccent,
+          child: Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                    "Planet Postition: ${data1[i]["planet_position"].toString()}"),
+                Text("Date: ${data1[i]["date"].toString()}"),
+                Text("Forecast: ${data1[i]["forecast"].toString()}"),
+                Divider(),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+    return ans;
+  }
+}
+
 List<Widget> getMonPhases(dynamic data1) {
   List<Widget> ans = [];
   int j = 0;
   //print(j);
-  //print(data1[j]);
+  //data1[j]=="1";
   while (true) {
     try {
-      print(data1[j]);
+      data1[j] == "1";
       j++;
       if (j > 10000) break;
     } catch (e) {
