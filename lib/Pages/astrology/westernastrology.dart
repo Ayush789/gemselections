@@ -229,7 +229,7 @@ class _WesternSinglePageState extends State<WesternSinglePage> {
   final dateFormat = DateFormat("EEEE, MMMM d, yyyy 'at' h:mma");
   DateTime date;
 
-  Future<Map<String, dynamic>> submitForm(Map<String, dynamic> data) async {
+  Future<dynamic> submitForm(Map<String, dynamic> data) async {
     String url = "https://json.astrologyapi.com/v1/" + widget.predicate;
     //print(data);
     //print(url);
@@ -324,7 +324,7 @@ class _WesternSinglePageState extends State<WesternSinglePage> {
                 "lon": lon_controller.text,
                 "tzone": tzoneController.text,
               };
-              Map<String, dynamic> results = {};
+              dynamic results= {};
               submitForm(data).then((val) {
                 results = val;
                 //print(results);
@@ -449,7 +449,7 @@ class _WesternDoublePageState extends State<WesternDoublePage> {
       s_lon_controller = TextEditingController();
   DateTime s_date = DateTime.now();
 
-  Future<Map<String, dynamic>> submitForm(Map<String, dynamic> data) async {
+  Future<dynamic> submitForm(Map<String, dynamic> data) async {
     String url = "https://json.astrologyapi.com/v1/" + widget.predicate;
     //print(data);
     //print(url);
@@ -626,7 +626,7 @@ class _WesternDoublePageState extends State<WesternDoublePage> {
                 "s_lon": s_lon_controller.text,
                 "s_tzone": s_tzoneController.text,
               };
-              Map<String, dynamic> results = {};
+              dynamic results= {};
               submitForm(data).then((val) {
                 results = val;
                 //print(results);

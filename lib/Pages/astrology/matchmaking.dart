@@ -164,7 +164,7 @@ class _MatchInputPageState extends State<MatchInputPage> {
       female_lon_controller = TextEditingController(),
       female_tzone = TextEditingController();
 
-  Future<Map<String, dynamic>> submitForm(Map<String, dynamic> data) async {
+  Future<dynamic> submitForm(Map<String, dynamic> data) async {
     String url = "https://json.astrologyapi.com/v1/match_" + widget.predicate;
     print(data);
     print(url);
@@ -350,7 +350,7 @@ class _MatchInputPageState extends State<MatchInputPage> {
                   "f_lon": female_lon_controller.text,
                   "f_tzone": female_tzone.text
                 };
-                Map<String, dynamic> results = {};
+                dynamic results= {};
                 submitForm(data).then((val) {
                   results = val;
                   if (results != null) {
