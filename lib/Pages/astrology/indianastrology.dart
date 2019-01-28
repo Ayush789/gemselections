@@ -194,6 +194,115 @@ class _IndianAstrologyPageState extends State<IndianAstrologyPage> {
             },
             child: Text("Current Chardasha"),
           ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "current_chardasha",
+                          )));
+            },
+            child: Text("Sub Chardasha"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "current_chardasha",
+                          )));
+            },
+            child: Text("Sub Sub Chardasha"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "basic_gem_suggestion",
+                          )));
+            },
+            child: Text("Basic Gem Suggestion"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "basic_panchang",
+                          )));
+            },
+            child: Text("Basic Panchang"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "planet_panchang",
+                          )));
+            },
+            child: Text("Planet Panchang"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "major_yogini_dasha",
+                          )));
+            },
+            child: Text("Yogini Dasha"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "numero_report",
+                          )));
+            },
+            child: Text("Numerology Report"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "numero_fav_time",
+                          )));
+            },
+            child: Text("Numerology Favourable Time"),
+          ),
+          FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "numero_place_vastu",
+                          )));
+            },
+            child: Text("Numerology Place Vastu"),
+          ),FlatButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => IndianSinglePage(
+                            predicate: "numero_prediction/daily",
+                          )));
+            },
+            child: Text("Numerology Prediction"),
+          ),
         ],
       ),
     );
@@ -220,7 +329,7 @@ class _IndianSinglePageState extends State<IndianSinglePage> {
   Future<dynamic> submitForm(Map<String, dynamic> data) async {
     String url = "https://json.astrologyapi.com/v1/" + widget.predicate;
     //print(data);
-    //print(url);
+    print(url);
 
     String userid = "601696", APIKey = "8510e537bcc424e154a3860e70e92209";
     String basicauth = "Basic " + base64Encode(utf8.encode("$userid:$APIKey"));
@@ -399,6 +508,51 @@ class _IndianSinglePageState extends State<IndianSinglePage> {
                       break;
                     case "current_chardasha":
                       nextWidget = CurrentCharDasha(
+                        data: results,
+                      );
+                      break;
+                    case "sub_chardasha":
+                      nextWidget = SubCharDasha(
+                        data: results,
+                      );
+                      break;
+                    case "basic_gem_suggestion":
+                      nextWidget = GemstoneSuggestion(
+                        data: results,
+                      );
+                      break;
+                    case "basic_panchang":
+                      nextWidget = BasicPanchang(
+                        data: results,
+                      );
+                      break;
+                    case "planet_panchang":
+                      nextWidget = PlanetPanchang(
+                        data: results,
+                      );
+                      break;
+                    case "major_yogini_dasha":
+                      nextWidget = YoginiDasha(
+                        data: results,
+                      );
+                      break;
+                    case "numero_report":
+                      nextWidget = NumerologyReport(
+                        data: results,
+                      );
+                      break;
+                    case "numero_fav_time":
+                      nextWidget = NumerologyFavourlableTime(
+                        data: results,
+                      );
+                      break;
+                    case "numero_place_vastu":
+                      nextWidget = NumerologyPlaceVastu(
+                        data: results,
+                      );
+                      break;
+                    case "numero_prediction/daily":
+                      nextWidget = NumerologyDailyPrediction(
                         data: results,
                       );
                       break;
@@ -1386,7 +1540,6 @@ class CurrentCharDasha extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(data["sub_sub_dasha"]);
     return Scaffold(
       appBar: AppBar(
         title: Text("Results"),
@@ -1462,6 +1615,461 @@ class CurrentCharDasha extends StatelessWidget {
                     )),
                 Text(
                     "${data["sub_sub_dasha"]["start_date"].toString()} - ${data["sub_sub_dasha"]["end_date"].toString()}"),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class SubCharDasha extends StatelessWidget {
+  dynamic data;
+
+  SubCharDasha({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Major Dasha",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["major_dasha"]["sign_name"],
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["major_dasha"]["duration"].toString()),
+                Text(
+                    "${data["major_dasha"]["start_date"].toString()} - ${data["major_dasha"]["end_date"].toString()}"),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class GemstoneSuggestion extends StatelessWidget {
+  dynamic data;
+
+  GemstoneSuggestion({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightGreenAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Life",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text("Primary Gem : ${data["LIFE"]["name"]}",
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text("Semi Gem : ${data["LIFE"]["semi_gem"]}"),
+                Text("Wear Finger : ${data["LIFE"]["wear_finger"]}"),
+                Text("Weight Caret : ${data["LIFE"]["weight_caret"]}"),
+                Text("Wear Metal : ${data["LIFE"]["wear_metal"]}"),
+                Text("Wear Day : ${data["LIFE"]["wear_day"]}"),
+                Text("Gem Deity: ${data["LIFE"]["gem_deity"]}"),
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Benefic",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text("Primary Gem : ${data["BENEFIC"]["name"]}",
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text("Semi Gem : ${data["BENEFIC"]["semi_gem"]}"),
+                Text("Wear Finger : ${data["BENEFIC"]["wear_finger"]}"),
+                Text("Weight Caret : ${data["BENEFIC"]["weight_caret"]}"),
+                Text("Wear Metal : ${data["BENEFIC"]["wear_metal"]}"),
+                Text("Wear Day : ${data["BENEFIC"]["wear_day"]}"),
+                Text("Gem Deity: ${data["BENEFIC"]["gem_deity"]}"),
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.pinkAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Lucky",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text("Primary Gem : ${data["LUCKY"]["name"]}",
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text("Semi Gem : ${data["LUCKY"]["semi_gem"]}"),
+                Text("Wear Finger : ${data["LUCKY"]["wear_finger"]}"),
+                Text("Weight Caret : ${data["LUCKY"]["weight_caret"]}"),
+                Text("Wear Metal : ${data["LUCKY"]["wear_metal"]}"),
+                Text("Wear Day : ${data["LUCKY"]["wear_day"]}"),
+                Text("Gem Deity: ${data["LUCKY"]["gem_deity"]}"),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class BasicPanchang extends StatelessWidget {
+  dynamic data;
+
+  BasicPanchang({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Day",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["day"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Tithi",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["tithi"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Yog",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["yog"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Nakshatra",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["nakshatra"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Karan",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["karan"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Sunrise",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["sunrise"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Sunset",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["sunset"].toString(),
+                    style: TextStyle(fontWeight: FontWeight.bold))
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class PlanetPanchang extends StatelessWidget {
+  dynamic data;
+
+  PlanetPanchang({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView.builder(
+        itemBuilder: (c, i) => ComfyBox(
+              color: Colors.lightBlueAccent,
+              child: Column(
+                children: <Widget>[
+                  Text(data[i]["name"],
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
+                      )),
+                  Text("Full Degree : ${data[i]["fullDegree"].toString()}"),
+                  Text("Norm Degree : ${data[i]["normDegree"].toString()}"),
+                  Text("Is Retro : ${data[i]["isRetro"]}"),
+                  Text("Sign Lord : ${data[i]["sign_lord"]}"),
+                  Text("Nakshatra : ${data[i]["nakshatra"]}"),
+                  Text("Nakshatra Lord : ${data[i]["nakshatra_lord"]}"),
+                ],
+              ),
+            ),
+        itemCount: data.length,
+      ),
+    );
+  }
+}
+
+class YoginiDasha extends StatelessWidget {
+  dynamic data;
+
+  YoginiDasha({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView.builder(
+        itemBuilder: (c, i) => ComfyBox(
+              color: Colors.lightBlueAccent,
+              child: Column(
+                children: <Widget>[
+                  Text(data[i]["dasha_name"],
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
+                      )),
+                  Text("Start Date : ${data[i]["start_date"].toString()}"),
+                  Text("End Date : ${data[i]["end_date"].toString()}"),
+                  Text("Duration : ${data[i]["duration"].toString()}"),
+                ],
+              ),
+            ),
+        itemCount: data.length,
+      ),
+    );
+  }
+}
+
+class NumerologyReport extends StatelessWidget {
+  dynamic data;
+
+  NumerologyReport({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(data["title"],
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["description"]),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class NumerologyFavourlableTime extends StatelessWidget {
+  dynamic data;
+
+  NumerologyFavourlableTime({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(data["title"],
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["description"]),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class NumerologyPlaceVastu extends StatelessWidget {
+  dynamic data;
+
+  NumerologyPlaceVastu({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text(data["title"],
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+                Text(data["description"]),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class NumerologyDailyPrediction extends StatelessWidget {
+  dynamic data;
+
+  NumerologyDailyPrediction({this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Results"),
+      ),
+      body: ListView(
+        children: [
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Prediction",style : TextStyle(fontSize:18.0,fontWeight:FontWeight.bold,)),
+                Text(data["prediction"]),
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Lucky Color",style : TextStyle(fontSize:18.0,fontWeight:FontWeight.bold,)),
+                Text(data["lucky_color"]),
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Lucky Number",style : TextStyle(fontSize:18.0,fontWeight:FontWeight.bold,)),
+                Text(data["lucky_number"]),
+              ],
+            ),
+          ),
+          ComfyBox(
+            color: Colors.lightBlueAccent,
+            child: Column(
+              children: <Widget>[
+                Text("Prediction Date",style : TextStyle(fontSize:18.0,fontWeight:FontWeight.bold,)),
+                Text(data["prediction_date"]),
               ],
             ),
           ),
