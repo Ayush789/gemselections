@@ -201,13 +201,11 @@ class _WesternAstrologyPageState extends State<WesternAstrologyPage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => WesternSinglePage(
-                        predicate:
-                        "romantic_forecast_report/tropical",
-                      )));
+                            predicate: "romantic_forecast_report/tropical",
+                          )));
             },
             child: Text("Romantic Forecast Report"),
           ),
-
         ],
       ),
     );
@@ -256,43 +254,61 @@ class _WesternSinglePageState extends State<WesternSinglePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Enter Details"),
+      ),
       body: ListView(
         children: <Widget>[
-          TextFormField(
-            controller: nameController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: "Name",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: nameController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Name",
+              ),
             ),
           ),
-          DateTimePickerFormField(
-            format: dateFormat,
-            decoration: InputDecoration(
-              labelText: "Date and Time of Birth",
-              border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blue)),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: DateTimePickerFormField(
+              format: dateFormat,
+              decoration: InputDecoration(
+                labelText: "Date and Time of Birth",
+                border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blue)),
+              ),
+              onChanged: (dt) => setState(() => date = dt),
             ),
-            onChanged: (dt) => setState(() => date = dt),
           ),
-          TextFormField(
-            textInputAction: TextInputAction.next,
-            controller: lat_controller,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-                border: OutlineInputBorder(), labelText: "Birth Latitude"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              textInputAction: TextInputAction.next,
+              controller: lat_controller,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: "Birth Latitude"),
+            ),
           ),
-          TextFormField(
-            textInputAction: TextInputAction.next,
-            controller: lon_controller,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-                border: OutlineInputBorder(), labelText: "Birth Longitude"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              textInputAction: TextInputAction.next,
+              controller: lon_controller,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: "Birth Longitude"),
+            ),
           ),
-          TextFormField(
-            controller: tzoneController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: "Time Zone",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: tzoneController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Time Zone",
+              ),
             ),
           ),
           RaisedButton(
@@ -458,88 +474,135 @@ class _WesternDoublePageState extends State<WesternDoublePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Enter Details"),
+      ),
       body: ListView(
         children: <Widget>[
           Container(
+            padding: EdgeInsets.all(8.0),
             color: Colors.blue,
-            child: Text("Enter Primary Data"),
+            child: Text("Enter Primary Data",
+              style: TextStyle(
+              color: Colors.white,
+              fontSize: 16.0,
+            ),),
           ),
-          TextFormField(
-            controller: p_nameController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: "Name",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: p_nameController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Name",
+              ),
             ),
           ),
-          DateTimePickerFormField(
-            format: dateFormat,
-            decoration: InputDecoration(
-              labelText: "Date and Time of Birth",
-              border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blue)),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: DateTimePickerFormField(
+              format: dateFormat,
+              decoration: InputDecoration(
+                labelText: "Date and Time of Birth",
+                border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blue)),
+              ),
+              onChanged: (dt) => setState(() => p_date = dt),
             ),
-            onChanged: (dt) => setState(() => p_date = dt),
           ),
-          TextFormField(
-            textInputAction: TextInputAction.next,
-            controller: p_lat_controller,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-                border: OutlineInputBorder(), labelText: "Birth Latitude"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              textInputAction: TextInputAction.next,
+              controller: p_lat_controller,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: "Birth Latitude"),
+            ),
           ),
-          TextFormField(
-            textInputAction: TextInputAction.next,
-            controller: p_lon_controller,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-                border: OutlineInputBorder(), labelText: "Birth Longitude"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              textInputAction: TextInputAction.next,
+              controller: p_lon_controller,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: "Birth Longitude"),
+            ),
           ),
-          TextFormField(
-            controller: p_tzoneController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: "Time Zone",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: p_tzoneController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Time Zone",
+              ),
+              keyboardType: TextInputType.number,
             ),
           ),
           Container(
+            padding: EdgeInsets.all(8.0),
             color: Colors.blue,
-            child: Text("Enter Secondary Data"),
-          ),
-          TextFormField(
-            controller: s_nameController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: "Name",
+            child: Text(
+              "Enter Secondary Data",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16.0,
+              ),
             ),
           ),
-          DateTimePickerFormField(
-            format: dateFormat,
-            decoration: InputDecoration(
-              labelText: "Date and Time of Birth",
-              border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blue)),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: s_nameController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Name",
+              ),
             ),
-            onChanged: (dt) => setState(() => s_date = dt),
           ),
-          TextFormField(
-            textInputAction: TextInputAction.next,
-            controller: s_lat_controller,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-                border: OutlineInputBorder(), labelText: "Birth Latitude"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: DateTimePickerFormField(
+              format: dateFormat,
+              decoration: InputDecoration(
+                labelText: "Date and Time of Birth",
+                border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blue)),
+              ),
+              onChanged: (dt) => setState(() => s_date = dt),
+            ),
           ),
-          TextFormField(
-            textInputAction: TextInputAction.next,
-            controller: s_lon_controller,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-                border: OutlineInputBorder(), labelText: "Birth Longitude"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              textInputAction: TextInputAction.next,
+              controller: s_lat_controller,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: "Birth Latitude"),
+            ),
           ),
-          TextFormField(
-            controller: s_tzoneController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: "Time Zone",
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              textInputAction: TextInputAction.next,
+              controller: s_lon_controller,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: "Birth Longitude"),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              controller: s_tzoneController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Time Zone",
+              ),
+              keyboardType: TextInputType.number,
             ),
           ),
           RaisedButton(

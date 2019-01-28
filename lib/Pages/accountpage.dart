@@ -208,7 +208,6 @@ Future<FirebaseUser> signIn() async {
 
 void signOut() {
   googleSignIn.signOut();
-
   print("Signed Out");
 }
 
