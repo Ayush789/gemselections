@@ -156,7 +156,7 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
 
     void _onFocusChange(){
     // debugPrint("Focus: "+_focus.hasFocus.toString());
-      Future.delayed(const Duration(milliseconds: 600), () {
+      Future.delayed(const Duration(milliseconds: 1000), () {
                     setState(() {
                      _scrollController.animateTo(_scrollController.position.maxScrollExtent,
                        curve: Curves.easeInOut,
