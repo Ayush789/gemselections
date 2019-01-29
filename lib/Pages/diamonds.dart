@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/jwellry.dart';
 //import 'package:gemselections/Pages/jwellry.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:gemselections/Pages/imageurl.dart';
 
 class DiamondPage extends StatefulWidget {
   @override
@@ -15,6 +17,15 @@ class _DiamondPageState extends State<DiamondPage> {
     return MainScaffold(
       body: ListView(
         children: <Widget>[
+           FlatButton(
+            onPressed: () {},
+            padding: EdgeInsets.all(2.0),
+            child: Image.asset(
+              "assets/landing/diamonds.jpeg",
+              fit: BoxFit.fitWidth,
+            ),
+          ),
+          Padding(padding: EdgeInsets.only(top: 10.0),),
           FlatButton(
             onPressed: () {
               LaunchYoutube("qUomm4C7b-M");
@@ -40,14 +51,7 @@ class _DiamondPageState extends State<DiamondPage> {
               ],
             ),
           ),
-          FlatButton(
-            onPressed: () {},
-            padding: EdgeInsets.all(2.0),
-            child: Image.asset(
-              "assets/landing/diamonds.jpeg",
-              fit: BoxFit.fitWidth,
-            ),
-          ),
+         
           DescriptionTextWidget(
             text:
                 "Diamond is a solid form of carbon with a diamond cubic crystal structure. At room temperature and pressure it is metastable and graphite is the stable form, but diamond almost never converts to graphite. Diamond is renowned for its superlative physical qualities, most of which originate from the strong covalent bonding between its atoms. In particular, it has the highest hardness and thermal conductivity of any bulk material. Those properties determine the major industrial applications of diamond in cutting and polishing tools and the scientific applications in diamond knives and diamond anvil cells. Because of its extremely rigid lattice, diamond can be contaminated by very few types of impurities, such as boron and nitrogen. Small amounts of defects or impurities (about one per million of lattice atoms) color diamond blue (boron), yellow (nitrogen), brown (lattice defects), green (radiation exposure), purple, pink, orange or red. Diamond also has relatively high optical dispersion (ability to disperse light of different colors). Most natural diamonds have ages between 1 billion and 3.5 billion years. Most were formed at depths of 150 to 250 kilometers (93 to 155 mi) in the Earth's mantle, although a few have come from as deep as 800 kilometers (500 mi). Under high pressure and temperature, carbon-containing fluids dissolved minerals and replaced them with diamonds. Much more recently (tens to hundreds of million years ago), they were carried to the surface in volcanic eruptions and deposited in igneous rocks known as kimberlites and lamproites.Synthetic diamonds can be produced in a high pressure, high temperature method (HPHT) which approximately simulates the conditions in the Earth's mantle. An alternative, and completely different growth technique is chemical vapor deposition (CVD). Diamond simulants are non-diamond materials that resemble real diamonds in appearance and many properties. These include cubic zirconia and silicon carbide. Special gemological techniques have been developed to distinguish natural diamonds, synthetic diamonds, and diamond simulants.",
@@ -154,24 +158,28 @@ Widget DualBoxes(double w, BuildContext context) {
                 //Navigator.push(context, MaterialPageRoute(builder: (context)=>JwelleryPage()));
               },
               color: Colors.white,
-              child: ConstrainedBox(
-                constraints:
-                    BoxConstraints(minHeight: w / 2, maxWidth: w / 2 - 20),
-                child: Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      Image.network(
-                        "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FSolitaire-Rings.jpg?alt=media&token=9f156095-83a3-47e5-a676-13869d2a640d",
-                        height: w / 2 - 25,
-                      ),
-                      Container(
-                          padding: EdgeInsets.all(5.0),
-                          child: Text(
-                            "Solitre Ring",
-                            style: TextStyle(fontSize: 15.0),
-                          )),
-                    ],
+              child: GestureDetector(
+                onTap: ()=>Navigator.push(context,
+                MaterialPageRoute(builder: (context) => JwelleryPage())),
+                              child: ConstrainedBox(
+                  constraints:
+                      BoxConstraints(minHeight: w / 2, maxWidth: w / 2 - 20),
+                  child: Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        Image.network(
+                          "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FSolitaire-Rings.jpg?alt=media&token=9f156095-83a3-47e5-a676-13869d2a640d",
+                          height: w / 2 - 25,
+                        ),
+                        Container(
+                            padding: EdgeInsets.all(5.0),
+                            child: Text(
+                              "Solitre Ring",
+                              style: TextStyle(fontSize: 15.0),
+                            )),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -186,23 +194,26 @@ Widget DualBoxes(double w, BuildContext context) {
               //padding: EdgeInsets.all(10.0),
               onPressed: () {},
               color: Colors.white,
-              child: ConstrainedBox(
-                constraints:
-                    BoxConstraints(minHeight: w / 2, maxWidth: w / 2 - 20),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Image.network(
-                      "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLoose-Solitair.jpg?alt=media&token=4da2088b-8c01-4fb4-b451-3e34ac9fb577",
-                      height: w / 2 - 25,
-                    ),
-                    Container(
-                        padding: EdgeInsets.all(5.0),
-                        child: Text(
-                          "Loose Solitre",
-                          style: TextStyle(fontSize: 15.0),
-                        )),
-                  ],
+              child: GestureDetector(
+                onTap: ()=>launchRubyIdent(),
+                              child: ConstrainedBox(
+                  constraints:
+                      BoxConstraints(minHeight: w / 2, maxWidth: w / 2 - 20),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Image.network(
+                        "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FLoose-Solitair.jpg?alt=media&token=4da2088b-8c01-4fb4-b451-3e34ac9fb577",
+                        height: w / 2 - 25,
+                      ),
+                      Container(
+                          padding: EdgeInsets.all(5.0),
+                          child: Text(
+                            "Loose Solitre",
+                            style: TextStyle(fontSize: 15.0),
+                          )),
+                    ],
+                  ),
                 ),
               ),
             ),

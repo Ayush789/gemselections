@@ -7,6 +7,9 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:gemselections/main.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:gemselections/Pages/imageurl.dart';
+
+
 
 class JwelleryPage extends StatefulWidget {
   @override
@@ -20,7 +23,7 @@ class _JwelleryPageState extends State<JwelleryPage> {
       body: ListView(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(8.0),
+            // padding: EdgeInsets.all(4.0),
             child: FlatButton(
               onPressed: () {
                 Navigator.push(
@@ -30,7 +33,44 @@ class _JwelleryPageState extends State<JwelleryPage> {
               },
               child: Column(
                 children: <Widget>[
-                  Image.asset("assets/category_create_your_own_cewellery.png"),
+                     Container(
+            padding: EdgeInsets.symmetric(vertical: 10.0),
+            child: GestureDetector(
+              child: FadeInImage(
+                placeholder: AssetImage(placeholder),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2FGem%20selections%20App.jpeg?alt=media&token=811ed36e-f562-4501-9321-c970e5c771b1"),
+              ),
+              onTap: () => launchYoutube(mobile_app_video),
+            ),
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 20.0,
+                  offset: new Offset(5.0, 15.0),
+                ),
+              ],
+            ),
+          ),
+
+          Container(
+            padding: EdgeInsets.only(top: 10.0),
+            child: Column(
+              children: <Widget>[
+              Text("Why to buy Jwellery from Gem Selections App?\n\n",
+              style: TextStyle(fontWeight: FontWeight.bold,
+              fontSize: 15.0,
+              color: Colors.blue[00]),
+              textAlign: TextAlign.center,),
+              Text("1. You can design your own jewellery using our app.\n"),
+              Text("2. Gem Selections is the only organisation in India to sell Govt. Lab Certified GemStones, Diamonds and Jewellery.\n"),
+              Text("3. Buy Jewellery at real - time Gold and Silver rates using the Gem Selectiolns App.\n"),
+            ],),
+          ),
+                  Card(
+                    elevation: 10.0,
+                    child: Image.asset("assets/category_create_your_own_cewellery.png")),
                 ],
               ),
             ),
@@ -44,13 +84,15 @@ class _JwelleryPageState extends State<JwelleryPage> {
               },
               child: Column(
                 children: <Widget>[
-                  Image.asset("assets/category_diamond_jewellery.png"),
+                  Card(
+                    elevation: 10.0,
+                    child: Image.asset("assets/category_diamond_jewellery.png")),
                 ],
               ),
             ),
           ),
           Container(
-              padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: FlatButton(
               onPressed: () {
                 Navigator.push(
@@ -60,7 +102,9 @@ class _JwelleryPageState extends State<JwelleryPage> {
               },
               child: Column(
                 children: <Widget>[
-                  Image.asset("assets/category_gem_studded_jewellery.png"),
+                  Card(
+                    elevation: 10.0,
+                    child: Image.asset("assets/category_gem_studded_jewellery.png")),
                 ],
               ),
             ),
@@ -78,7 +122,9 @@ class _JwelleryPageState extends State<JwelleryPage> {
               },
               child: Column(
                 children: <Widget>[
-                  Image.asset("assets/category_victorian_jewellery_.png"),
+                  Card(
+                    elevation: 10.0,
+                    child: Image.asset("assets/category_victorian_jewellery_.png")),
                 ],
               ),
             ),
@@ -99,10 +145,181 @@ class JewelleryViewPage extends StatefulWidget {
 }
 
 class _JewelleryViewPageState extends State<JewelleryViewPage> {
+
+
+  void _showDialog(AsyncSnapshot snap,int index){
+
+      FocusNode _focus = new FocusNode();
+
+    ScrollController _scrollController = new ScrollController();
+    PageController _pageController = new PageController(initialPage: index);
+
+    void _onFocusChange(){
+    // debugPrint("Focus: "+_focus.hasFocus.toString());
+      Future.delayed(const Duration(milliseconds: 600), () {
+                    setState(() {
+                     _scrollController.animateTo(_scrollController.position.maxScrollExtent,
+                       curve: Curves.easeInOut,
+                          duration: Duration(seconds: 1));
+                    });
+                  });
+    
+  }
+
+       _focus.addListener(_onFocusChange);
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Center(
+          child: Container(
+            // height: MediaQuery.of(context).size.height/1.5,
+            // width: MediaQuery.of(context).size.width/1.1,
+            child: AlertDialog(
+              
+                content: PageView.builder(
+                  controller: _pageController,
+                  itemBuilder: (context, position){
+                    return  SingleChildScrollView(
+                      controller: _scrollController,
+                 child: Container(
+                     child: Column(
+             children: <Widget>[
+               Image.network(
+                     snap.data.data[widget.type][position],
+                   ),
+             Padding(padding: EdgeInsets.only(top: 10.0),),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: (){
+                      _pageController.animateToPage(position-1,
+                       curve: Curves.easeInOut,
+                          duration: Duration(seconds: 1));
+                    },
+                                      child: Icon(Icons.arrow_left,
+                    size: 50,
+                    color: Colors.black54,),
+                  ),
+                  GestureDetector(
+                    onTap: (){
+                      _scrollController.animateTo(_scrollController.position.maxScrollExtent,
+                       curve: Curves.easeInOut,
+                          duration: Duration(seconds: 1));
+                    },
+                    child: Text("Image No.")),
+                  GestureDetector(
+                      onTap: (){
+                      _pageController.animateToPage(position+1,
+                       curve: Curves.easeInOut,
+                          duration: Duration(seconds: 1));
+                    },
+                                      child: Icon(Icons.arrow_right,
+                    size: 50,
+                    color: Colors.black54,),
+                  )
+                ],
+              ),
+              GestureDetector(
+                 onTap: (){
+                  Future.delayed(const Duration(milliseconds: 600), () {
+                    setState(() {
+                      _scrollController.animateTo(_scrollController.position.maxScrollExtent,
+                          curve: Curves.easeInOut,
+                          duration: Duration(seconds: 1));
+                    });
+                  });
+                 },
+                   child: Container(
+                  child: Form(       
+                           child: Theme(
+                           data: ThemeData(
+                             inputDecorationTheme: InputDecorationTheme(
+                               labelStyle: TextStyle(
+                                 color: Colors.orange,
+                               )
+                             )
+                           ) ,
+                                 child: Padding(
+
+                   padding: EdgeInsets.symmetric(horizontal:5.0),
+                              child: Column(
+
+                             children: <Widget>[
+
+                               TextFormField(
+                                 focusNode: _focus,
+                                 autofocus: true,
+                                   decoration: InputDecoration(
+             labelText: "Enter Name"
+                                   
+                                   ),
+                                   keyboardType: TextInputType.text,
+                                  
+                                 ),
+
+                                TextFormField(
+                   decoration: InputDecoration(
+             labelText: "Enter Email"
+                   ),
+                   keyboardType: TextInputType.emailAddress,
+                               ),
+                                 TextFormField(
+                                 decoration: InputDecoration(
+             labelText: "Enter Phone No"
+                                 ),
+                                 keyboardType: TextInputType.number,
+                               ),
+                                 Container(
+             height: 100,
+             child: TextFormField(
+             decoration: InputDecoration(
+                           labelText: "Remark (if any)"
+             ),
+             keyboardType: TextInputType.text,
+                               ),
+                                 ),
+                               
+                               
+
+                               Padding(
+                                 padding: EdgeInsets.only(top: 10.0),
+                               ),
+
+                               MaterialButton(
+                                 child: Text("Request Price",
+                                 style: TextStyle(color: Colors.white),),
+                                 elevation: 4.0,
+                                 color: Colors.orange,
+                                 onPressed: ()=>{},
+                               )
+                             ],
+                           ),
+                                 ),
+                           ),
+             ),
+                ),
+              ),
+             ],
+                     ),
+                   ),
+                 );
+                  },
+                  itemCount: 11,
+                )
+              ),
+          ),
+        );
+      }
+    );
+  }
   @override
   Widget build(BuildContext context) {
     DocumentReference ref =
         Firestore.instance.collection("AppData").document("Jewellery");
+        // final ref = FirebaseStorage.instance.ref().child('jewellery-images/victorian');
+        
     double w = MediaQuery.of(context).size.width;
 
     return MainScaffold(
@@ -115,15 +332,21 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
                 if (snap.connectionState == ConnectionState.done) {
                   print(snap.data.data);
                   return GridView.count(
-                    padding: EdgeInsets.all(0.0),
-                    crossAxisCount: 3,
+                    padding: EdgeInsets.only(top: 10.0),
+                    crossAxisCount: 2,
                     shrinkWrap: true,
                     children: List.generate(snap.data.data[widget.type].length,
                         (index) {
-                      return Container(
-                        child: Image.network(
-                          snap.data.data[widget.type][index],
-                          height: w / 2,
+                      return 
+                      GestureDetector(
+                        onTap: ()=> _showDialog(snap, index),
+                                              child: Card(
+                                                child: Container(
+                            margin: EdgeInsets.symmetric(vertical: 10.0),
+                            child: Image.network(
+                              snap.data.data[widget.type][index],
+                            ),
+                          ),
                         ),
                       );
                     }),
