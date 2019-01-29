@@ -23,7 +23,17 @@ List<String> precious_you_link = [
   'GVOcqJeG5iM'
 ];
 
+String mobile_app_video = "ztD0h3PTkQc";
+
 void LaunchYoutube(String id) async {
+  if (await canLaunch("vnd.youtube://" + id)) {
+    await launch("vnd.youtube://" + id);
+  } else {
+    print("Cannot launch " + id);
+  }
+}
+
+void launchYoutube(String id) async {
   if (await canLaunch("vnd.youtube://" + id)) {
     await launch("vnd.youtube://" + id);
   } else {
@@ -34,7 +44,7 @@ void LaunchYoutube(String id) async {
 void launchRubyIdent() async {
   const url = 'https://www.gemselections.in/ruby-identification.htm';
   if (await canLaunch(url)) {
-    await launch(url);
+    await launch(url, forceSafariVC: true, forceWebView: true);
   } else {
     throw 'Could not launch $url';
   }
