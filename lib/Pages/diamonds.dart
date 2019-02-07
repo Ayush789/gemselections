@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/jwellry.dart';
 //import 'package:gemselections/Pages/jwellry.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
+import 'package:gemselections/Pages/webView.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:gemselections/Pages/imageurl.dart';
 
@@ -15,6 +16,7 @@ class _DiamondPageState extends State<DiamondPage> {
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
     return MainScaffold(
+      
       body: ListView(
         children: <Widget>[
            FlatButton(
@@ -195,7 +197,12 @@ Widget DualBoxes(double w, BuildContext context) {
               onPressed: () {},
               color: Colors.white,
               child: GestureDetector(
-                onTap: ()=>launchRubyIdent(),
+                onTap: (){
+                  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => WebViewGem()),
+  );
+                },
                               child: ConstrainedBox(
                   constraints:
                       BoxConstraints(minHeight: w / 2, maxWidth: w / 2 - 20),
