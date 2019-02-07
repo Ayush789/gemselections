@@ -23,7 +23,61 @@ List<String> precious_you_link = [
   'GVOcqJeG5iM'
 ];
 
-String mobile_app_video = "ztD0h3PTkQc";
+String mobile_app_video    = "ztD0h3PTkQc";
+String victorian_jewellery = "3ipwkl_tGzI";
+String gemStuddedJewellery = "1k7gaSAvbiU";
+String diamondJewellery    = "okVOrm2cM6s";
+
+List<String> jewel_victorian            = List<String>.generate(136, (i)=>"VJ 9346${(i+1).toString().padLeft(3,'0')}");
+List<String> diamond_Studded            = List<String>.generate(14 , (i)=> "DSAG 474589${(i+1).toString().padLeft(2,'0')}");
+List<String> diamond_sets               = List<String>.generate(81 , (i)=> "DJS 71290${(i+1).toString().padLeft(2,'0')}");
+List<String> diamond_rings              = List<String>.generate(96 , (i)=> "DR 2140${(i+1).toString().padLeft(2,'0')}");
+List<String> diamond_nose_pins          = List<String>.generate(22 , (i)=> "DNS 8710${(i+1).toString().padLeft(2,'0')}");
+List<String> jewel_gemStudded_sets      = List<String>.generate(54 , (i)=> "GSJS 16490${(i+1).toString().padLeft(2,'0')}");
+List<String> jewel_gemStudded_bracelets = List<String>.generate(37 , (i)=> "GSB 49830${(i+1).toString().padLeft(2,'0')}");
+
+var jewel_gemStudded_rings     = ['GSE 5982103',
+                                  'GSE 5983001',
+                                  'GSE 5983002',
+                                  'GSE 5983003',
+                                  'GSE 5983003',
+                                  ];
+
+var jewel_gemStudded_tops      = ['GSE 5982103',
+                                  'GSE 5982103',
+                                  'GSE 5982103',
+                                  'GSE 5982103',
+                                  ];
+
+var jewel_gemStudded_pendants  = ['GSP3192002',
+                                  'GSP3192003',
+                                  'GSP3192004',
+                                  'GSP3192005',
+                                  ];
+
+
+var diamond_pendants           = ['DP 3981001',
+                                  'DP 3981002',
+                                  'DP 3981003',
+                                  'DP 3981004'
+                                  ];
+
+var diamond_tops               = ['DJT 5310001',
+                                  'DJT 5310002',
+                                  'DJT 5310003',
+                                  'DJT 5310004'
+                                  ];
+
+var diamond_bracelets          = ['DP 3981001',
+                                  'DP 3981002',
+                                  'DP 3981003',
+                                  'DP 3981004'
+                                  ];
+
+var diamond_studs              = ['DSS 1009001',
+                                  'DSS 1009002',
+                                  'DSS 1009003',
+                                  'DSS 1009004'];
 
 void LaunchYoutube(String id) async {
   if (await canLaunch("vnd.youtube://" + id)) {
@@ -44,7 +98,7 @@ void launchYoutube(String id) async {
 void launchRubyIdent() async {
   const url = 'https://www.gemselections.in/ruby-identification.htm';
   if (await canLaunch(url)) {
-    await launch(url, forceSafariVC: true, forceWebView: true);
+    await launch(url, forceSafariVC: true, forceWebView: true, );
   } else {
     throw 'Could not launch $url';
   }

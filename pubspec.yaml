@@ -28,6 +28,7 @@ dependencies:
   carousel_slider: ^1.0.1
   datetime_picker_formfield: ^0.1.7
   http:
+  flutter_webview_plugin:
 
 
 dev_dependencies:
@@ -51,6 +52,7 @@ flutter:
     - assets/appbar/bar.jpg
 
     - assets/gemstones/gemstonesbanner.png
+    - assets/placeholder.png
 
     - assets/landing/astrology.jpeg
     - assets/landing/diamonds.jpeg
