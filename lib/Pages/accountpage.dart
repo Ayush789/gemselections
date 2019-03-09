@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-//import 'package:flutter_facebook_login/flutter_facebook_login.dart';
+import 'package:gemselections/Pages/notifications.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -15,6 +14,12 @@ class AccountPage extends StatefulWidget {
 }
 
 class _AccountPageState extends State<AccountPage> {
+  @override
+  void initState() {
+    super.initState();
+    try {} catch (e) {}
+  }
+
   @override
   Widget build(BuildContext context) {
     if (user != null) {
@@ -55,7 +60,12 @@ class _AccountPageState extends State<AccountPage> {
                 child: Text("Give Feedback."),
               ),
               FlatButton(
-                onPressed: () => {},
+                onPressed: () async {
+                  await signOut();
+                  setState(() {
+                    user = null;
+                  });
+                },
                 child: Text("Sign Out"),
               ),
             ],
@@ -126,7 +136,6 @@ class _ReadLaterPageState extends State<ReadLaterPage> {
         body: FutureBuilder<DocumentSnapshot>(
       future: ref.get(),
       builder: (context, snap) {
-        //print("0 ${snap.data.data}");
         if (snap.data != null) {
           print("1");
           if (snap.data.data != null) {
@@ -227,8 +236,17 @@ Future<FirebaseUser> signInGoogle() async {
   FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithGoogle(
       idToken: googleSignInAuthentication.idToken,
       accessToken: googleSignInAuthentication.accessToken);
-
   print("Signed in as ${firebaseUser.displayName} uid ${firebaseUser.uid}");
+  print("Saving File");
+
+  saveUser(firebaseUser.uid);
+
+  print("User Saved");
+
+  String data = await getSavedUser();
+
+  print("Data: $data");
+
   return firebaseUser;
 }
 
@@ -247,11 +265,23 @@ Future<FirebaseUser> signInFacebook() async {
       break;
   }
   */
+  print("Saving File");
+
+  saveUser(firebaseUser.uid);
+
+  print("User Saved");
+
+  String data = await getSavedUser();
+
+  print("Data: $data");
+
   return firebaseUser;
 }
 
 void signOut() {
   googleSignIn.signOut();
+  saveUser("0");
+  FirebaseAuth.instance.signOut();
   print("Signed Out");
 }
 
