@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/imageurl.dart';
-import 'package:gemselections/Pages/mainpage.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:gemselections/main.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-void showItemDialog(Map<String, dynamic> message) {
+Future<String> getSavedUser() async {
+  SharedPreferences pref = await SharedPreferences.getInstance();
+  return pref.getString("UID");
+}
+
+Future saveUser(String Uid) async {
+  SharedPreferences pref = await SharedPreferences.getInstance();
+  print("saving $Uid");
+  pref.setString("UID", Uid);
+}
+
+Future showItemDialog(Map<String, dynamic> message) async {
+  String uid = await getSavedUser();
+
   print("Got Message ${message["data"]}");
 
   switch (message["data"]["type"]) {
@@ -45,6 +59,10 @@ void showItemDialog(Map<String, dynamic> message) {
                   ),
                   onPressed: () async {
                     if (await canLaunch(message["data"]["url"])) {
+                      DocumentReference ref = Firestore.instance
+                          .collection("ReadLater")
+                          .document(uid);
+                      await ref.updateData({message["data"]["id"]: "1"});
                       launch(message["data"]["url"]);
                     } else {
                       print("Cannot launch ${message["data"]["url"]}");
@@ -93,6 +111,10 @@ void showItemDialog(Map<String, dynamic> message) {
                     style: TextStyle(color: Colors.white),
                   ),
                   onPressed: () async {
+                    DocumentReference ref = Firestore.instance
+                        .collection("ReadLater")
+                        .document(uid);
+                    await ref.updateData({message["data"]["vidid"]: "1"});
                     launchYoutube(message["data"]["vidid"]);
                     Navigator.pop(notifkey.currentContext);
                   },
@@ -105,18 +127,16 @@ void showItemDialog(Map<String, dynamic> message) {
 }
 
 Future navigateToItemDetail(Map<String, dynamic> message) async {
-  //print("Got Message ${message["url"]}");
-
   switch (message["type"]) {
     case "article":
-                if (await canLaunch(message["url"])) {
-                  launch(message["url"]);
-                } else {
-                  print("Cannot launch ${message["url"]}");
-                }
-    break;
+      if (await canLaunch(message["url"])) {
+        launch(message["url"]);
+      } else {
+        print("Cannot launch ${message["url"]}");
+      }
+      break;
     case "video":
-                launchYoutube(message["vidid"]);
+      launchYoutube(message["vidid"]);
       break;
   }
 /*
