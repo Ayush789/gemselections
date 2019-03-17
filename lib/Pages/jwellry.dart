@@ -9,6 +9,8 @@ import 'package:gemselections/main.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:gemselections/Pages/imageurl.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 
 
 
@@ -172,11 +174,11 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
     void _onFocusChange(){
     // debugPrint("Focus: "+_focus.hasFocus.toString());
       Future.delayed(const Duration(milliseconds: 500), () {
-                    setState(() {
+                    // setState(() {
                      _scrollController.animateTo(_scrollController.position.maxScrollExtent,
                        curve: Curves.easeInOut,
                           duration: Duration(seconds: 1));
-                    });
+                    // });
                   });
     
   }
@@ -201,9 +203,14 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
                  child: Container(
                      child: Column(
              children: <Widget>[
-               Image.network(
-                     snap.data.data[widget.type][position],
-                   ),
+              //  Image.network(
+              //        snap.data.data[widget.type][position],
+              //      ),
+              CachedNetworkImage(
+                  imageUrl: snap.data.data[widget.type][position],
+                  placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                  errorWidget: Icon(Icons.error),
+                ),
              Padding(padding: EdgeInsets.only(top: 10.0),),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -335,7 +342,7 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
                             'Email'     : _email.text,
                             'Phone No.' : _phone.text,
                             'Remarks'   : _remarks.text,
-                          });
+                          },context);
                           } else{
                             setState(() {
                              _autoValidate = true; 
@@ -372,66 +379,76 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
     double w = MediaQuery.of(context).size.width;
 
     return MainScaffold(
-      body: ListView(
-        children: <Widget>[
-          widget.type == 'Victorian'?
-           Container(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            margin: EdgeInsets.symmetric(horizontal: 10.0),
-            child: GestureDetector(
-              child: FadeInImage(
-                placeholder: AssetImage(placeholder),
-                image: NetworkImage(
-                    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2FVictorian%20Jewellery.jpeg?alt=media&token=578e6020-f56e-4c2f-a786-aa4e2d912ecd"),
-              ),
-              onTap: () => launchYoutube(victorian_jewellery),
-            ),
-         decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black38,
-                  blurRadius: 20.0,
-                  offset: new Offset(2.0, 7.0),
+      body: SingleChildScrollView(
+              child: Column(
+          // addAutomaticKeepAlives: true,
+          children: <Widget>[
+            widget.type == 'Victorian'?
+             Container(
+              padding: EdgeInsets.symmetric(vertical: 10.0),
+              margin: EdgeInsets.symmetric(horizontal: 10.0),
+              child: GestureDetector(
+                child: FadeInImage(
+                  placeholder: AssetImage(placeholder),
+                  image: NetworkImage(
+                      "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2FVictorian%20Jewellery.jpeg?alt=media&token=578e6020-f56e-4c2f-a786-aa4e2d912ecd"),
                 ),
-              ],
-            ),
-          ):
-          Padding(padding: EdgeInsets.only(top: 5),),
-          FutureBuilder(
-              builder: (context, snap) {
-                if (snap.connectionState == ConnectionState.done) {
-                  print(snap.data.data);
-                  return GridView.count(
-                    physics: ClampingScrollPhysics(),
-                    padding: EdgeInsets.only(top: 10.0),
-                    crossAxisCount: 2,
-                    shrinkWrap: true,
-                    children: List.generate(snap.data.data[widget.type].length,
-            (index) {
-          return 
-          GestureDetector(
-            onTap: ()=> _showDialog(snap, index, snap.data.data[widget.type].length ),
-                                  child: Card(
-                                    child: Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0),
-                child: Image.network(
-                  snap.data.data[widget.type][index],
+                onTap: () => launchYoutube(victorian_jewellery),
+              ),
+           decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black38,
+                    blurRadius: 20.0,
+                    offset: new Offset(2.0, 7.0),
+                  ),
+                ],
+              ),
+            ):
+            Padding(padding: EdgeInsets.only(top: 5),),
+            FutureBuilder(
+                builder: (context, snap) {
+                  if (snap.connectionState == ConnectionState.done) {
+                    print(snap.data.data);
+                    return GridView.count(
+                      
+                      physics: ClampingScrollPhysics(),
+                      padding: EdgeInsets.only(top: 10.0),
+                      crossAxisCount: 2,
+                      shrinkWrap: true,
+                      children: List.generate(snap.data.data[widget.type].length,
+              (index) {
+            return 
+            GestureDetector(
+              onTap: ()=> _showDialog(snap, index, snap.data.data[widget.type].length ),
+                                    child: Card(
+                                      child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  child: 
+                  CachedNetworkImage(
+                    imageUrl: snap.data.data[widget.type][index],
+                    placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                    errorWidget: Icon(Icons.error),
+                  )
+                  // child: Image.network(snap.data.data[widget.type][index]),
                 ),
               ),
-            ),
-          );
-                    }),
-                  );
-                } else {
-                  return Center(child: CircularProgressIndicator());
-                }
-              },
-              future: ref.get(),
-            )
-        ],
+            );
+                      }),
+                    );
+          
+                  } else {
+                    return Center(child: CircularProgressIndicator());
+                  }
+                },
+                future: ref.get(),
+              )
+          ],
+        ),
       ),
     );
   }
+  
 }
 
 class CreateYourOwnJewelleryPage extends StatefulWidget {
@@ -769,28 +786,34 @@ class _GemStuddedJewelleryPageState extends State<GemStuddedJewelleryPage> {
                                                   'https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/jewellery-images%2Fgem-studded%2Fbracelets%2FGSB%204983001.png?alt=media&token=c75603dc-f6ac-452d-a00c-e7316838f03c']; 
 
                         return GestureDetector(
-                           child: Card(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: <Widget>[
-                                // Padding(padding: EdgeInsets.only(top: 5.0),),
-                                Container(child: Image.network(gemStuddedImageUrl[index]),
-                                height: MediaQuery.of(context).size.width/2.5,
-                                ),
-                                Text(imageName[index])
-                              ],
+                        child: Card(
+                         child: Column(
+                           mainAxisSize: MainAxisSize.min,
+                           children: <Widget>[
+                             // Padding(padding: EdgeInsets.only(top: 5.0),),
+                             Container(
+                              //  child: Image.network(gemStuddedImageUrl[index]),
+                             child: CachedNetworkImage(
+                  imageUrl: gemStuddedImageUrl[index],
+                  placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                  errorWidget: Icon(Icons.error),
+                ),
+                             height: MediaQuery.of(context).size.width/2.5,
+                             ),
+                             Text(imageName[index])
+                           ],
+                         ),
                             ),
-                          ),
-                          onTap: (){
-                             Navigator.push(
+                            onTap: (){
+                          Navigator.push(
                    context,
                    MaterialPageRoute(
                        builder: (context) => JewelleryViewPage(
-                             type: pageName[index],
-                             orderId: pageData[index],
-                           )));
-                          },
-                        );
+                          type: pageName[index],
+                          orderId: pageData[index],
+                        )));
+                            },
+                          );
                       })
 
               )
@@ -861,7 +884,13 @@ class _DiamondJewelleryPageState extends State<DiamondJewelleryPage> {
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
                                 // Padding(padding: EdgeInsets.only(top: 5.0),),
-                                Container(child: Image.network(gemStuddedImageUrl[index]),
+                                Container(
+                                  // child: Image.network(gemStuddedImageUrl[index]),
+                                  child: CachedNetworkImage(
+                  imageUrl: gemStuddedImageUrl[index],
+                  placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                  errorWidget: Icon(Icons.error),
+                ),
                                 height: MediaQuery.of(context).size.width/2.5,
                                 ),
                                 Text(imageName[index])

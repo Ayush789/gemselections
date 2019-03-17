@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/diamonds.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
@@ -160,10 +161,18 @@ class GemButton extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.network(
-                Imgurl,
-                //height: 100.0,
+              // Image.network(
+              //   Imgurl,
+              //   //height: 100.0,
+              //   width: 150.0,
+              // ),
+              Container(
                 width: 150.0,
+                child: CachedNetworkImage(
+                    imageUrl: Imgurl,
+                    placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                    errorWidget: Icon(Icons.error),
+                  ),
               ),
               Text(Title),
               Text(SubTitle),

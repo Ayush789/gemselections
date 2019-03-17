@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
@@ -7,25 +8,25 @@ List<Bracelet> gemstones = [
     Title: "Rudraksha Mala",
     ImageUrl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-bracelet1.jpg?alt=media",
-    DialogText: "Dialog Text 1",
+    DialogText: "Rudraksha Bracelet\nRs1100.00\n\n\tThe birth of son in the family gives it strength and continuity. The couples who desire that a son should be born to them should wear it. This not only helps in birth of a male offspring but also helps in giving his long life and strength.\n\n\n\tThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras.\n\nRs. 1100.00",
   ),
   Bracelet(
     Title: "Do Mukhi Rudraksha Mala",
     ImageUrl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudrakshabracelet.jpg?alt=media",
-    DialogText: "Dialog Text 1",
+    DialogText: "Two Mukhi Rudraksha Bracelet\n\n\tThis fulfills desires and cuts down the problems and impediments created by the Government or superiors. It raises a person to a very high level and leadership qualities are developed by its constant use\n\n\n\tThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras.\n\nRs.Rs. 1000.00",
   ),
   Bracelet(
     Title: "Three Mukhi Rudraksha Bracelet",
     ImageUrl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fseven-mukhi-rudraksha-bracelet.jpg?alt=media",
-    DialogText: "Dialog Text 1",
+    DialogText: "Three Mukhi Rudraksha Bracelet\n\n\tThis fulfills desires and cuts down the problems and impediments created by the Government or superiors. It raises a person to a very high level and leadership qualities are developed by its constant use.\n\n\n\tThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras.\n\nRs. 1000.00",
   ),
   Bracelet(
     Title: "Pearl and Rudraksha Combination",
     ImageUrl:
     "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-pearl-bracelet.jpg?alt=media",
-    DialogText: "Dialog Text 1",
+    DialogText: "Rudraksha Pearl Combination\n\n\tThis string is Natural Fresh Water Pearls. Pearl beads are very good for chanting the name of Vishnu and all his incarnations. It improves the glow in the skin and makes it vibrant. It improves the natural beauty of the wearer. This string improves the imagination, power of expression and the skill of handling people.\n\n\tThis is a rosary which is used to chant the name of Lord Shiva. It gives peace of mind ,controls the blood pressure and also strengthens the mind. In Ayurveda this is used to cure epilepsy .This mala is widely used to awaken the Kundalini Shakti .\n\n\tThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras.\n\nRs. 501.00",
   ),
 ];
 
@@ -42,11 +43,23 @@ class _BraceletPageState extends State<BraceletPage>
     return RudrakshScaffold(
       body: ListView(
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child:Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-pearl-bracelet.jpg?alt=media&token=2199a086-b44e-4474-894b-1dacd6423bb3"),
+          Container(
+            child: CachedNetworkImage(
+                imageUrl: "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-banner.jpg?alt=media",
+                 placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                 errorWidget: Icon(Icons.error),
+              ),
+              decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 20.0,
+                  offset: new Offset(2.0, 7.0),
+                ),
+              ],
+            ),
           ),
-
+         Padding(padding: EdgeInsets.only(top: 10.0),),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
@@ -99,7 +112,7 @@ class Bracelet extends StatelessWidget {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        content: Text(DialogText),
+                        content: SingleChildScrollView(child: Text(DialogText)),
                       );
                     });
               },

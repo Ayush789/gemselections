@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/imageurl.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
@@ -15,24 +16,40 @@ class _YugalPageState extends State<YugalPage> {
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: <Widget>[
-            Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-banner.jpg?alt=media"),
-            Text("Yugal Yantras",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25.0),textAlign: TextAlign.center,),
+            Container(
+            child: CachedNetworkImage(
+                imageUrl: "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-banner.jpg?alt=media",
+                 placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                 errorWidget: Icon(Icons.error),
+              ),
+              decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 20.0,
+                  offset: new Offset(2.0, 7.0),
+                ),
+              ],
+            ),
+          ),
+          Padding(padding: EdgeInsets.only(top: 10.0),),
+            Text("Yugal Yantras",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25.0, fontStyle: FontStyle.italic),textAlign: TextAlign.center,),
+            Padding(padding: EdgeInsets.only(top: 10.0),),
+             Text(
+              "Aakarshan Vriddhi Yantra",
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17.0),
+            ),
+            //bold
+            Text(
+              "\u20B9 6000.00",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             Card(
               elevation: 2.0,
               child: Image.network(
                   "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Faakarshanvriddhiyantra.jpg?alt=media"),
             ),
-            Text(
-              "Aakarshan Vriddhi Yantra",
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17.0),
-            ),
-            //bold
-
-            Text(
-              "\u20B9 6000.00",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
+           
             Text(
                 "\nAakarshan Vriddhi Yantra. (AVY08) Cleopatra was known to wear magnets on her body and that helped her to attract the opposite sex. Seven Mukhi Rudraksha is manifestation of Kamdev and pearl is the Gem of Beauty these there in. Combination can gives you an unfore advantage in attracting the opposite sex and retaining it. Men and Women of all age groups can use it. Advantageously\n\nThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras.\n\n"),
             Text(

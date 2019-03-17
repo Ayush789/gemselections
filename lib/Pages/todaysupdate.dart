@@ -23,9 +23,10 @@ class _TodaysUpdateState extends State<TodaysUpdate> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
+                    Padding(padding: EdgeInsets.only(top: 50.0),),
                     Text(
                       "Todays Update",
-                      style: TextStyle(fontSize: 30.0),
+                      style: TextStyle(fontSize: 30.0, fontStyle: FontStyle.italic),
                     )
                   ],
                 ),

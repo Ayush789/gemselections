@@ -200,7 +200,7 @@ Widget DualBoxes(double w, BuildContext context) {
                 onTap: (){
                   Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => WebViewGem()),
+    MaterialPageRoute(builder: (context) => WebViewGem(url: "https://www.gemselections.in/ruby-identification.htm")),
   );
                 },
                               child: ConstrainedBox(
