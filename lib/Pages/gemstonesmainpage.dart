@@ -19,17 +19,41 @@ class _GemStonesMainPageState extends State<GemStonesMainPage> {
     return MainScaffold(
       body: ListView(
         children: <Widget>[
+          // FlatButton(
+          //   onPressed: () {
+          //     Navigator.push(context,
+          //         MaterialPageRoute(builder: (context) => GemstonesPage()));
+          //   },
+          //   padding: EdgeInsets.all(2.0),
+          //   child: Image.asset(
+          //     "assets/landing/gemstones.jpeg",
+          //     fit: BoxFit.fitWidth,
+          //   ),
+          // ),
           FlatButton(
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => GemstonesPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/preciousgemstone.jpg",
               fit: BoxFit.fitWidth,
             ),
           ),
+          // FlatButton(
+          //   onPressed: () {
+          //     Navigator.push(
+          //         context,
+          //         MaterialPageRoute(
+          //             builder: (context) => SemiPreciousGemstonesPage()));
+          //   },
+          //   padding: EdgeInsets.all(2.0),
+          //   child: Image.asset(
+          //     "assets/landing/gemstones.jpeg",
+          //     fit: BoxFit.fitWidth,
+          //   ),
+          // ),
           FlatButton(
             onPressed: () {
               Navigator.push(
@@ -37,9 +61,9 @@ class _GemStonesMainPageState extends State<GemStonesMainPage> {
                   MaterialPageRoute(
                       builder: (context) => SemiPreciousGemstonesPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/semi_pre.jpg",
               fit: BoxFit.fitWidth,
             ),
           ),
@@ -50,9 +74,9 @@ class _GemStonesMainPageState extends State<GemStonesMainPage> {
                   MaterialPageRoute(
                       builder: (context) => TriangularGemstonesPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/triangular.jpg",
               fit: BoxFit.fitWidth,
             ),
           ),
@@ -61,9 +85,9 @@ class _GemStonesMainPageState extends State<GemStonesMainPage> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => CabochonGemsPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/Cabochon.jpg",
               fit: BoxFit.fitWidth,
             ),
           ),
@@ -74,34 +98,48 @@ class _GemStonesMainPageState extends State<GemStonesMainPage> {
                   MaterialPageRoute(
                       builder: (context) => CarvedGemstonesPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/carvedGem.jpeg",
               fit: BoxFit.fitWidth,
             ),
           ),
-          FlatButton(
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => GemstonesPage()));
-            },
-            padding: EdgeInsets.all(2.0),
-            child: Image.asset(
-              "assets/landing/gemstones.jpeg",
-              fit: BoxFit.fitWidth,
-            ),
-          ),
+          
+          // FlatButton(
+          //   onPressed: () {
+          //     Navigator.push(context,
+          //         MaterialPageRoute(builder: (context) => BirthStonesPage()));
+          //   },
+          //   padding: EdgeInsets.all(2.0),
+          //   child: Image.asset(
+          //     "assets/landing/gemstones.jpeg",
+          //     fit: BoxFit.fitWidth,
+          //   ),
+          // ),
           FlatButton(
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => BirthStonesPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/birthstone.jpg",
               fit: BoxFit.fitWidth,
             ),
           ),
+          // FlatButton(
+          //   onPressed: () {
+          //     Navigator.push(
+          //         context,
+          //         MaterialPageRoute(
+          //             builder: (context) => AbhimantranMainPage()));
+          //   },
+          //   padding: EdgeInsets.all(2.0),
+          //   child: Image.asset(
+          //     "assets/landing/gemstones.jpeg",
+          //     fit: BoxFit.fitWidth,
+          //   ),
+          // ),
           FlatButton(
             onPressed: () {
               Navigator.push(
@@ -109,9 +147,9 @@ class _GemStonesMainPageState extends State<GemStonesMainPage> {
                   MaterialPageRoute(
                       builder: (context) => AbhimantranMainPage()));
             },
-            padding: EdgeInsets.all(2.0),
+            padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Image.asset(
-              "assets/landing/gemstones.jpeg",
+              "assets/landing/abhimantran.jpg",
               fit: BoxFit.fitWidth,
             ),
           ),

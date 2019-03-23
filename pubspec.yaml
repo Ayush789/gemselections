@@ -25,13 +25,18 @@ dependencies:
   google_sign_in: ^3.2.4
   url_launcher: ^4.0.2
   firebase_storage: ^1.0.4
-  carousel_slider: ^1.0.1
+  carousel_slider: ^1.1.0
   datetime_picker_formfield: ^0.1.7
   http: 0.12.0
-  firebase_messaging: 3.0.1
+  firebase_messaging: ^4.0.0+1
   flutter_webview_plugin:
-  path_provider: 0.5.0
+  cached_network_image: ^0.7.0
+  webview_flutter:
+  connectivity:
+  # path_provider: ^0.5.0
   shared_preferences: 0.4.3
+  path_provider: ^0.5.0+1
+  flutter_cache_manager: ^0.3.1
 
 dev_dependencies:
   flutter_test:
@@ -55,14 +60,20 @@ flutter:
 
     - assets/gemstones/gemstonesbanner.png
 
+    - assets/landing/
+    - assets/landing/knowledgeBase.jpeg
+    - assets/landing/raveena.jpg
     - assets/landing/astrology.jpeg
-    - assets/landing/diamonds.jpeg
+    # - assets/landing/diamonds.jpeg
     - assets/landing/gemstones.jpeg
     - assets/landing/jwellery.jpeg
     - assets/landing/rudraksh.jpeg
     - assets/landing/reasons.jpg
     - assets/landing/inthenews.jpg
     - assets/landing/offers.jpg
+    - assets/landing/inmedia.jpg
+
+    - assets/products/diamondsbanner.jpg
 
     - assets/products/diamondsbanner.jpg
 

@@ -108,7 +108,7 @@ class _BirthStonesPageState extends State<BirthStonesPage> {
               child: Text(
                 " To find more about the gems mentioned here,please refer to semi-precious gems section in app.",
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
                   color: Colors.red,
                   fontSize: 17.0,
                 ),
@@ -120,7 +120,7 @@ class _BirthStonesPageState extends State<BirthStonesPage> {
               style: TextStyle(fontSize: 17.0, fontStyle: FontStyle.italic),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 10.0),
+              padding: const EdgeInsets.only(bottom: 5.0),
               child: DropdownButtonFormField(
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(5.0),
@@ -131,6 +131,7 @@ class _BirthStonesPageState extends State<BirthStonesPage> {
                     ),
                   ),
                 ),
+                
                 items: [
                   DropdownMenuItem<int>(
                     value: 0,
@@ -196,6 +197,7 @@ class _BirthStonesPageState extends State<BirthStonesPage> {
                 value: v1,
               ),
             ),
+            Padding(padding: EdgeInsets.only(top: 10.0),),
             Text(
                 "Buying Birthstones is a not a very easy task for a layman as the Quality and Originality of Birthstones is something which is difficult to assess for any person who is not a trained Gemologist.\n\nNow let us try to understand these two points in detail:\n\nThe quality of Gemstones implies the three things:\n\n "),
             Text(

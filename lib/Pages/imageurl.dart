@@ -6,6 +6,14 @@ String imgurl =
 String placeholder = "assets/gemstones/gemstonesbanner.png";
 // String placeholder = "assets/placeholder.png";
 
+  List<String> semi_pre_video_pics = ['https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2Fsemi_pre%2Famethyst.jpeg?alt=media&token=9e35c833-91eb-4ed8-8a51-0e2ffe73175f',
+                                      'https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2Fsemi_pre%2Faquamarine.jpeg?alt=media&token=02cc0c33-681d-4f6c-905f-175cd1ae5c65',
+                                      ''];
+
+  List<String> semi_pre_video_link = ['NkrqeqeUGdM'
+                                      'UPWJJumif4w',
+                                      ];
+
 List<String> precious_you_link = [
   'GT6d2ShkyQ4',
   'KC4t6RbeB9Y',

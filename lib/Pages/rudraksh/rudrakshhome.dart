@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gemselections/Pages/imageurl.dart';
 import 'package:gemselections/Pages/readmore.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 
 class RudrakshHomePage extends StatefulWidget {
   @override
@@ -15,14 +18,47 @@ class _RudrakshHomePageState extends State<RudrakshHomePage> {
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: <Widget>[
-            Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-banner.jpg?alt=media"),
+            Container(
+            child: CachedNetworkImage(
+                imageUrl: "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-banner.jpg?alt=media",
+                 placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                 errorWidget: (context, url, error) =>Icon(Icons.error),
+              ),
+              decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 20.0,
+                  offset: new Offset(2.0, 7.0),
+                ),
+              ],
+            ),
+          ),
+            
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("\"The Message\"Rudraksh-From Lord Shiva with Love"),
+              child: Center(child: Text("\"The Message\"\nRudraksh\n-From Lord Shiva with Love", style: TextStyle(fontStyle: FontStyle.italic, fontSize: 20.0, fontWeight: FontWeight.bold),textAlign: TextAlign.center,)),
             ),
-            Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F0.jpg?alt=media"),
+           Container(
+            padding: EdgeInsets.symmetric(vertical: 10.0),
+            child: GestureDetector(
+              child: FadeInImage(
+                placeholder: AssetImage(placeholder),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2FRudraksha.jpeg?alt=media&token=714b9b51-290d-4993-a14b-2aec23868fa6"),
+              ),
+              onTap: () => launchYoutube("bpdj-D6FO4k"),
+            ),
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 20.0,
+                  offset: new Offset(2.0, 7.0),
+                ),
+              ],
+            ),
+          ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 
@@ -26,7 +27,7 @@ List<TriangularGem> gemstones = [
   TriangularGem(
     Title: "Rose Quartz",
     ImageUrl:
-    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-rose-quartz.jpg?alt=media",
+        "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FTriangular-rose-quartz.jpg?alt=media",
     DialogText: "Triangular Rose quartz is one of the most desirable varieties of quartz. The pink to rose red color is completely unique, unlike any other pink mineral species. The color is caused by iron and titanium impurities. Rose quartz is used as an ornamental stone and as a gemstone. Rose quartz is found in Madagascar, India, Germany and several localities in the USA. Much rose quartz was extracted from a famous site near Custer, South Dakota, but now, most of the worlds supply of good carvable rose quartz comes from Brazil. Brazil is also the only source of true well formed crystals of rose quartz. If rutile needles are present in the rose quartz then a star effect or asterism is sometimes seen. The star is best seen when light is viewed through the rose quartz. Pink quartz (rose quartz) allows you to be in touch with your basic self. It will allow you to get to know your true self and to love that true self in all its beauty. It can also allow you to communicate internally with your spirit guides, which means you may or may not be aware of them but they are teaching you all the same. Rose Quartz is a good stone for someone who has trouble loving themselves or accepting love from another because they do not believe that they are worthy of being loved. Opens Heart Chakra Rose quartz is the most powerful for dealing with affairs of the heart. It opens up the heart for both giving and receiving love. It soothes negative influences. This stone is good for dealing with issues on an emotional level. A stone from the heart and for the heart. It helps one to be able to love themselves. A good stone for dealing with a \"broken heart.\" The rose quartz is also good for helping one to release childhood traumas, neglect, lack of love, self-esteem. The best stone for opening the 4th chakra.\n\n Weight : 11.25 Ratti Rs. 2100.00\nWeight : 21.00 Ratti Rs. 4200.00 ",
     WeightText: "Quality : Premium\n\n Weight : 11.25 Ratti Rs. 2100.00\nWeight : 21.00 Ratti Rs. 4200.00 ",
   ),
@@ -80,12 +81,15 @@ class _TriangularGemstonesPageState extends State<TriangularGemstonesPage> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(
-              "Triangular Gemstones",
-              style: TextStyle(
-                fontSize: 30.0,
+            child: Center(
+              child: Text(
+                "Triangular Gemstones",
+                style: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontSize: 30.0,
+                ),
+                textAlign: TextAlign.left,
               ),
-              textAlign: TextAlign.left,
             ),
           ),
           Padding(
@@ -100,7 +104,7 @@ class _TriangularGemstonesPageState extends State<TriangularGemstonesPage> {
                 children: <Widget>[
                   Text(
                     (iffull) ? full : half,
-                    style: TextStyle(color: Colors.red, fontSize: 15.0),
+                    style: TextStyle(color: Colors.blue[900], fontSize: 15.0),
                     textAlign: TextAlign.justify,
                   ),
                   Row(
@@ -163,9 +167,18 @@ class TriangularGem extends StatelessWidget {
               ),
             ),
             FlatButton(
-              child: Image.network(
-                ImageUrl,
+              child:
+              //  Image.network(
+              //   ImageUrl,
+              //   width: 150.0,
+              // ),
+              Container(
                 width: 150.0,
+                child: CachedNetworkImage(
+                    imageUrl: ImageUrl,
+                    placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                    errorWidget: (context, url, error) =>Icon(Icons.error),
+                  ),
               ),
               onPressed: () {
                 showDialog(

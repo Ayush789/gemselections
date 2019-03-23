@@ -3,9 +3,11 @@ import 'package:gemselections/Pages/imageurl.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:gemselections/Pages/rudraksh/rudrakshscaffold.dart';
 
+
 List<Bead> gemstones = [
   Bead(
     Title: "ONE MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fone-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -13,6 +15,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "TWO MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwo-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -20,6 +23,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "THREE MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fthree-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -27,6 +31,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "FOUR MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffour-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -34,6 +39,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "FIVE MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffive-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -41,13 +47,16 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "SIX MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fsix-mukhi-rudraksha.jpg?alt=media",
     DialogText:
         "Rs. 270.00(Six Mukhi Rudraksha)\n\nRs. 151.00 (Six Mukhi Indonesian Rudraksha) \n\nCheh (6)Mukhi Rudraksha (code:ARB06) (FOR ANY QUERY ON Cheh (6)Mukhi Rudraksha CALL 0091 - 9213932017) Six Mukhi Rudraksha is a form of Kartika and Ganesha. This awakens the sleeping powers of an individual. By wearing this, a person imbibes moral strength, will power and the power of knowledge. This has the complete blessings of Gauri Mata. It gives a person the gift of comprehension. In Astrology it is said to remove the malefic effects of Venus.\n\nSix Mukhi (Om Harim Humm Namah)\n\nThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras. \n\nSix Mukhi Rudraksha Rs. 270.00\n\nSix Mukhi Indonesian Rudraksha Rs. 151.00 ",
   ),
   Bead(
+    
     Title: "SEVEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fseven-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -55,6 +64,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "EIGHT MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Feight-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -62,6 +72,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "NINE MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnine-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -69,6 +80,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "TEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ften-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -76,6 +88,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "ELEVEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Feleven-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -83,6 +96,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "TWELVE MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwelve-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -90,6 +104,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "THIRTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fthirteen-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -97,6 +112,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "FOURTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffourteen-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -104,6 +120,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "FIFTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ffifteen-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -111,6 +128,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "SIXTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fsixteen-mukhi-rudraksha.gif?alt=media",
     DialogText:
@@ -118,6 +136,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "SEVENTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fseventeen-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -125,6 +144,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "EIGHTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Feighteen-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -132,6 +152,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "NINTEEN MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fnineteen-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -139,6 +160,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "TWENTY MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwenty-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -146,6 +168,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "TWENTY ONE MUKHI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftwentyone-mukhi-rudraksha.jpg?alt=media",
     DialogText:
@@ -153,6 +176,7 @@ List<Bead> gemstones = [
   ),
   Bead(
     Title: "TRIJUTI RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Ftrijuti-rudraksha.gif?alt=media",
     DialogText:
@@ -160,12 +184,14 @@ List<Bead> gemstones = [
   ),
   Bead(
       Title: "GANESH RUDRAKSH",
+      VideoUrl: "",
       ImageUrl:
           "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fganesh-rudraksha.jpg?alt=media",
       DialogText:
           " GANESH RUDRAKSHA\nRs. 900.00 \n\nGanesh Rudraksha Code : ARB16 (FOR ANY QUERY ON Ganesh Rudraksha CALL 0091 - 9213932017) Ganesha Rudraksha represents Lord Ganesha\n\nThe Mantra has to be recited on a Rudhraksha mala and should be spoken in such a way that at least you can hear it. Shri Shiv Mahapuran is of the view that Rudhraksha does not give its full results without the use of proper mantras.\n\n Rs. 900.00 "),
   Bead(
     Title: "GAURI SHANKAR RUDRAKSH",
+    VideoUrl: "",
     ImageUrl:
         "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fgauri-shanker-rudraksha.jpg?alt=media",
     DialogText:
@@ -184,9 +210,25 @@ class _BeadPageState extends State<BeadPage> {
     return RudrakshScaffold(
       body: ListView(
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F0.jpg?alt=media"),
+           Container(
+            padding: EdgeInsets.all(10.0),
+            child: GestureDetector(
+              child: FadeInImage(
+                placeholder: AssetImage(placeholder),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/YoutubeImages%2FRudrakshaBeads.jpeg?alt=media&token=0c912842-c35b-4f4e-b78f-11ee8fb1c9a7"),
+              ),
+              onTap: () => launchYoutube("Qd1hHh_vEkA"),
+            ),
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 20.0,
+                  offset: new Offset(2.0, 7.0),
+                ),
+              ],
+            ),
           ),
           Column(
             children: BeadToRows(gemstones, context),
@@ -198,13 +240,15 @@ class _BeadPageState extends State<BeadPage> {
 }
 
 class Bead extends StatelessWidget {
-  String Title, ImageUrl, DialogText;
+  String Title, ImageUrl, DialogText, VideoUrl;
 
   Bead({
     this.DialogText,
-    this.Title,
     this.ImageUrl,
+    this.Title,
+    this.VideoUrl,
   });
+
 
   @override
   Widget build(BuildContext context) {
@@ -215,6 +259,8 @@ class Bead extends StatelessWidget {
         height: 200.0,
         child: Column(
           children: <Widget>[
+            
+
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -236,13 +282,25 @@ class Bead extends StatelessWidget {
                       return AlertDialog(
                         content: ListView(
                           children: <Widget>[
-                            Text(
+                            // Padding(padding: EdgeInsets.only(top: 10.0),),
+           
+                              Padding(padding: EdgeInsets.only(top: 10.0),),
+                              Text(
                               Title,
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20.0,
                               ),
                             ),
+                              RaisedButton(
+                           child: Text("Watch Video",style: TextStyle(color: Colors.white),),
+                         color: Colors.red,
+                         shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+                            onPressed: (){
+                            launchYoutube(VideoUrl);
+                            },
+                              ),
+                              Padding(padding: EdgeInsets.only(top: 10.0),),
                             Text(DialogText)
                           ],
                         ),

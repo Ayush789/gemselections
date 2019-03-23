@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/imageurl.dart';
+import 'dart:ui' as ui;
+import 'imageurl.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 
 class AbhimantranMainPage extends StatefulWidget {
@@ -20,17 +22,24 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
                 MaterialPageRoute(
                   builder: (context) => AbhimantritPage(
                         Imgurl:
-                            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media",
+                            "QcjlAmjn_-U",
                       ),
                 ),
               );
             },
-            child: Card(
-              child: Column(
-                children: <Widget>[
-                  Text("PANNA STONE ABHIMANTRAN"),
-                  Image.network(imgurl),
-                ],
+            child: Container(
+              padding: EdgeInsets.all(8.0),
+              child: Card(
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 200.0,
+                      child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fafrican-emerald.jpg?alt=media")),
+                      Text("PANNA STONE ABHIMANTRAN"),
+                      Padding(padding: EdgeInsets.only(top: 10.0),),
+                  ],
+                ),
               ),
             ),
           ),
@@ -41,7 +50,7 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
                 MaterialPageRoute(
                   builder: (context) => AbhimantritPage(
                         Imgurl:
-                            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media",
+                            "Pu_NqgEa0TQ",
                       ),
                 ),
               );
@@ -49,8 +58,12 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
             child: Card(
               child: Column(
                 children: <Widget>[
+                  Container(
+                    height: 200.0,
+                    width: MediaQuery.of(context).size.width,
+                    child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2FNatural-blue-sapphire.jpg?alt=media")),
                   Text("NEELAM STONE ABHIMANTRAN"),
-                  Image.network(imgurl),
+                  Padding(padding: EdgeInsets.only(top: 10.0),),
                 ],
               ),
             ),
@@ -62,7 +75,7 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
                 MaterialPageRoute(
                   builder: (context) => AbhimantritPage(
                         Imgurl:
-                            "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media",
+                            "Kt99XEBQ3pw",
                       ),
                 ),
               );
@@ -70,8 +83,13 @@ class _AbhimantranMainPageState extends State<AbhimantranMainPage> {
             child: Card(
               child: Column(
                 children: <Widget>[
+                  Container(
+                    height: 200.0,
+                    width: MediaQuery.of(context).size.width,
+                    child: Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Fpeela-pukhraj.jpg?alt=media")),
                   Text("PUKHRAJ STONE ABHIMANTRAN"),
-                  Image.network(imgurl),
+                  Padding(padding: EdgeInsets.only(top: 10.0),),
+                 
                 ],
               ),
             ),
@@ -97,7 +115,20 @@ class _AbhimantritPageState extends State<AbhimantritPage> {
     return Scaffold(
       body: ListView(
         children: <Widget>[
-          Image.network(widget.Imgurl),
+          GestureDetector(
+            onTap: (){
+              launchYoutube(widget.Imgurl);
+            },
+              child: Stack(
+              alignment: Alignment.center,
+              children: <Widget>[
+                Image.network("https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2F3d9041e5-e52d-45cd-a6b0-d65a147408cf.jpeg?alt=media"),
+                Align(child: BackdropFilter(
+                  filter: new ui.ImageFilter.blur(sigmaX: 1.5, sigmaY: 1.5),
+                  child: Icon(Icons.play_arrow, color: Colors.white,size: 70.0,)),alignment: Alignment.center,)
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 20.0),
             child: Card(
