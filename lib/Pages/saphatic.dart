@@ -110,14 +110,21 @@ class SaphticTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(5.0),
       child: Card(
-        child: Column(
-          children: <Widget>[
-            Image.network(ImgUrl),
-            Text(Title),
-            Text(text),
-            Text("Price : INR.$Price/-"),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: <Widget>[
+              Image.network(ImgUrl),
+              Text(Title,style : TextStyle(fontSize:18.0,fontWeight:FontWeight.bold,)),
+              Text(text),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Price : INR.$Price/-",style:TextStyle(fontWeight:FontWeight.bold)),
+              ),
+            ],
+          ),
         ),
       ),
     );

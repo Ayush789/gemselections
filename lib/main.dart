@@ -6,8 +6,63 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:gemselections/Pages/mainpage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:gemselections/Pages/notifications.dart';
+
+final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+GlobalKey<ScaffoldState> notifkey = GlobalKey<ScaffoldState>();
 
 void main() => runApp(GemApp());
+
+class GemApp extends StatefulWidget {
+  @override
+  _GemAppState createState() => _GemAppState();
+}
+
+class _GemAppState extends State<GemApp> {
+
+  @override
+  void initState() {
+    super.initState();
+
+    _firebaseMessaging.requestNotificationPermissions();
+    _firebaseMessaging.configure(
+      onMessage: (Map<String, dynamic> message) async {
+        print("onMessage: $message");
+        showItemDialog(message);
+      },
+      onLaunch: (Map<String, dynamic> message) async {
+        print("onLaunch: $message");
+        navigateToItemDetail(message);
+      },
+      onResume: (Map<String, dynamic> message) async {
+        print("onResume: $message");
+        navigateToItemDetail(message);
+      },
+
+    );
+    _firebaseMessaging.setAutoInitEnabled(true);
+
+
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      //key: notifkey,
+      debugShowCheckedModeBanner: false,
+      title: "IOSD gem app",
+      home: Stack(
+        children: <Widget>[
+          Scaffold(
+            key: notifkey,
+          ),
+          MainPage(),
+        ],
+      ),
+    );
+  }
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -175,19 +230,3 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-
-class GemApp extends StatefulWidget {
-  @override
-  _GemAppState createState() => _GemAppState();
-}
-
-class _GemAppState extends State<GemApp> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "IOSD gem app",
-      home: MainPage(),
-    );
-  }
-}

@@ -176,8 +176,8 @@ class TriangularGem extends StatelessWidget {
                 width: 150.0,
                 child: CachedNetworkImage(
                     imageUrl: ImageUrl,
-                    placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
-                    errorWidget: Icon(Icons.error),
+                    placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                    errorWidget: (context, url, error) =>Icon(Icons.error),
                   ),
               ),
               onPressed: () {

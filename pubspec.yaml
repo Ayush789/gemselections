@@ -27,12 +27,16 @@ dependencies:
   firebase_storage: ^1.0.4
   carousel_slider: ^1.1.0
   datetime_picker_formfield: ^0.1.7
-  http:
+  http: 0.12.0
+  firebase_messaging: ^4.0.0+1
   flutter_webview_plugin:
-  cached_network_image:
+  cached_network_image: ^0.7.0
   webview_flutter:
   connectivity:
-
+  # path_provider: ^0.5.0
+  shared_preferences: 0.4.3
+  path_provider: ^0.5.0+1
+  flutter_cache_manager: ^0.3.1
 
 dev_dependencies:
   flutter_test:

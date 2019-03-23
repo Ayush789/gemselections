@@ -19,8 +19,8 @@ class _YugalPageState extends State<YugalPage> {
             Container(
             child: CachedNetworkImage(
                 imageUrl: "https://firebasestorage.googleapis.com/v0/b/gemselections-add52.appspot.com/o/AppData%2Frudraksha-banner.jpg?alt=media",
-                 placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
-                 errorWidget: Icon(Icons.error),
+                 placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                 errorWidget: (context, url, error) =>Icon(Icons.error),
               ),
               decoration: BoxDecoration(
               boxShadow: [

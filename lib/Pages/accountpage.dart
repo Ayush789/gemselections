@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gemselections/Pages/mainscaffold.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:gemselections/Pages/notifications.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -13,6 +14,12 @@ class AccountPage extends StatefulWidget {
 }
 
 class _AccountPageState extends State<AccountPage> {
+  @override
+  void initState() {
+    super.initState();
+    try {} catch (e) {}
+  }
+
   @override
   Widget build(BuildContext context) {
     if (user != null) {
@@ -52,6 +59,15 @@ class _AccountPageState extends State<AccountPage> {
                 onPressed: () {},
                 child: Text("Give Feedback."),
               ),
+              FlatButton(
+                onPressed: () async {
+                  await signOut();
+                  setState(() {
+                    user = null;
+                  });
+                },
+                child: Text("Sign Out"),
+              ),
             ],
           ),
         ),
@@ -63,20 +79,40 @@ class _AccountPageState extends State<AccountPage> {
             FlatButton(
               onPressed: () {
                 setState(() {
-                  signIn().then((fuser) {
-                    setState(() {
-                      user = fuser;
-                    });
+                  signInGoogle().then((fuser) {
+                    if (fuser != null)
+                      setState(() {
+                        user = fuser;
+                      });
+                    else {
+                      Scaffold.of(context).showSnackBar(
+                          SnackBar(content: Text("Unable to Sign In")));
+                    }
                   }).catchError((e) {
                     print("Error $e");
                   });
                 });
               },
-              child: Text("Sign In"),
+              child: Text("Sign In With Google"),
             ),
             FlatButton(
-              onPressed: signOut,
-              child: Text("Sign Up"),
+              onPressed: () {
+                setState(() {
+                  signInFacebook().then((fuser) {
+                    if (fuser != null)
+                      setState(() {
+                        user = fuser;
+                      });
+                    else {
+                      Scaffold.of(context).showSnackBar(
+                          SnackBar(content: Text("Unable to Sign In")));
+                    }
+                  }).catchError((e) {
+                    print("Error $e");
+                  });
+                });
+              },
+              child: Text("Sign In With Facebook"),
             ),
           ],
         ),
@@ -100,8 +136,7 @@ class _ReadLaterPageState extends State<ReadLaterPage> {
         body: FutureBuilder<DocumentSnapshot>(
       future: ref.get(),
       builder: (context, snap) {
-        print("0 ${snap.data.data}");
-        if (snap.data.data != null) {
+        if (snap.data != null) {
           print("1");
           if (snap.data.data != null) {
             return ListView.builder(
@@ -154,8 +189,8 @@ class _WatchLaterState extends State<WatchLater> {
         body: FutureBuilder<DocumentSnapshot>(
       future: ref.get(),
       builder: (context, snap) {
-        print("0 ${snap.data.data}");
-        if (snap.data.data != null) {
+        //print("0 ${snap.data.data}");
+        if (snap.data != null) {
           print("1");
           if (snap.data.data != null) {
             return ListView.builder(
@@ -193,7 +228,7 @@ class _WatchLaterState extends State<WatchLater> {
   }
 }
 
-Future<FirebaseUser> signIn() async {
+Future<FirebaseUser> signInGoogle() async {
   GoogleSignInAccount googleSignInAccount = await googleSignIn.signIn();
   GoogleSignInAuthentication googleSignInAuthentication =
       await googleSignInAccount.authentication;
@@ -201,13 +236,52 @@ Future<FirebaseUser> signIn() async {
   FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithGoogle(
       idToken: googleSignInAuthentication.idToken,
       accessToken: googleSignInAuthentication.accessToken);
-
   print("Signed in as ${firebaseUser.displayName} uid ${firebaseUser.uid}");
+  print("Saving File");
+
+  saveUser(firebaseUser.uid);
+
+  print("User Saved");
+
+  String data = await getSavedUser();
+
+  print("Data: $data");
+
+  return firebaseUser;
+}
+
+Future<FirebaseUser> signInFacebook() async {
+  //FacebookLogin fblogin = FacebookLogin();
+  FirebaseUser firebaseUser = null;
+  /*var res = await fblogin.logInWithReadPermissions(['email']);
+  switch (res.status) {
+    case FacebookLoginStatus.loggedIn:
+      firebaseUser = await FirebaseAuth.instance
+          .signInWithFacebook(accessToken: res.accessToken.token);
+      break;
+    case FacebookLoginStatus.cancelledByUser:
+      break;
+    case FacebookLoginStatus.error:
+      break;
+  }
+  */
+  print("Saving File");
+
+  saveUser(firebaseUser.uid);
+
+  print("User Saved");
+
+  String data = await getSavedUser();
+
+  print("Data: $data");
+
   return firebaseUser;
 }
 
 void signOut() {
   googleSignIn.signOut();
+  saveUser("0");
+  FirebaseAuth.instance.signOut();
   print("Signed Out");
 }
 

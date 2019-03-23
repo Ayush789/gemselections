@@ -208,8 +208,8 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
               //      ),
               CachedNetworkImage(
                   imageUrl: snap.data.data[widget.type][position],
-                  placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
-                  errorWidget: Icon(Icons.error),
+                  placeholder: (context, url) => Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                  errorWidget: (context, url, error) =>Icon(Icons.error),
                 ),
              Padding(padding: EdgeInsets.only(top: 10.0),),
               Row(
@@ -427,8 +427,8 @@ class _JewelleryViewPageState extends State<JewelleryViewPage> {
                   child: 
                   CachedNetworkImage(
                     imageUrl: snap.data.data[widget.type][index],
-                    placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
-                    errorWidget: Icon(Icons.error),
+                    placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                    errorWidget: (context, url, error) =>Icon(Icons.error),
                   )
                   // child: Image.network(snap.data.data[widget.type][index]),
                 ),
@@ -795,8 +795,8 @@ class _GemStuddedJewelleryPageState extends State<GemStuddedJewelleryPage> {
                               //  child: Image.network(gemStuddedImageUrl[index]),
                              child: CachedNetworkImage(
                   imageUrl: gemStuddedImageUrl[index],
-                  placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
-                  errorWidget: Icon(Icons.error),
+                  placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                  errorWidget: (context, url, error) =>Icon(Icons.error),
                 ),
                              height: MediaQuery.of(context).size.width/2.5,
                              ),
@@ -888,8 +888,8 @@ class _DiamondJewelleryPageState extends State<DiamondJewelleryPage> {
                                   // child: Image.network(gemStuddedImageUrl[index]),
                                   child: CachedNetworkImage(
                   imageUrl: gemStuddedImageUrl[index],
-                  placeholder: Align(alignment: Alignment.center,child: CircularProgressIndicator()),
-                  errorWidget: Icon(Icons.error),
+                  placeholder: (context, url) =>Align(alignment: Alignment.center,child: CircularProgressIndicator()),
+                  errorWidget: (context, url, error) =>Icon(Icons.error),
                 ),
                                 height: MediaQuery.of(context).size.width/2.5,
                                 ),
